@@ -185,7 +185,14 @@ namespace MetodeGabarro
                 {
                     //se ha equivocado
                     MessageBox.Show("Error, paraula incorrecte");
-                    MostrarResposta();
+
+
+                    do {
+                        MessageBox.Show( resposta, "Visualitza");
+                        //deletrearlo!
+                    } while (MessageBox.Show("L'has visualitzat, correctament?","",MessageBoxButton.YesNo)==MessageBoxResult.No);
+
+                    
                     if (!dicRepetides.ContainsKey(resposta))
                     {
                         dicRepetides.Add(resposta, 0);
