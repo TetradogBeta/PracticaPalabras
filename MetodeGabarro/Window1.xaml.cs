@@ -190,6 +190,7 @@ namespace MetodeGabarro
                     do {
                         MessageBox.Show( resposta, "Visualitza");
                         //deletrearlo!
+                        new winDeletreo(resposta).ShowDialog();
                     } while (MessageBox.Show("L'has visualitzat, correctament?","",MessageBoxButton.YesNo)==MessageBoxResult.No);
 
                     

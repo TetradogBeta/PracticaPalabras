@@ -1,0 +1,8 @@
+﻿<Window x:Class="MetodeGabarro.winDeletreo"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="MetodeGabarro" Height="128.755" Width="243.348">
+    <Viewbox>
+        <TextBlock x:Name="txtParaulaDeletrejada"  HorizontalAlignment="Left" />
+    </Viewbox>
+</Window>
