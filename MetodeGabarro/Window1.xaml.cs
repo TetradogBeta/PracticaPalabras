@@ -51,7 +51,7 @@ namespace MetodeGabarro
                 txtDic.Text = System.IO.File.ReadAllText(FileName);
 
                 CarregaParaules();
-              
+
 
             }
             else
@@ -69,7 +69,8 @@ namespace MetodeGabarro
                         dicRepetides.Add(lstRepetidas[i], 0);
                     else lstRepetidas.RemoveAt(i);
             }
-            SeguentParaula();
+            if (!string.IsNullOrEmpty(txtDic.Text))
+                SeguentParaula();
         }
         public static bool SpeakAllWord
         {
@@ -141,20 +142,20 @@ namespace MetodeGabarro
             str.Append(palabra);
             if (palabra.IndexOf("·") > 0)
             {
-                
+
                 str.Replace("L·L", "_");
                 str.Replace("L·l", "_");
                 str.Replace("l·L", "_");
-               
+
             }
             if (palabra.IndexOf(" ") > 0)
             {
                 aux = palabra[palabra.IndexOf(' ') - 1] + " ";
                 str.Replace(aux, "_");
             }
-            if (palabra.IndexOf("'") >0 && palabra.IndexOf("'") < palabra.Length)
+            if (palabra.IndexOf("'") > 0 && palabra.IndexOf("'") < palabra.Length)
             {
-                aux ="'"+ palabra[palabra.IndexOf('\'') + 1] ;
+                aux = "'" + palabra[palabra.IndexOf('\'') + 1];
                 str.Replace(aux, "_");
             }
             if (palabra.IndexOf("-") > 0 && palabra.IndexOf("-") < palabra.Length)
