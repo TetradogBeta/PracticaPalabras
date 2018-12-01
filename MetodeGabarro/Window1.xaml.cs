@@ -69,7 +69,7 @@ namespace MetodeGabarro
                         dicRepetides.Add(lstRepetidas[i], 0);
                     else lstRepetidas.RemoveAt(i);
             }
-            if (!string.IsNullOrEmpty(txtDic.Text))
+            if (paraulesDic!=null&&paraulesDic.Length>0)
                 SeguentParaula();
         }
         public static bool SpeakAllWord
