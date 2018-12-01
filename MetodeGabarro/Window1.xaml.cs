@@ -16,7 +16,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-
+using System.Linq;
 namespace MetodeGabarro
 {
     /// <summary>
@@ -29,7 +29,7 @@ namespace MetodeGabarro
         public const int INDEXREPEAT = 6;
         public const int INDEXTOTAL = 10;
         public const int REPEATMAX = 5;
-        public static char[] CaracteresSplit = new char[] { ';', ',', '/' };
+        public static char[] CaracteresSplit = new char[] { ';', '|', '/' };
         public static char[] CaracteresSinGuion = new char[] { '·', '-', '\'' };
         public static readonly string FileName = System.IO.Path.Combine(Environment.CurrentDirectory, DICFILE);
         static Random llavor;
@@ -49,7 +49,7 @@ namespace MetodeGabarro
             if (System.IO.File.Exists(FileName))
             {
                 txtDic.Text = System.IO.File.ReadAllText(FileName);
-            
+
                 CarregaParaules();
                 SeguentParaula();
 
@@ -70,12 +70,15 @@ namespace MetodeGabarro
                     else lstRepetidas.RemoveAt(i);
             }
         }
-        public static bool SpeakAllWord {
-            get {
+        public static bool SpeakAllWord
+        {
+            get
+            {
 
                 return Properties.Settings.Default.SpeakAllWord;
             }
-            set {
+            set
+            {
                 Properties.Settings.Default.SpeakAllWord = value;
                 Properties.Settings.Default.Save();
             }
@@ -100,6 +103,7 @@ namespace MetodeGabarro
             int randomPos;
             string[] camps = null;
             string palabra = null;
+            StringBuilder str = new StringBuilder();
             do
             {
                 if (lstRepetidas.Count > 0 && llavor.Next(0, INDEXTOTAL) < INDEXREPEAT)
@@ -107,8 +111,12 @@ namespace MetodeGabarro
                     randomPos = llavor.Next(lstRepetidas.Count);
                     palabra = DameParaulaDic(lstRepetidas[randomPos]);
                     if (palabra != null)
-                        camps = palabra.Split(CaracteresSplit);
-                    else if (palabra!=null&&dicRepetides.ContainsKey(palabra))
+                    {
+                        if (palabra.Intersect(CaracteresSplit).ToArray().Length > 0)
+                            camps = palabra.Split(CaracteresSplit);
+                        else camps = new string[] { palabra, "" };
+                    }
+                    else if (palabra != null && dicRepetides.ContainsKey(palabra))
                     {
                         dicRepetides.Remove(palabra);
                         lstRepetidas.RemoveAt(randomPos);
@@ -118,17 +126,33 @@ namespace MetodeGabarro
                 {
                     randomPos = llavor.Next(paraulesDic.Length);
                     palabra = paraulesDic[randomPos];
-                    camps = palabra.Split(CaracteresSplit);
+                    if (palabra.Intersect(CaracteresSplit).ToArray().Length > 0)
+                        camps = palabra.Split(CaracteresSplit);
+                    else camps = new string[] { palabra, "" };
                 }
 
-            } while (palabra == null || tbParaula.Text.Equals(camps[0]));
+            } while (palabra == null || tbParaula.Text.Equals(camps[0]) && paraulesDic.Length > 1);
             txtPista.Text = camps[1];
             tbParaula.Tag = camps[0].ToLower();
             tbParaula.Text = "";
-            for (int i = 0; i < camps[0].Length; i++)
-                if (!Char.IsLower(camps[0][i]) && !CaracteresSinGuion.Contains(camps[0][i]))//si es mayuscula o un caracter especial
+            palabra = camps[0];
+            if (palabra.IndexOf("·") > 0)
+            {
+                str.Append(palabra);
+                str.Replace("L·L", "_");
+                str.Replace("L·l", "_");
+                str.Replace("l·L", "_");
+                palabra = str.ToString();
+            }
+            if (palabra.IndexOf(" ") > 0)
+            {
+                str.Replace(palabra[palabra.IndexOf(' ') - 1] + " ", "_");
+                palabra = str.ToString();
+            }
+            for (int i = 0; i < palabra.Length; i++)
+                if (!Char.IsLower(palabra[i]) && !CaracteresSinGuion.Contains(palabra[i]))//si es mayuscula o un caracter especial
                     tbParaula.Text += '_';
-                else tbParaula.Text += camps[0][i];
+                else tbParaula.Text += palabra[i];
 
 
         }
@@ -162,7 +186,7 @@ namespace MetodeGabarro
 
         void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (tabDiccionari!=null&&!tabDiccionari.IsSelected&& txtDic != null && !string.IsNullOrEmpty(txtDic.Text))
+            if (tabDiccionari != null && !tabDiccionari.IsSelected && txtDic != null && !string.IsNullOrEmpty(txtDic.Text))
             {
                 CarregaParaules();
                 SeguentParaula();
@@ -197,16 +221,17 @@ namespace MetodeGabarro
                 else
                 {
                     //se ha equivocado
-                    MessageBox.Show("Error, paraula incorrecte");
+                    MessageBox.Show(this, "Error, paraula incorrecte");
 
 
-                    do {
-                        MessageBox.Show( resposta, "Visualitza");
+                    do
+                    {
+                        MessageBox.Show(this, resposta, "Visualitza");
                         //deletrearlo!
-                        new winDeletreo(resposta).ShowDialog();
-                    } while (MessageBox.Show("L'has visualitzat, correctament?","",MessageBoxButton.YesNo)==MessageBoxResult.No);
+                        new winDeletreo(this, resposta).ShowDialog();
+                    } while (MessageBox.Show(this, "L'has visualitzat, correctament?", "", MessageBoxButton.YesNo) == MessageBoxResult.No);
 
-                    
+
                     if (!dicRepetides.ContainsKey(resposta))
                     {
                         dicRepetides.Add(resposta, 0);

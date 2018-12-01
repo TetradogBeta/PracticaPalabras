@@ -30,49 +30,65 @@ namespace MetodeGabarro
         Thread fil;
         string paraula;
         SpeechSynthesizer reader;
-        public winDeletreo(string paraula)
+        Semaphore semaphoreSpell;
+        public winDeletreo(Window parent,string paraula)
         {
+       
             StringBuilder str = new StringBuilder(paraula.ToLower());
             str.Replace("l·l", LGEMINADA + "");
             reader = new SpeechSynthesizer();
             this.paraula = str.ToString();
             InitializeComponent();
+            semaphoreSpell = new Semaphore(1, 1);
             fil = new Thread(() => Deletrea());
             fil.Start();
-            
+
+            Left = parent.Left+ (parent.Width / 2) -(Width/2);
+            Top = parent.Top + (parent.Height / 2) -(Height/2);
+
+        
         }
 
         private void Deletrea()
         {
             string caracterAPosar;
-            Action actText;
-            Action act = () =>
-                 {
-                     Hide();
-                     for (int i = paraula.Length - 1; i >= 0; i--)
-                     {
 
-                         //poso la lletra
-                         if ((paraula[i] + "").Equals(LGEMINADA))
-                             caracterAPosar = "l·l";
-                         else caracterAPosar = "" + paraula[i];
+            Action act;/* = () => Hide();
+            Dispatcher.BeginInvoke(act);*/
 
-                         actText = () => txtParaulaDeletrejada.Text = caracterAPosar + txtParaulaDeletrejada.Text;
-                         Dispatcher.BeginInvoke(actText);
-                         System.Threading.Thread.Sleep(1 * 1000);//un segon
-                         //dic la lletra
-                         Speak(paraula[i]);
+            for (int i = paraula.Length - 1; i >= 0; i--)
+            {
 
-                         
-                     }
-                     if (Window1.SpeakAllWord)
-                     {
-                         reader.Rate = -1;
-                         reader.Speak(paraula);
-                     }
-                     this.Close();
+            
 
-                 };
+                act = () =>
+                {
+                    //poso la lletra
+                    if ((paraula[i]).Equals(LGEMINADA))
+                        caracterAPosar = "l·l";
+                    else caracterAPosar = "" + paraula[i];
+                    txtParaulaDeletrejada.Text = caracterAPosar + txtParaulaDeletrejada.Text;
+                    System.Threading.Thread.Sleep(1 * 1000);//un segon
+                                                            //dic la lletra
+                    semaphoreSpell.Release();
+                };
+
+                Dispatcher.BeginInvoke(act);
+               
+                semaphoreSpell.WaitOne();
+                Speak(paraula[i]);
+
+
+            }
+            if (Window1.SpeakAllWord)
+            {
+                reader.Rate = -1;
+                act=()=>reader.Speak(txtParaulaDeletrejada.Text);
+                Dispatcher.BeginInvoke(act);
+            }
+            act = () => this.Close();
+
+
             Dispatcher.BeginInvoke(act);
         }
 

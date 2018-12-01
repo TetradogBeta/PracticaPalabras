@@ -4,6 +4,7 @@
         Title="MetodeGabarro" Height="300" Width="300"
         Closing="Window_Closing"
         KeyDown="Window_KeyDown"
+        
 >
 	<TabControl  SelectionChanged="TabControl_SelectionChanged">
 		<TabItem Header="Joc" IsSelected="True" >
