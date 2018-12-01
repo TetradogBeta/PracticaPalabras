@@ -51,7 +51,7 @@ namespace MetodeGabarro
                 txtDic.Text = System.IO.File.ReadAllText(FileName);
 
                 CarregaParaules();
-                SeguentParaula();
+              
 
             }
             else
@@ -69,6 +69,7 @@ namespace MetodeGabarro
                         dicRepetides.Add(lstRepetidas[i], 0);
                     else lstRepetidas.RemoveAt(i);
             }
+            SeguentParaula();
         }
         public static bool SpeakAllWord
         {
@@ -103,6 +104,7 @@ namespace MetodeGabarro
             int randomPos;
             string[] camps = null;
             string palabra = null;
+            string aux;
             StringBuilder str = new StringBuilder();
             do
             {
@@ -135,20 +137,32 @@ namespace MetodeGabarro
             txtPista.Text = camps[1];
             tbParaula.Tag = camps[0].ToLower();
             tbParaula.Text = "";
-            palabra = camps[0];
+            palabra = camps[0].Trim();
+            str.Append(palabra);
             if (palabra.IndexOf("·") > 0)
             {
-                str.Append(palabra);
+                
                 str.Replace("L·L", "_");
                 str.Replace("L·l", "_");
                 str.Replace("l·L", "_");
-                palabra = str.ToString();
+               
             }
             if (palabra.IndexOf(" ") > 0)
             {
-                str.Replace(palabra[palabra.IndexOf(' ') - 1] + " ", "_");
-                palabra = str.ToString();
+                aux = palabra[palabra.IndexOf(' ') - 1] + " ";
+                str.Replace(aux, "_");
             }
+            if (palabra.IndexOf("'") >0 && palabra.IndexOf("'") < palabra.Length)
+            {
+                aux ="'"+ palabra[palabra.IndexOf('\'') + 1] ;
+                str.Replace(aux, "_");
+            }
+            if (palabra.IndexOf("-") > 0 && palabra.IndexOf("-") < palabra.Length)
+            {
+                aux = "-" + palabra[palabra.IndexOf('-') + 1];
+                str.Replace(aux, "_");
+            }
+            palabra = str.ToString();
             for (int i = 0; i < palabra.Length; i++)
                 if (!Char.IsLower(palabra[i]) && !CaracteresSinGuion.Contains(palabra[i]))//si es mayuscula o un caracter especial
                     tbParaula.Text += '_';

@@ -83,7 +83,7 @@ namespace MetodeGabarro
             if (Window1.SpeakAllWord)
             {
                 reader.Rate = -1;
-                act=()=>reader.Speak(txtParaulaDeletrejada.Text);
+                act = () => { System.Threading.Thread.Sleep(1 * 1000); reader.Speak(txtParaulaDeletrejada.Text); };
                 Dispatcher.BeginInvoke(act);
             }
             act = () => this.Close();
@@ -109,6 +109,9 @@ namespace MetodeGabarro
                 case LGEMINADA: textADir = "l geminada"; break;
                 case '-': textADir = "guió"; break;
                 case '\'': textADir = "apostrof"; break;
+                case ' ':textADir = "espai";break;
+
+
                 default:
                     textADir = caracterADir + "";
                     break;
