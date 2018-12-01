@@ -40,6 +40,7 @@ namespace MetodeGabarro
         List<string> lstRepetidas;
         public Window1()
         {
+            SpeakAllWord = true;
             dicRepetides = new SortedList<string, int>();
             lstRepetidas = new List<string>();
             numParaulesResoltes = 0;
@@ -67,6 +68,16 @@ namespace MetodeGabarro
                     if (!dicRepetides.ContainsKey(lstRepetidas[i]))
                         dicRepetides.Add(lstRepetidas[i], 0);
                     else lstRepetidas.RemoveAt(i);
+            }
+        }
+        public static bool SpeakAllWord {
+            get {
+
+                return Properties.Settings.Default.SpeakAllWord;
+            }
+            set {
+                Properties.Settings.Default.SpeakAllWord = value;
+                Properties.Settings.Default.Save();
             }
         }
         void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -97,7 +108,7 @@ namespace MetodeGabarro
                     palabra = DameParaulaDic(lstRepetidas[randomPos]);
                     if (palabra != null)
                         camps = palabra.Split(CaracteresSplit);
-                    else
+                    else if (palabra!=null&&dicRepetides.ContainsKey(palabra))
                     {
                         dicRepetides.Remove(palabra);
                         lstRepetidas.RemoveAt(randomPos);
@@ -151,7 +162,7 @@ namespace MetodeGabarro
 
         void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (txtDic != null && !string.IsNullOrEmpty(txtDic.Text))
+            if (tabDiccionari!=null&&!tabDiccionari.IsSelected&& txtDic != null && !string.IsNullOrEmpty(txtDic.Text))
             {
                 CarregaParaules();
                 SeguentParaula();
@@ -162,7 +173,9 @@ namespace MetodeGabarro
         private void txtParaulaUser_KeyDown(object sender, KeyEventArgs e)
         {
             string resposta;
-            if (e.Key == Key.Enter)
+            if (e.Key == Key.F6)
+                SpeakAllWord = !SpeakAllWord;
+            else if (e.Key == Key.Enter)
             {
                 resposta = tbParaula.Tag.ToString().ToUpper();
                 if (resposta.Equals(txtParaulaUser.Text.ToUpper()))
