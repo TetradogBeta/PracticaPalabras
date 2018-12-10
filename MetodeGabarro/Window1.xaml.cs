@@ -148,6 +148,9 @@ namespace MetodeGabarro
                 str.Replace("l·L", "_");
 
             }
+            str.Replace("sS", "_");
+            str.Replace("Ss", "_");
+            str.Replace("SS", "_");
             if (palabra.IndexOf(" ") > 0)
             {
                 aux = palabra[palabra.IndexOf(' ') - 1] + " ";

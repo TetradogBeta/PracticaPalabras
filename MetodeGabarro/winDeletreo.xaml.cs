@@ -110,6 +110,7 @@ namespace MetodeGabarro
                 case '-': textADir = "guió"; break;
                 case '\'': textADir = "apostrof"; break;
                 case ' ':textADir = "espai";break;
+                case 'ç':textADir = "sé trancada";break;
 
 
                 default:
