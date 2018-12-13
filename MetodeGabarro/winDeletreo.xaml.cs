@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Speech.Synthesis;
 using System.Text;
 using System.Threading;
@@ -35,8 +36,18 @@ namespace MetodeGabarro
         {
        
             StringBuilder str = new StringBuilder(paraula.ToLower());
+            InstalledVoice voice;
             str.Replace("l·l", LGEMINADA + "");
             reader = new SpeechSynthesizer();
+            voice=reader.GetInstalledVoices(System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture).FirstOrDefault();
+            if (voice != null)
+                reader.SelectVoice(voice.VoiceInfo.Name);
+            else
+            {
+                voice = reader.GetInstalledVoices(new System.Globalization.CultureInfo("es-es")).FirstOrDefault();
+                if (voice != null)
+                    reader.SelectVoice(voice.VoiceInfo.Name);
+            }
             this.paraula = str.ToString();
             InitializeComponent();
             semaphoreSpell = new Semaphore(1, 1);
