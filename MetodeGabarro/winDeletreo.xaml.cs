@@ -108,9 +108,9 @@ namespace MetodeGabarro
             string textADir;
             switch (char.ToLower(caracterADir))
             {
-                case 'ò': textADir = "o amb accent óbert"; break;
+                case 'ò': textADir = "o amb accent ubert"; break;
                 case 'ó': textADir = "o amb accent tancat"; break;
-                case 'è': textADir = "e amb accent óbert"; break;
+                case 'è': textADir = "e amb accent ubert"; break;
                 case 'é': textADir = "e amb accent tancat"; break;
                 case 'à': textADir = "a amb accent"; break;
                 case 'í': textADir = "i amb accent"; break;
