@@ -28,18 +28,20 @@ namespace MetodeGabarro
     public partial class winDeletreo : Window
     {
         const char LGEMINADA = '&';
+        const char ENYA = '$';
         Thread fil;
         string paraula;
         SpeechSynthesizer reader;
         Semaphore semaphoreSpell;
-        public winDeletreo(Window parent,string paraula)
+        public winDeletreo(Window parent, string paraula)
         {
-       
+
             StringBuilder str = new StringBuilder(paraula.ToLower());
             InstalledVoice voice;
             str.Replace("l·l", LGEMINADA + "");
+            str.Replace("ny", ENYA + "");
             reader = new SpeechSynthesizer();
-            voice=reader.GetInstalledVoices(System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture).FirstOrDefault();
+            voice = reader.GetInstalledVoices(System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture).FirstOrDefault();
             if (voice != null)
                 reader.SelectVoice(voice.VoiceInfo.Name);
             else
@@ -54,10 +56,10 @@ namespace MetodeGabarro
             fil = new Thread(() => Deletrea());
             fil.Start();
 
-            Left = parent.Left+ (parent.Width / 2) -(Width/2);
-            Top = parent.Top + (parent.Height / 2) -(Height/2);
+            Left = parent.Left + (parent.Width / 2) - (Width / 2);
+            Top = parent.Top + (parent.Height / 2) - (Height / 2);
 
-        
+
         }
 
         private void Deletrea()
@@ -70,14 +72,17 @@ namespace MetodeGabarro
             for (int i = paraula.Length - 1; i >= 0; i--)
             {
 
-            
+
 
                 act = () =>
                 {
                     //poso la lletra
                     if ((paraula[i]).Equals(LGEMINADA))
                         caracterAPosar = "l·l";
+                    else if ((paraula[i]).Equals(ENYA))
+                        caracterAPosar = "ny";
                     else caracterAPosar = "" + paraula[i];
+
                     txtParaulaDeletrejada.Text = caracterAPosar + txtParaulaDeletrejada.Text;
                     System.Threading.Thread.Sleep(1 * 1000);//un segon
                                                             //dic la lletra
@@ -85,7 +90,7 @@ namespace MetodeGabarro
                 };
 
                 Dispatcher.BeginInvoke(act);
-               
+
                 semaphoreSpell.WaitOne();
                 Speak(paraula[i]);
 
@@ -118,10 +123,11 @@ namespace MetodeGabarro
                 case 'ü': textADir = "u amb dieresis"; break;
                 case 'ï': textADir = "i amb dieresis"; break;
                 case LGEMINADA: textADir = "l geminada"; break;
+                case ENYA:textADir = "eña";break;
                 case '-': textADir = "guió"; break;
                 case '\'': textADir = "apostrof"; break;
-                case ' ':textADir = "espai";break;
-                case 'ç':textADir = "sé trancada";break;
+                case ' ': textADir = "espai"; break;
+                case 'ç': textADir = "sé trancada"; break;
 
 
                 default:

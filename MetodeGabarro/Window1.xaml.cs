@@ -194,6 +194,11 @@ namespace MetodeGabarro
         {
             if (e.Key == Key.Escape)
                 MostrarResposta();
+            else if (e.Key == Key.F6)
+            {
+                SpeakAllWord = !SpeakAllWord;
+                MessageBox.Show(string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig",SpeakAllWord?"activat":"desactivat"));
+            }
         }
 
         private void MostrarResposta()
@@ -215,9 +220,8 @@ namespace MetodeGabarro
         private void txtParaulaUser_KeyDown(object sender, KeyEventArgs e)
         {
             string resposta;
-            if (e.Key == Key.F6)
-                SpeakAllWord = !SpeakAllWord;
-            else if (e.Key == Key.Enter)
+    
+             if (e.Key == Key.Enter)
             {
                 resposta = tbParaula.Tag.ToString().ToUpper();
                 if (resposta.Equals(txtParaulaUser.Text.ToUpper()))
