@@ -30,7 +30,10 @@ namespace MetodeGabarro
         public const int INDEXTOTAL = 10;
         public const int REPEATMAX = 5;
         public static char[] CaracteresSplit = new char[] { ';', '|', '/' };
-        public static char[] CaracteresSinGuion = new char[] { '·', '-', '\'' };
+
+        static SortedList<string, Idioma> DicIdiomas;
+        static readonly Idioma IdiomaPorDefecto;
+
         public static readonly string FileName = System.IO.Path.Combine(Environment.CurrentDirectory, DICFILE);
         static Random llavor;
         string[] paraulesDic;
@@ -38,14 +41,40 @@ namespace MetodeGabarro
 
         SortedList<string, int> dicRepetides;
         List<string> lstRepetidas;
+
+        static Window1()
+        {
+            DicIdiomas = new SortedList<string, Idioma>();
+            //añado el idioma catalan
+            IdiomaPorDefecto = new Idioma(new System.Globalization.CultureInfo("ca-ES"), new string[] { "l·l", "ny", "ss" }, new char[] { '-', '\'' }, new char[] { ' ' },new char[] { '·'});
+
+            IdiomaPorDefecto.PronunciacionEspañola.Add("ò", "o amb accent ubert");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("ó", "o amb accent tancat");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("è", "e amb accent ubert");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("é", "e amb accent tancat");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("à", "a amb accent");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("í", "i amb accent");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("ú", "u amb accent");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("ü", "u amb dieresis");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("ï", "i amb dieresis");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("l·l", "l geminada");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("ny", "eña");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("-", "guió");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("\"", "apostrof");
+            IdiomaPorDefecto.PronunciacionEspañola.Add(" ", "espai");
+            IdiomaPorDefecto.PronunciacionEspañola.Add("ç", "sé trancada");
+
+            DicIdiomas.Add(IdiomaPorDefecto.Region.Name, IdiomaPorDefecto);
+        }
         public Window1()
         {
-            SpeakAllWord = true;
+
             dicRepetides = new SortedList<string, int>();
             lstRepetidas = new List<string>();
             numParaulesResoltes = 0;
             llavor = new Random();
             InitializeComponent();
+
             if (System.IO.File.Exists(FileName))
             {
                 txtDic.Text = System.IO.File.ReadAllText(FileName);
@@ -69,10 +98,15 @@ namespace MetodeGabarro
                         dicRepetides.Add(lstRepetidas[i], 0);
                     else lstRepetidas.RemoveAt(i);
             }
-            if (paraulesDic!=null&&paraulesDic.Length>0)
+            if (paraulesDic != null && paraulesDic.Length > 0)
                 SeguentParaula();
         }
 
+
+        public Idioma Idioma
+        {
+            get { return DicIdiomas.ContainsKey(System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture.Name) ? DicIdiomas[System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture.Name] : IdiomaPorDefecto; }
+        }
         void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (!string.IsNullOrEmpty(txtDic.Text))
@@ -125,45 +159,7 @@ namespace MetodeGabarro
             } while (palabra == null || tbParaula.Text.Equals(camps[0]) && paraulesDic.Length > 1);
             txtPista.Text = camps[1];
             tbParaula.Tag = camps[0].ToLower();
-            tbParaula.Text = "";
-            palabra = camps[0].Trim();
-            str.Append(palabra);
-            if (palabra.IndexOf("·") > 0)
-            {
-
-                str.Replace("L·L", "_");
-                str.Replace("L·l", "_");
-                str.Replace("l·L", "_");
-
-            }
-            str.Replace("sS", "_");
-            str.Replace("Ss", "_");
-            str.Replace("SS", "_");
-
-            str.Replace("nY", "_");
-            str.Replace("Ny", "_");
-            str.Replace("NY", "_");
-
-            if (palabra.IndexOf(" ") > 0)
-            {
-                aux = palabra[palabra.IndexOf(' ') - 1] + " ";
-                str.Replace(aux, "_");
-            }
-            if (palabra.IndexOf("'") > 0 && palabra.IndexOf("'") < palabra.Length)
-            {
-                aux = "'" + palabra[palabra.IndexOf('\'') + 1];
-                str.Replace(aux, "_");
-            }
-            if (palabra.IndexOf("-") > 0 && palabra.IndexOf("-") < palabra.Length)
-            {
-                aux = "-" + palabra[palabra.IndexOf('-') + 1];
-                str.Replace(aux, "_");
-            }
-            palabra = str.ToString();
-            for (int i = 0; i < palabra.Length; i++)
-                if (!Char.IsLower(palabra[i]) && !CaracteresSinGuion.Contains(palabra[i]))//si es mayuscula o un caracter especial
-                    tbParaula.Text += '_';
-                else tbParaula.Text += palabra[i];
+            tbParaula.Text = Idioma.StringAdivina(camps[0]);
 
 
         }
@@ -190,7 +186,7 @@ namespace MetodeGabarro
             else if (e.Key == Key.F6)
             {
                 Idioma.SpeakWord = !Idioma.SpeakWord;
-                MessageBox.Show(string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig",Idioma.SpeakWord?"activat":"desactivat"));
+                MessageBox.Show(string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig", Idioma.SpeakWord ? "activat" : "desactivat"));
             }
         }
 
@@ -213,8 +209,8 @@ namespace MetodeGabarro
         private void txtParaulaUser_KeyDown(object sender, KeyEventArgs e)
         {
             string resposta;
-    
-             if (e.Key == Key.Enter)
+
+            if (e.Key == Key.Enter)
             {
                 resposta = tbParaula.Tag.ToString().ToUpper();
                 if (resposta.Equals(txtParaulaUser.Text.ToUpper()))
@@ -243,7 +239,7 @@ namespace MetodeGabarro
                     {
                         MessageBox.Show(this, resposta, "Visualitza");
                         //deletrearlo!
-                        new winDeletreo(this, resposta).ShowDialog();
+                        new winDeletreo(this, Idioma, resposta).ShowDialog();
                     } while (MessageBox.Show(this, "L'has visualitzat, correctament?", "", MessageBoxButton.YesNo) == MessageBoxResult.No);
 
 
