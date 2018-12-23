@@ -30,25 +30,40 @@ namespace MetodeGabarro
     {
 
         Task tskDeletreo;
-        CancellationToken cancelTask;
+        EstadoDeletreo cancelTask;
+        Thread filTencar;
         public winDeletreo(Window parent, Idioma idioma, string paraula)
         {
 
 
             InitializeComponent();
-            cancelTask = new CancellationToken();
-            tskDeletreo=  new Task(() => { idioma.Deletrea(paraula, txtParaulaDeletrejada).RunSynchronously();Dispatcher.BeginInvoke((ActDelegate)(()=>this.Close())); }, cancelTask);
+            cancelTask = new EstadoDeletreo();
+            tskDeletreo=  new Task(() => {
+                idioma.Deletrea(paraula, txtParaulaDeletrejada, cancelTask).RunSynchronously();
+         
+            });
             Left = parent.Left + (parent.Width / 2) - (Width / 2);
             Top = parent.Top + (parent.Height / 2) - (Height / 2);
             tskDeletreo.Start();
+            filTencar = new Thread(CerrarAlAcabar);
+            filTencar.Start();
 
         }
-
+         void CerrarAlAcabar()
+        {
+            Action act = () => { try { this.Close(); } catch { } };
+            while (!cancelTask.Acabado && !cancelTask.Cancelado)
+                System.Threading.Thread.Sleep(500);
+            Dispatcher.BeginInvoke(act);
+        }
         protected override void OnClosing(CancelEventArgs e)
         {
             if (!tskDeletreo.IsCompleted)
-                cancelTask.ThrowIfCancellationRequested();
+            {
+                cancelTask.Cancelado = true;
+            }
             base.OnClosing(e);
         }
     }
+
 }

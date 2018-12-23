@@ -1,7 +1,7 @@
 <Window x:Class="MetodeGabarro.Window1"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MetodeGabarro" Height="300" Width="300"
+        Title="MetodeGabarro" Height="333" Width="519"
         Closing="Window_Closing"
         KeyDown="Window_KeyDown"
         

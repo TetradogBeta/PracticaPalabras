@@ -39,8 +39,8 @@ namespace MetodeGabarro
         public SortedList<string, string> PronunciacionEspañola { get; private set; }
 
         private SpeechSynthesizer Reader { get; set; }
-        
-        public Idioma(System.Globalization.CultureInfo region, string[] letrasCompuestas, char[] caracteresLeft, char[] caracteresRight,char[] caracteresOmitirAdivina)
+
+        public Idioma(System.Globalization.CultureInfo region, string[] letrasCompuestas, char[] caracteresLeft, char[] caracteresRight, char[] caracteresOmitirAdivina)
         {
             InstalledVoice voice;
             DicCaracteresOmitirAdivina = new SortedList<char, char>();
@@ -108,13 +108,13 @@ namespace MetodeGabarro
                         str.Replace("" + str[j - 1] + CaracteresLeft[i], caracterAdivinarStr);
                 }
             for (int i = 0; i < str.Length; i++)
-                if (str[i] == char.ToUpperInvariant(str[i])&& !DicCaracteresOmitirAdivina.ContainsKey(str[i]))
-                    str.Replace(char.ToUpperInvariant(str[i])+"", caracterAdivinarStr);
+                if (str[i] == char.ToUpperInvariant(str[i]) && !DicCaracteresOmitirAdivina.ContainsKey(str[i]))
+                    str.Replace(char.ToUpperInvariant(str[i]) + "", caracterAdivinarStr);
 
             return str.ToString();
 
         }
-        public async Task Deletrea(string palabra, TextBlock controlTexto)
+        public async Task Deletrea(string palabra, TextBlock controlTexto, EstadoDeletreo estadoDeletreo)
         {
             Semaphore semaphoreSpell;
             string palabraOri = palabra;
@@ -133,28 +133,22 @@ namespace MetodeGabarro
                 strPalabra.Replace(LetrasCompuestas[i].ToLowerInvariant(), "" + (char)i);
             palabra = strPalabra.ToString();
             semaphoreSpell = new Semaphore(1, 1);
-            for (int i = palabra.Length - 1; i >= 0; i--)
+            for (int i = palabra.Length - 1; i >= 0 && !estadoDeletreo.Cancelado; i--)
             {
                 aux = dicCaracteresCompuestosIn.ContainsKey(palabra[i]) ? dicCaracteresCompuestosIn[palabra[i]] : palabra[i] + "";
 
                 //muestro la letra compuesta
-                controlTexto.Dispatcher.BeginInvoke((ActDelegate)(() => { controlTexto.Text = aux + controlTexto.Text;semaphoreSpell.Release(); }));
+                controlTexto.Dispatcher.BeginInvoke((ActDelegate)(() => { controlTexto.Text = aux + controlTexto.Text; semaphoreSpell.Release(); }));
                 //muestro el caracter
-              
+
                 semaphoreSpell.WaitOne();
                 System.Threading.Thread.Sleep(1 * 1000);//1 segundo
                 Reader.Rate = aux.Length > 1 ? -2 : 1;
-                if (pronunciaEsp)
-                {
 
-                    if (PronunciacionEspañola.ContainsKey(aux))
-                    {
-                        Reader.Speak(PronunciacionEspañola[aux]);
-                    }
-                    else
-                    {
-                        Reader.Speak(aux);
-                    }
+
+                if (PronunciacionEspañola.ContainsKey(aux))
+                {
+                    Reader.Speak(PronunciacionEspañola[aux]);
                 }
                 else
                 {
@@ -163,12 +157,19 @@ namespace MetodeGabarro
 
 
 
+
             }
-            if (SpeakWord)
+            if (SpeakWord && !estadoDeletreo.Cancelado)
             {
                 Reader.Rate = -1;
                 Reader.Speak(palabraOri);
             }
+            estadoDeletreo.Acabado = true;
         }
+    }
+    public class EstadoDeletreo
+    {
+        public bool Cancelado { get; set; } = false;
+        public bool Acabado { get; set; } = false;
     }
 }

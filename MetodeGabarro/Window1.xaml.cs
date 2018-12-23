@@ -44,27 +44,39 @@ namespace MetodeGabarro
 
         static Window1()
         {
+            Idioma idioma;
             DicIdiomas = new SortedList<string, Idioma>();
             //añado el idioma catalan
-            IdiomaPorDefecto = new Idioma(new System.Globalization.CultureInfo("ca-ES"), new string[] { "l·l", "ny", "ss" }, new char[] { '-', '\'' }, new char[] { ' ' },new char[] { '·'});
+            idioma = new Idioma(new System.Globalization.CultureInfo("ca-ES"), new string[] { "l·l", "ny", "ss" }, new char[] { '-', '\'' }, new char[] { ' ' },new char[] { '·'});
 
-            IdiomaPorDefecto.PronunciacionEspañola.Add("ò", "o amb accent ubert");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("ó", "o amb accent tancat");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("è", "e amb accent ubert");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("é", "e amb accent tancat");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("à", "a amb accent");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("í", "i amb accent");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("ú", "u amb accent");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("ü", "u amb dieresis");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("ï", "i amb dieresis");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("l·l", "l geminada");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("ny", "eña");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("-", "guió");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("\"", "apostrof");
-            IdiomaPorDefecto.PronunciacionEspañola.Add(" ", "espai");
-            IdiomaPorDefecto.PronunciacionEspañola.Add("ç", "sé trancada");
-
+            idioma.PronunciacionEspañola.Add("ò", "o amb accent ubert");
+            idioma.PronunciacionEspañola.Add("ó", "o amb accent tancat");
+            idioma.PronunciacionEspañola.Add("è", "e amb accent ubert");
+            idioma.PronunciacionEspañola.Add("é", "e amb accent tancat");
+            idioma.PronunciacionEspañola.Add("à", "a amb accent");
+            idioma.PronunciacionEspañola.Add("í", "i amb accent");
+            idioma.PronunciacionEspañola.Add("ú", "u amb accent");
+            idioma.PronunciacionEspañola.Add("ü", "u amb dieresis");
+            idioma.PronunciacionEspañola.Add("ï", "i amb dieresis");
+            idioma.PronunciacionEspañola.Add("l·l", "l geminada");
+            idioma.PronunciacionEspañola.Add("ny", "eña");
+            idioma.PronunciacionEspañola.Add("-", "guió");
+            idioma.PronunciacionEspañola.Add("\"", "apostrof");
+            idioma.PronunciacionEspañola.Add(" ", "espai");
+            idioma.PronunciacionEspañola.Add("ç", "sé trancada");
+            IdiomaPorDefecto = idioma;
             DicIdiomas.Add(IdiomaPorDefecto.Region.Name, IdiomaPorDefecto);
+            idioma = new Idioma(new System.Globalization.CultureInfo("es-ES"), new string[] { }, new char[] { }, new char[] { }, new char[] { });
+ 
+            idioma.PronunciacionEspañola.Add("ó", "o con tilde");
+            idioma.PronunciacionEspañola.Add("é", "e con tilde ");
+            idioma.PronunciacionEspañola.Add("à", "a con tilde");
+            idioma.PronunciacionEspañola.Add("í", "i con tilde");
+            idioma.PronunciacionEspañola.Add("ú", "u con tilde");
+            idioma.PronunciacionEspañola.Add("ü", "u con dieresis");
+            idioma.PronunciacionEspañola.Add("ï", "i con dieresis");
+
+            DicIdiomas.Add(idioma.Region.Name, idioma);
         }
         public Window1()
         {
@@ -186,7 +198,7 @@ namespace MetodeGabarro
             else if (e.Key == Key.F6)
             {
                 Idioma.SpeakWord = !Idioma.SpeakWord;
-                MessageBox.Show(string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig", Idioma.SpeakWord ? "activat" : "desactivat"));
+                MessageBox.Show(this,string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig", Idioma.SpeakWord ? "activat" : "desactivat"));
             }
         }
 
@@ -202,8 +214,9 @@ namespace MetodeGabarro
             {
                 CarregaParaules();
                 SeguentParaula();
-
+                
             }
+            Title = string.Format("Paraules Resoltes {0} Idioma {1}", numParaulesResoltes, Idioma.Region.NativeName.Substring(0, Idioma.Region.NativeName.IndexOf('(')));
         }
 
         private void txtParaulaUser_KeyDown(object sender, KeyEventArgs e)
