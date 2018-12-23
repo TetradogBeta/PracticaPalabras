@@ -72,19 +72,7 @@ namespace MetodeGabarro
             if (paraulesDic!=null&&paraulesDic.Length>0)
                 SeguentParaula();
         }
-        public static bool SpeakAllWord
-        {
-            get
-            {
 
-                return Properties.Settings.Default.SpeakAllWord;
-            }
-            set
-            {
-                Properties.Settings.Default.SpeakAllWord = value;
-                Properties.Settings.Default.Save();
-            }
-        }
         void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (!string.IsNullOrEmpty(txtDic.Text))
@@ -151,6 +139,11 @@ namespace MetodeGabarro
             str.Replace("sS", "_");
             str.Replace("Ss", "_");
             str.Replace("SS", "_");
+
+            str.Replace("nY", "_");
+            str.Replace("Ny", "_");
+            str.Replace("NY", "_");
+
             if (palabra.IndexOf(" ") > 0)
             {
                 aux = palabra[palabra.IndexOf(' ') - 1] + " ";
@@ -196,8 +189,8 @@ namespace MetodeGabarro
                 MostrarResposta();
             else if (e.Key == Key.F6)
             {
-                SpeakAllWord = !SpeakAllWord;
-                MessageBox.Show(string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig",SpeakAllWord?"activat":"desactivat"));
+                Idioma.SpeakWord = !Idioma.SpeakWord;
+                MessageBox.Show(string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig",Idioma.SpeakWord?"activat":"desactivat"));
             }
         }
 

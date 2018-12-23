@@ -37,19 +37,10 @@ namespace MetodeGabarro
         {
 
             StringBuilder str = new StringBuilder(paraula.ToLower());
-            InstalledVoice voice;
+
             str.Replace("l·l", LGEMINADA + "");
             str.Replace("ny", ENYA + "");
-            reader = new SpeechSynthesizer();
-            voice = reader.GetInstalledVoices(System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture).FirstOrDefault();
-            if (voice != null)
-                reader.SelectVoice(voice.VoiceInfo.Name);
-            else
-            {
-                voice = reader.GetInstalledVoices(new System.Globalization.CultureInfo("es-es")).FirstOrDefault();
-                if (voice != null)
-                    reader.SelectVoice(voice.VoiceInfo.Name);
-            }
+
             this.paraula = str.ToString();
             InitializeComponent();
             semaphoreSpell = new Semaphore(1, 1);
