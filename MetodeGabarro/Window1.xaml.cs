@@ -47,7 +47,7 @@ namespace MetodeGabarro
             Idioma idioma;
             DicIdiomas = new SortedList<string, Idioma>();
             //añado el idioma catalan
-            idioma = new Idioma(new System.Globalization.CultureInfo("ca-ES"), new string[] { "l·l", "ny", "ss" }, new char[] { '-', '\'' }, new char[] { ' ' },new char[] { '·'});
+            idioma = new Idioma(new System.Globalization.CultureInfo("ca-ES"), new string[] { "l·l", "ny", "ss" }, new char[] { ' ' }, new char[] { '-', '\'' },new char[] { '·'});
 
             idioma.PronunciacionEspañola.Add("ò", "o amb accent ubert");
             idioma.PronunciacionEspañola.Add("ó", "o amb accent tancat");

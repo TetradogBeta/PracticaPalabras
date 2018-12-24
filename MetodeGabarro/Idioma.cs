@@ -96,16 +96,16 @@ namespace MetodeGabarro
                 str.Replace(letraCompuestaActual.ToUpperInvariant(), caracterAdivinarStr);
             }
             for (int i = 0; i < CaracteresRight.Length; i++)
-                for (int j = 0; j < str.Length; j++)
+                for (int j = 1; j < str.Length; j++)
                 {
-                    if (str[j] == CaracteresRight[i] && str.Length > j + 1 && str[j + 1] == char.ToUpperInvariant(str[j + 1]))
+                    if (str[j] == CaracteresRight[i]  && str[j + 1] == char.ToUpperInvariant(str[j + 1]))
                         str.Replace("" + CaracteresRight[i] + str[j + 1], caracterAdivinarStr);
                 }
             for (int i = 0; i < CaracteresLeft.Length; i++)
-                for (int j = 0; j < str.Length; j++)
+                for (int j = 0; j < str.Length-1; j++)
                 {
-                    if (str[j] == CaracteresLeft[i] && j > 0 && str[j - 1] == char.ToUpperInvariant(str[j - 1]))
-                        str.Replace("" + str[j - 1] + CaracteresLeft[i], caracterAdivinarStr);
+                    if (str[j]== char.ToUpperInvariant(str[j]) && str[j + 1] == CaracteresLeft[i] )
+                        str.Replace("" + str[j] + CaracteresLeft[i], caracterAdivinarStr);
                 }
             for (int i = 0; i < str.Length; i++)
                 if (str[i] == char.ToUpperInvariant(str[i]) && !DicCaracteresOmitirAdivina.ContainsKey(str[i]))
