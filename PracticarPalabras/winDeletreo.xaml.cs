@@ -1,16 +1,7 @@
-﻿/*
- * Creado por SharpDevelop.
- * Usuario: PokemonGBAReBuild
- * Fecha: 30/11/2018
- * Hora: 19:30
- * 
- * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Speech.Synthesis;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,15 +11,16 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
-namespace MetodeGabarro
+namespace PracticarPalabras
 {
     /// <summary>
-    /// Interaction logic for winDeletreo.xaml
+    /// Lógica de interacción para winDeletreo.xaml
     /// </summary>
     public partial class winDeletreo : Window
     {
-
         Task tskDeletreo;
         EstadoDeletreo cancelTask;
         Thread filTencar;
@@ -38,9 +30,11 @@ namespace MetodeGabarro
 
             InitializeComponent();
             cancelTask = new EstadoDeletreo();
-            tskDeletreo=  new Task(() => {
-                idioma.Deletrea(paraula, txtParaulaDeletrejada, cancelTask).RunSynchronously();
-         
+            tskDeletreo = new Task(async () => {
+
+                await idioma.Deletrea(paraula, txtParaulaDeletrejada, cancelTask);
+
+
             });
             Left = parent.Left + (parent.Width / 2) - (Width / 2);
             Top = parent.Top + (parent.Height / 2) - (Height / 2);
@@ -49,7 +43,7 @@ namespace MetodeGabarro
             filTencar.Start();
 
         }
-         void CerrarAlAcabar()
+        void CerrarAlAcabar()
         {
             Action act = () => { try { this.Close(); } catch { } };
             while (!cancelTask.Acabado && !cancelTask.Cancelado)
@@ -58,12 +52,9 @@ namespace MetodeGabarro
         }
         protected override void OnClosing(CancelEventArgs e)
         {
-            if (!tskDeletreo.IsCompleted)
-            {
-                cancelTask.Cancelado = true;
-            }
+            cancelTask.Cancelado = true;
+
             base.OnClosing(e);
         }
     }
-
 }

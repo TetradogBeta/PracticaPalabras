@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace MetodeGabarro
+namespace PracticarPalabras
 {
     public delegate void ActDelegate();
     public class Idioma//al final hacer que se pueda serializar
@@ -138,10 +138,10 @@ namespace MetodeGabarro
                 aux = dicCaracteresCompuestosIn.ContainsKey(palabra[i]) ? dicCaracteresCompuestosIn[palabra[i]] : palabra[i] + "";
 
                 //muestro la letra compuesta
-                controlTexto.Dispatcher.BeginInvoke((ActDelegate)(() => { controlTexto.Text = aux + controlTexto.Text; semaphoreSpell.Release(); }));
+                await controlTexto.Dispatcher.BeginInvoke((ActDelegate)(() => { controlTexto.Text = aux + controlTexto.Text;}));
                 //muestro el caracter
 
-                semaphoreSpell.WaitOne();
+               
                 System.Threading.Thread.Sleep(1 * 1000);//1 segundo
                 Reader.Rate = aux.Length > 1 ? -2 : 1;
 

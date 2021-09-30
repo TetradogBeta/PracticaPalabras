@@ -1,35 +1,33 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Miquel
- * Date: 20/11/2018
- * Time: 19:59
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
+﻿using Notifications.Wpf.Core;
+using Notifications.Wpf.Core.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Linq;
-namespace MetodeGabarro
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace PracticarPalabras
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class MainWindow : Window
     {
         public const string DICFILE = "file.dic";
         public const string REPEATFILE = "repit.dic";
         public const int INDEXREPEAT = 6;
         public const int INDEXTOTAL = 10;
         public const int REPEATMAX = 5;
-        public static char[] CaracteresSplit = new char[] { ';', '|', '/' };
+        public static char[] CaracteresSplitPista = new char[] { ';', '|', '/' };
 
         static SortedList<string, Idioma> DicIdiomas;
         static readonly Idioma IdiomaPorDefecto;
@@ -41,13 +39,14 @@ namespace MetodeGabarro
 
         SortedList<string, int> dicRepetides;
         List<string> lstRepetidas;
-
-        static Window1()
+        NotificationManager notificationManager;
+        static MainWindow()
         {
             Idioma idioma;
+       
             DicIdiomas = new SortedList<string, Idioma>();
             //añado el idioma catalan
-            idioma = new Idioma(new System.Globalization.CultureInfo("ca-ES"), new string[] { "l·l", "ny", "ss" }, new char[] { ' ' }, new char[] { '-', '\'' },new char[] { '·'});
+            idioma = new Idioma(new System.Globalization.CultureInfo("ca-ES"), new string[] { "l·l", "ny", "ss" }, new char[] { ' ' }, new char[] { '-', '\'' }, new char[] { '·' });
 
             idioma.PronunciacionEspañola.Add("ò", "o amb accent ubert");
             idioma.PronunciacionEspañola.Add("ó", "o amb accent tancat");
@@ -67,7 +66,7 @@ namespace MetodeGabarro
             IdiomaPorDefecto = idioma;
             DicIdiomas.Add(IdiomaPorDefecto.Region.Name, IdiomaPorDefecto);
             idioma = new Idioma(new System.Globalization.CultureInfo("es-ES"), new string[] { }, new char[] { }, new char[] { }, new char[] { });
- 
+
             idioma.PronunciacionEspañola.Add("ó", "o con tilde");
             idioma.PronunciacionEspañola.Add("é", "e con tilde ");
             idioma.PronunciacionEspañola.Add("à", "a con tilde");
@@ -78,15 +77,16 @@ namespace MetodeGabarro
 
             DicIdiomas.Add(idioma.Region.Name, idioma);
         }
-        public Window1()
+        public MainWindow()
         {
-
+            notificationManager = new NotificationManager(NotificationPosition.TopRight);
             dicRepetides = new SortedList<string, int>();
             lstRepetidas = new List<string>();
             numParaulesResoltes = 0;
             llavor = new Random();
             InitializeComponent();
-
+            tabDiccionari.Header = TabDiccionarioString;
+            tabJoc.Header = TabJocString;
             if (System.IO.File.Exists(FileName))
             {
                 txtDic.Text = System.IO.File.ReadAllText(FileName);
@@ -112,14 +112,25 @@ namespace MetodeGabarro
             }
             if (paraulesDic != null && paraulesDic.Length > 0)
                 SeguentParaula();
+
         }
 
 
         public Idioma Idioma
         {
-            get { return DicIdiomas.ContainsKey(System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture.Name) ? DicIdiomas[System.Windows.Forms.InputLanguage.CurrentInputLanguage.Culture.Name] : IdiomaPorDefecto; }
+            get { return DicIdiomas.ContainsKey(this.Dispatcher.Thread.CurrentCulture.Name) ? DicIdiomas[this.Dispatcher.Thread.CurrentCulture.Name] : IdiomaPorDefecto; }
         }
-        void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        #region MultiIdioma
+        public string TabDiccionarioString => Idioma.Equals(IdiomaPorDefecto) ? "Diccionari" : "Diccionario";
+        public string TabJocString => Idioma.Equals(IdiomaPorDefecto) ? "Joc" : "Juego";
+        public string SpeakWordString => Idioma.Equals(IdiomaPorDefecto) ? string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig", Idioma.SpeakWord ? "activat" : "desactivat") : string.Format("Se tiene que {0} decir la palabra completa al finalizar el deletreo", Idioma.SpeakWord ? "activado" : "desactivado");
+        public string PalabrasResueltasString => Idioma.Equals(IdiomaPorDefecto) ? "Paraules Resoltes {0} Idioma {1}" : "Palabras Resueltas {0} Idioma {1}";
+        public string PalabrasResultasTextString => Idioma.Equals(IdiomaPorDefecto) ? "Paraules Resoltes {0}" : "Palabras Resueltas {0}";
+        public string ErrorPalabraEquivocadaString => Idioma.Equals(IdiomaPorDefecto) ? "Error, paraula incorrecte" : "Error, palabra incorrecta";
+        public string VisualizaString => Idioma.Equals(IdiomaPorDefecto) ? "Visualitza" : "Visualiza";
+        public string VisualizadoCorrectamenteString => Idioma.Equals(IdiomaPorDefecto) ? "L'has visualitzat correctament?" : "Lo has visualizado correctamente?";
+        #endregion
+        public void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (!string.IsNullOrEmpty(txtDic.Text))
                 System.IO.File.WriteAllText(FileName, txtDic.Text);
@@ -137,10 +148,10 @@ namespace MetodeGabarro
         void SeguentParaula()
         {
             int randomPos;
-            string[] camps = null;
-            string palabra = null;
+            string palabra;
             string aux;
-            StringBuilder str = new StringBuilder();
+            string[] camps = null;
+
             do
             {
                 if (lstRepetidas.Count > 0 && llavor.Next(0, INDEXTOTAL) < INDEXREPEAT)
@@ -149,8 +160,8 @@ namespace MetodeGabarro
                     palabra = DameParaulaDic(lstRepetidas[randomPos]);
                     if (palabra != null)
                     {
-                        if (palabra.Intersect(CaracteresSplit).ToArray().Length > 0)
-                            camps = palabra.Split(CaracteresSplit);
+                        if (palabra.Intersect(CaracteresSplitPista).ToArray().Length > 0)
+                            camps = palabra.Split(CaracteresSplitPista);
                         else camps = new string[] { palabra, "" };
                     }
                     else if (palabra != null && dicRepetides.ContainsKey(palabra))
@@ -163,8 +174,8 @@ namespace MetodeGabarro
                 {
                     randomPos = llavor.Next(paraulesDic.Length);
                     palabra = paraulesDic[randomPos];
-                    if (palabra.Intersect(CaracteresSplit).ToArray().Length > 0)
-                        camps = palabra.Split(CaracteresSplit);
+                    if (palabra.Intersect(CaracteresSplitPista).ToArray().Length > 0)
+                        camps = palabra.Split(CaracteresSplitPista);
                     else camps = new string[] { palabra, "" };
                 }
 
@@ -180,14 +191,15 @@ namespace MetodeGabarro
         {
             string paraulaDic = null;
             for (int i = 0; i < paraulesDic.Length && paraulaDic == null; i++)
-                if (paraulesDic[i].Split(CaracteresSplit)[0].ToUpper().Equals(palabra))
+                if (paraulesDic[i].Split(CaracteresSplitPista)[0].ToUpper().Equals(palabra))
                     paraulaDic = paraulesDic[i];
             return paraulaDic;
         }
 
         void CarregaParaules()
         {
-            paraulesDic = txtDic.Text.Trim('\r', '\n').Replace('\r', ' ').Split('\n');
+
+            paraulesDic = txtDic.Text.Replace("\n", "").Split('\r');
 
 
         }
@@ -198,7 +210,7 @@ namespace MetodeGabarro
             else if (e.Key == Key.F6)
             {
                 Idioma.SpeakWord = !Idioma.SpeakWord;
-                MessageBox.Show(this,string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig", Idioma.SpeakWord ? "activat" : "desactivat"));
+                MessageBox.Show(this, SpeakWordString);
             }
         }
 
@@ -214,9 +226,9 @@ namespace MetodeGabarro
             {
                 CarregaParaules();
                 SeguentParaula();
-                
+
             }
-            Title = string.Format("Paraules Resoltes {0} Idioma {1}", numParaulesResoltes, Idioma.Region.NativeName.Substring(0, Idioma.Region.NativeName.IndexOf('(')));
+            Title = string.Format(PalabrasResueltasString, numParaulesResoltes, Idioma.Region.NativeName.Substring(0, Idioma.Region.NativeName.IndexOf('(')));
         }
 
         private void txtParaulaUser_KeyDown(object sender, KeyEventArgs e)
@@ -230,7 +242,7 @@ namespace MetodeGabarro
                 {
                     SeguentParaula();
                     numParaulesResoltes++;
-                    Title = string.Format("Paraules Resoltes {0}", numParaulesResoltes);
+                    Title = string.Format(PalabrasResultasTextString, numParaulesResoltes);
                     txtParaulaUser.Text = "";
                     if (dicRepetides.ContainsKey(resposta))
                     {
@@ -245,15 +257,15 @@ namespace MetodeGabarro
                 else
                 {
                     //se ha equivocado
-                    MessageBox.Show(this, "Error, paraula incorrecte");
+                    MessageBox.Show(this, ErrorPalabraEquivocadaString);
 
 
                     do
                     {
-                        MessageBox.Show(this, resposta, "Visualitza");
+                        MessageBox.Show(this, resposta, VisualizaString);
                         //deletrearlo!
                         new winDeletreo(this, Idioma, resposta).ShowDialog();
-                    } while (MessageBox.Show(this, "L'has visualitzat, correctament?", "", MessageBoxButton.YesNo) == MessageBoxResult.No);
+                    } while (MessageBox.Show(this, VisualizadoCorrectamenteString, "", MessageBoxButton.YesNo) == MessageBoxResult.No);
 
 
                     if (!dicRepetides.ContainsKey(resposta))
@@ -267,6 +279,13 @@ namespace MetodeGabarro
                     }
                 }
             }
+        }
+
+        private void tabDiccionari_GotFocus(object sender, RoutedEventArgs e)
+        {
+            notificationManager.ShowAsync(
+                  new NotificationContent { Title = "Notification", Message = "Notification in window!" },
+                  areaName: nameof(notificationArea));
         }
     }
 }
