@@ -41,7 +41,7 @@ namespace PracticarPalabras
             tskDeletreo.Start();
             filTencar = new Thread(CerrarAlAcabar);
             filTencar.Start();
-
+            Title = MainWindow.NombreApp;
         }
         void CerrarAlAcabar()
         {

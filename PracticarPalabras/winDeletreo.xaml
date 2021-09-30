@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PracticarPalabras"
         mc:Ignorable="d"
-	Title="Mètode Gabarró" Height="128.755" Width="243.348" WindowStartupLocation="Manual" >
+	    Height="127" Width="330" WindowStartupLocation="Manual" >
     <Viewbox>
         <TextBlock x:Name="txtParaulaDeletrejada"  HorizontalAlignment="Left" />
     </Viewbox>

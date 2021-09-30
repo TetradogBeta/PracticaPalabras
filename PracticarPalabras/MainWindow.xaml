@@ -30,8 +30,9 @@
         </TabItem>
         <TabItem x:Name="tabDiccionari" Header="Diccionari" GotFocus="tabDiccionari_GotFocus" >
             <Grid>
+   
             <TextBox x:Name="txtDic" AcceptsReturn="True" />
-            <notifications:NotificationArea  x:Name="notificationArea"  Position="TopLeft" />
+            <notifications:NotificationArea  x:Name="notificationArea"  Position="TopLeft"  />
             </Grid>
         </TabItem>
     </TabControl>

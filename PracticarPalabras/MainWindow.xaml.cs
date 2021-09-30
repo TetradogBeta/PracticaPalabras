@@ -22,6 +22,7 @@ namespace PracticarPalabras
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static string NombreApp => "Practica Palabras V2.0";
         public const string DICFILE = "file.dic";
         public const string REPEATFILE = "repit.dic";
         public const int INDEXREPEAT = 6;
@@ -40,6 +41,7 @@ namespace PracticarPalabras
         SortedList<string, int> dicRepetides;
         List<string> lstRepetidas;
         NotificationManager notificationManager;
+        public bool NotificacionVista { get; set; }
         static MainWindow()
         {
             Idioma idioma;
@@ -79,6 +81,8 @@ namespace PracticarPalabras
         }
         public MainWindow()
         {
+            IdiomaName=Dispatcher.Thread.CurrentCulture.Name;
+            NotificacionVista = false;
             notificationManager = new NotificationManager(NotificationPosition.TopRight);
             dicRepetides = new SortedList<string, int>();
             lstRepetidas = new List<string>();
@@ -114,21 +118,33 @@ namespace PracticarPalabras
                 SeguentParaula();
 
         }
-
-
+       
+        public string IdiomaName { get; set; } 
         public Idioma Idioma
         {
-            get { return DicIdiomas.ContainsKey(this.Dispatcher.Thread.CurrentCulture.Name) ? DicIdiomas[this.Dispatcher.Thread.CurrentCulture.Name] : IdiomaPorDefecto; }
+            get { return DicIdiomas.ContainsKey(IdiomaName) ? DicIdiomas[IdiomaName] : IdiomaPorDefecto; }
         }
         #region MultiIdioma
         public string TabDiccionarioString => Idioma.Equals(IdiomaPorDefecto) ? "Diccionari" : "Diccionario";
         public string TabJocString => Idioma.Equals(IdiomaPorDefecto) ? "Joc" : "Juego";
         public string SpeakWordString => Idioma.Equals(IdiomaPorDefecto) ? string.Format("S'ha {0} dir la paraula completa al finalitzar el deletreig", Idioma.SpeakWord ? "activat" : "desactivat") : string.Format("Se tiene que {0} decir la palabra completa al finalizar el deletreo", Idioma.SpeakWord ? "activado" : "desactivado");
-        public string PalabrasResueltasString => Idioma.Equals(IdiomaPorDefecto) ? "Paraules Resoltes {0} Idioma {1}" : "Palabras Resueltas {0} Idioma {1}";
+        public string PalabrasTituloResueltasString => Idioma.Equals(IdiomaPorDefecto) ? "Paraules Resoltes {0} Idioma {1}" : "Palabras Resueltas {0} Idioma {1}";
         public string PalabrasResultasTextString => Idioma.Equals(IdiomaPorDefecto) ? "Paraules Resoltes {0}" : "Palabras Resueltas {0}";
         public string ErrorPalabraEquivocadaString => Idioma.Equals(IdiomaPorDefecto) ? "Error, paraula incorrecte" : "Error, palabra incorrecta";
         public string VisualizaString => Idioma.Equals(IdiomaPorDefecto) ? "Visualitza" : "Visualiza";
         public string VisualizadoCorrectamenteString => Idioma.Equals(IdiomaPorDefecto) ? "L'has visualitzat correctament?" : "Lo has visualizado correctamente?";
+
+        public NotificationContent NotificacionUsoDiccionario => Idioma.Equals(IdiomaPorDefecto) ? new NotificationContent
+        {
+            Title = "Com s'utilitza",
+            Message = $"Paraula[ {string.Join(' ',CaracteresSplitPista)} ]Pista \nI cada paraula separada per un enter" 
+            
+        } : new NotificationContent
+        {
+            Title = "Como se utiliza",
+            Message = $"Palabra[ {string.Join(' ', CaracteresSplitPista)} ]Pista \nY cada palabra separada por un intro"
+        };
+
         #endregion
         public void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -149,7 +165,6 @@ namespace PracticarPalabras
         {
             int randomPos;
             string palabra;
-            string aux;
             string[] camps = null;
 
             do
@@ -228,8 +243,9 @@ namespace PracticarPalabras
                 SeguentParaula();
 
             }
-            Title = string.Format(PalabrasResueltasString, numParaulesResoltes, Idioma.Region.NativeName.Substring(0, Idioma.Region.NativeName.IndexOf('(')));
+            Title =$"{NombreApp} {string.Format(PalabrasTituloResueltasString, numParaulesResoltes, Idioma.Region.NativeName.Substring(0, Idioma.Region.NativeName.IndexOf('(')))}";
         }
+      
 
         private void txtParaulaUser_KeyDown(object sender, KeyEventArgs e)
         {
@@ -242,7 +258,7 @@ namespace PracticarPalabras
                 {
                     SeguentParaula();
                     numParaulesResoltes++;
-                    Title = string.Format(PalabrasResultasTextString, numParaulesResoltes);
+                    Title =$"{NombreApp} {string.Format(PalabrasResultasTextString, numParaulesResoltes)}";
                     txtParaulaUser.Text = "";
                     if (dicRepetides.ContainsKey(resposta))
                     {
@@ -283,9 +299,21 @@ namespace PracticarPalabras
 
         private void tabDiccionari_GotFocus(object sender, RoutedEventArgs e)
         {
-            notificationManager.ShowAsync(
-                  new NotificationContent { Title = "Notification", Message = "Notification in window!" },
-                  areaName: nameof(notificationArea));
+            if (!NotificacionVista)
+            {
+                NotificacionVista = true;
+                Task.Run(new Action(async () =>
+                                        {
+
+                                            await notificationManager.ShowAsync(
+                                             NotificacionUsoDiccionario,
+                                             nameof(notificationArea),
+                                             TimeSpan.FromMinutes(1));
+                                       
+                                        }
+
+                ));
+            }
         }
     }
 }
