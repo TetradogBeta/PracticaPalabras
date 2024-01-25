@@ -28,7 +28,7 @@ namespace PracticarPalabras
         public const int INDEXREPEAT = 6;
         public const int INDEXTOTAL = 10;
         public const int REPEATMAX = 5;
-        public static char[] CaracteresSplitPista = new char[] { ';', '|', '/' };
+        public static char[] CaracteresSplitPista = new char[] {  '/' ,';', '|'};
 
         static SortedList<string, Idioma> DicIdiomas;
         static readonly Idioma IdiomaPorDefecto;
@@ -144,7 +144,16 @@ namespace PracticarPalabras
             Title = "Como se utiliza",
             Message = $"Palabra[ {string.Join(' ', CaracteresSplitPista)} ]Pista \nY cada palabra separada por un intro"
         };
+        public NotificationContent NotificacionUsoAñadirPalabra => Idioma.Equals(IdiomaPorDefecto) ? new NotificationContent
+        {
+            Title = "Com afegir una paraula",
+            Message = "La paraula ha de contenir MAJUSCULES dintre i substituin la lletra que doni problemes, ex:'paRaUla' -> paraula"
 
+        } : new NotificationContent
+        {
+            Title = "Como añadir una palabra",
+            Message = "La palabra tiene que contener MAYÚSCULAS dentro y sustiuir la letra que dé problemas, ej: 'paLaBra' -> palabra"
+        };
         #endregion
         public void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -309,7 +318,12 @@ namespace PracticarPalabras
                                              NotificacionUsoDiccionario,
                                              nameof(notificationArea),
                                              TimeSpan.FromMinutes(1));
-                                       
+
+                                            await notificationManager.ShowAsync(
+                                             NotificacionUsoAñadirPalabra,
+                                             nameof(notificationArea),
+                                             TimeSpan.FromMinutes(2));
+
                                         }
 
                 ));
