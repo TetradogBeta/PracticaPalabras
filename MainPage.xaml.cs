@@ -16,18 +16,11 @@ public partial class MainPage : ContentPage
         InitializeComponent();
 
 		BindingContext = this;
-        
-
-        UpdateWord();
+       
 
     }
 
-   
-    public static List<Word> Words { get; set; }= new List<Word>
-	{
-		new Word(){Content="Planeta",Clue="Pista1"},
-        new Word(){Content="Tierra",Clue="Pista2"}
-    };
+    public IList<Word> Words => DictionaryPage.AllWords.ToList();
 
     public string Text { get => text; set { text = value; OnPropertyChanged(); } }
 
@@ -49,7 +42,18 @@ public partial class MainPage : ContentPage
     }
     private void UpdateWord()
     {
-        Actual = Words[Random.Next(Words.Count)];
+        IList<Word> words = Words;
+        Word newWorld;
+        do
+        {
+            newWorld = words[Random.Next(words.Count)];
+        } while (words.Count>0 && newWorld.Content == Actual.Content);
+        Actual = newWorld;
+    }
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+        UpdateWord();
     }
 
     private async void Button_Clicked(object sender=null, EventArgs e=null)
@@ -144,6 +148,14 @@ public class Word : INotifyPropertyChanged
     private void OnPropertyChanged([CallerMemberName] string name=null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+    }
+
+
+    public static Word FromLine(string line)
+    {
+
+        string[] fields =line.Contains(';')? line.Split(';'):new string[] { line };
+        return new Word() { Content = fields[0], Clue = fields.Length > 1 ? fields[1]:string.Empty };
     }
 }
 
