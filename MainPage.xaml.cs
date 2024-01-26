@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
 
+
 namespace PracticaPalabrasMAUI;
 
 public partial class MainPage : ContentPage
@@ -40,20 +41,29 @@ public partial class MainPage : ContentPage
             }
         }
     }
-    private void UpdateWord()
+    private async Task UpdateWord()
     {
         IList<Word> words = Words;
         Word newWorld;
-        do
+        string uri;
+        if (words.Count > 0)
         {
-            newWorld = words[Random.Next(words.Count)];
-        } while (words.Count>0 && newWorld.Content == Actual.Content);
-        Actual = newWorld;
+            do
+            {
+                newWorld = words[Random.Next(words.Count)];
+            } while (words.Count > 0 && newWorld.Content == Actual.Content);
+            Actual = newWorld;
+        }
+        else
+        {
+            uri = $"{nameof(DictionaryPage)}";
+            await Shell.Current.GoToAsync(uri);
+        }
     }
-    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
-        UpdateWord();
+        await UpdateWord();
     }
 
     private async void Button_Clicked(object sender=null, EventArgs e=null)
@@ -65,7 +75,7 @@ public partial class MainPage : ContentPage
 			if(word.ToString() == Text.Trim().ToLower())
 			{
 				Text = "";
-                UpdateWord();
+                await UpdateWord();
             }
             else
             {

@@ -4,7 +4,9 @@ namespace PracticaPalabrasMAUI;
 
 public partial class DictionaryPage : ContentPage
 {
-    public static string text = string.Empty;
+    private static string FilePath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "dictionary.txt");
+
+    public static string text = Load();
 
     public DictionaryPage()
     {
@@ -13,8 +15,24 @@ public partial class DictionaryPage : ContentPage
        
     }
 
-    public string Text { get => text; set { text = value;OnPropertyChanged(); } }
+    public string Text { get => text; set { text = value;OnPropertyChanged();Save(); } }
 
     public static IEnumerable<Word> AllWords => text.Contains('\r')?text.Split('\r').Select(p=>Word.FromLine(p)) :text.Length>0?new Word[] { Word.FromLine(text) } :Array.Empty<Word>();
+ 
+    public static void Save(string valor=null)
+    {
+        File.WriteAllText(FilePath, valor ?? text);
+    }
 
+    public static string Load()
+    {
+        if (File.Exists(FilePath))
+        {
+            return File.ReadAllText(FilePath);
+        }
+        else
+        {
+            return string.Empty; // o proporciona un valor predeterminado
+        }
+    }
 }
