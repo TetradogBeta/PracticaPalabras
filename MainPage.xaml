@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PracticaPalabrasMAUI"
+             x:Class="PracticaPalabrasMAUI.MainPage">
+
+    <ContentPage.Resources>
+        <local:Word x:Key="actual"/>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="5*,*,30">
+
+  
+
+        <Label Text="{Binding Source={StaticResource actual}, Path=HiddenContent,Mode=OneWay}" FontSize="Header" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+        <Grid Grid.Row="1" ColumnDefinitions="*,150">
+            <Entry  FontSize="Medium" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Entry_TextChanged" />
+            <Button Grid.Column="1" Text="Check" Clicked="Button_Clicked" />
+        </Grid>
+
+        <Label Grid.Row="2" Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium"/>
+
+
+
+    </Grid>
+
+</ContentPage>
