@@ -7,11 +7,11 @@
     Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
-        Title="Play"
+        Title="{StaticResource Play}"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
-        Title="Dictionary"
+        Title="{StaticResource Dictionary}"
         ContentTemplate="{DataTemplate local:DictionaryPage}"
         Route="DictionaryPage" />
 </Shell>

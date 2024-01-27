@@ -10,7 +10,6 @@ public partial class VisualitzationWordPage : ContentPage, IQueryAttributable
         InitializeComponent();
         BindingContext = this;
     }
-
     public string Word { get => word; set { word = value;OnPropertyChanged(); } }
     public bool Can { get; set; }
 

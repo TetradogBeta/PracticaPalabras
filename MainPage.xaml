@@ -16,7 +16,7 @@
 
         <Grid Grid.Row="1" ColumnDefinitions="*,150">
             <Entry  FontSize="Medium" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Entry_TextChanged" />
-            <Button Grid.Column="1" Text="Check" Clicked="Button_Clicked" />
+            <Button Grid.Column="1" Text="{StaticResource Check}" Clicked="Button_Clicked" />
         </Grid>
 
         <Label Grid.Row="2" Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium"/>

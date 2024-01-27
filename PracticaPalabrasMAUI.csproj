@@ -57,6 +57,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Resources\Raw\en-UK.xaml.cs" />
+	  <Compile Remove="Resources\Raw\es-CA.xaml.cs" />
+	  <Compile Remove="Resources\Raw\es-ES.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Resources\Raw\en-UK.xaml" />
+	  <MauiXaml Remove="Resources\Raw\es-CA.xaml" />
+	  <MauiXaml Remove="Resources\Raw\es-ES.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
@@ -67,6 +79,21 @@
 	  <MauiXaml Update="VisualitzationWordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiAsset Include="Languages\en-UK.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiAsset>
+	  <MauiAsset Include="Languages\en-UK.xaml.cs" />
+	  <MauiAsset Include="Languages\es-CA.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiAsset>
+	  <MauiAsset Include="Languages\es-CA.xaml.cs" />
+	  <MauiAsset Include="Languages\es-ES.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiAsset>
+	  <MauiAsset Include="Languages\es-ES.xaml.cs" />
 	</ItemGroup>
 
 </Project>

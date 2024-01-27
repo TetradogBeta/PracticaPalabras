@@ -1,7 +1,5 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text.Json.Serialization;
-
 
 namespace PracticaPalabrasMAUI;
 
@@ -11,17 +9,19 @@ public partial class MainPage : ContentPage
     private Random Random { get; set; }
     public MainPage()
     {
-		
+
         Random= new Random();
-        text = String.Empty;
+        text = string.Empty;
         InitializeComponent();
 
 		BindingContext = this;
+
        
 
     }
 
-    public IList<Word> Words => DictionaryPage.AllWords.ToList();
+    public IList<Word> Words { get; set; }
+
 
     public string Text { get => text; set { text = value; OnPropertyChanged(); } }
 
@@ -43,15 +43,16 @@ public partial class MainPage : ContentPage
     }
     private async Task UpdateWord()
     {
-        IList<Word> words = Words;
+   
         Word newWorld;
         string uri;
-        if (words.Count > 0)
+
+        if (Words.Count > 0)
         {
             do
             {
-                newWorld = words[Random.Next(words.Count)];
-            } while (words.Count > 0 && newWorld.Content == Actual.Content);
+                newWorld = Words[Random.Next(Words.Count)];
+            } while (Words.Count > 1  && newWorld.Content == Actual.Content);
             Actual = newWorld;
         }
         else
@@ -63,6 +64,7 @@ public partial class MainPage : ContentPage
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
+        Words = DictionaryPage.AllWords.ToList();
         await UpdateWord();
     }
 
@@ -120,7 +122,6 @@ public class Word : INotifyPropertyChanged
             OnPropertyChanged(nameof(HiddenContent));
         } 
     }
-    [JsonIgnore]
     public string HiddenContent
     {
         get

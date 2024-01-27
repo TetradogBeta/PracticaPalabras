@@ -10,6 +10,17 @@
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
   <ItemGroup>
+    <MauiAsset Update="Languages\en-UK.xaml">
+      <SubType>Designer</SubType>
+    </MauiAsset>
+    <MauiAsset Update="Languages\es-CA.xaml">
+      <SubType>Designer</SubType>
+    </MauiAsset>
+    <MauiAsset Update="Languages\es-ES.xaml">
+      <SubType>Designer</SubType>
+    </MauiAsset>
+  </ItemGroup>
+  <ItemGroup>
     <MauiXaml Update="DictionaryPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
