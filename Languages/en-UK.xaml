@@ -4,10 +4,10 @@
              x:Class="PracticaPalabrasMAUI.en_UK">
     
 
-        <x:String x:Key="Check">Check</x:String>
+     
         <x:String x:Key="Imagine">Imagine</x:String>
-        <x:String x:Key="Play">Play</x:String>
-        <x:String x:Key="Dictionary">Dictionary</x:String>
-
-    
+        <x:String x:Key="Play">Practice</x:String>
+    <x:String x:Key="Dictionary">Dictionary</x:String>
+    <x:String x:Key="Current">Current</x:String>
+    <x:String x:Key="Max">Max</x:String>
 </ResourceDictionary>

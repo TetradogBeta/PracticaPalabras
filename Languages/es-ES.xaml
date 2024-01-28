@@ -5,11 +5,9 @@
 
 
 
-
-        <x:String x:Key="Check">Verificar</x:String>
-        <x:String x:Key="Imagine">Imaginar</x:String>
-        <x:String x:Key="Play">Jugar</x:String>
+        <x:String x:Key="Imagine">Imagina</x:String>
+        <x:String x:Key="Play">Practicar</x:String>
         <x:String x:Key="Dictionary">Diccionario</x:String>
-
-
+    <x:String x:Key="Current">Actual</x:String>
+    <x:String x:Key="Max">Máximo</x:String>
 </ResourceDictionary>

@@ -6,21 +6,45 @@ namespace PracticaPalabrasMAUI;
 public partial class MainPage : ContentPage
 {
     private string text;
+    private int max;
+    private int current;
+
     private Random Random { get; set; }
     public MainPage()
     {
 
-        Random= new Random();
+        Random = new Random();
         text = string.Empty;
         InitializeComponent();
-
-		BindingContext = this;
-
-       
-
+        max = Preferences.Get(nameof(Max), 0);
+        BindingContext = this;
+        
+        
+   
     }
 
     public IList<Word> Words { get; set; }
+
+
+    public int Max { 
+        get => max; 
+        set { 
+            max = value;
+            Preferences.Set(nameof(Max), max);
+            OnPropertyChanged();
+        }
+    }
+    public int Current { 
+        get => current; 
+        set { 
+            current = value; 
+            OnPropertyChanged();
+            if (current > max)
+            {
+                Max = current;
+            }
+        }
+    }
 
 
     public string Text { get => text; set { text = value; OnPropertyChanged(); } }
@@ -31,8 +55,8 @@ public partial class MainPage : ContentPage
         {
             return Resources["actual"] as Word;
         }
-		set
-		{
+        set
+        {
             Word actual = Actual;
             if (actual != null)
             {
@@ -43,7 +67,7 @@ public partial class MainPage : ContentPage
     }
     private async Task UpdateWord()
     {
-   
+
         Word newWorld;
         string uri;
 
@@ -52,7 +76,7 @@ public partial class MainPage : ContentPage
             do
             {
                 newWorld = Words[Random.Next(Words.Count)];
-            } while (Words.Count > 1  && newWorld.Content == Actual.Content);
+            } while (Words.Count > 1 && newWorld.Content == Actual.Content);
             Actual = newWorld;
         }
         else
@@ -64,38 +88,43 @@ public partial class MainPage : ContentPage
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
+        txtWord.Text = "";
         Words = DictionaryPage.AllWords.ToList();
         await UpdateWord();
+
     }
 
-    private async void Button_Clicked(object sender=null, EventArgs e=null)
+    private async void Button_Clicked(object sender = null, EventArgs e = null)
     {
-		Word word = Actual;
+        Word word = Actual;
         string uri;
-		if(!Equals(word, null)) {
-		
-			if(word.ToString() == Text.Trim().ToLower())
-			{
-				Text = "";
+        if (!Equals(word, null))
+        {
+
+            if (word.ToString() == Text.Trim().ToLower())
+            {
+                Text = "";
+                Current++;
                 await UpdateWord();
             }
             else
             {
+                Current = 0;
                 uri = $"{nameof(VisualitzationWordPage)}?{nameof(VisualitzationWordPage.Word)}={word}";
                 await Shell.Current.GoToAsync(uri);
             }
-		
-		
-		
-		
-		
-		}
+
+
+
+
+
+        }
     }
 
     private void Entry_TextChanged(object sender, TextChangedEventArgs e)
     {
-        Entry entry= (Entry)sender;
-        if(entry != null && entry.Text.Contains(' '))
+        Entry entry = (Entry)sender;
+        if (entry != null && entry.Text.EndsWith(' '))
         {
             Button_Clicked();
         }

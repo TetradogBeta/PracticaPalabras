@@ -21,7 +21,7 @@ public partial class DictionaryPage : ContentPage
  
 
 
-    public static IEnumerable<Word> AllWords => text.Contains('\r')?text.Split('\r').Select(p=>Word.FromLine(p)) :text.Length>0?new Word[] { Word.FromLine(text) } :Array.Empty<Word>();
+    public static IEnumerable<Word> AllWords => text.Contains('\r')?text.Split('\r').Where(l=>l.Trim().Length>0).Select(p=>Word.FromLine(p)) :text.Length>0?new Word[] { Word.FromLine(text) } :Array.Empty<Word>();
  
     public static void Save(string valor=null)
     {
