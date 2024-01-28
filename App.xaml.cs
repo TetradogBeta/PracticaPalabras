@@ -1,35 +1,34 @@
-﻿using System.Globalization;
+﻿
 
 namespace PracticaPalabrasMAUI;
 
 public partial class App : Application
 {
-	public App()
+
+    public static Page CurrentPage { get; set; }
+    public static App CurrentApp { get; set; }
+
+    private ResourceDictionary AntDic { get; set; }
+    public App()
 	{
-      
+  
 		InitializeComponent();
-        SetLang(GetSystemLanguage());
+        UpdateLang();
 
         MainPage = new AppShell();
-     
+
+        CurrentApp = this;
+        
+
     }
-    public string GetSystemLanguage()
-    {
-        CultureInfo currentCulture = CultureInfo.CurrentCulture;
 
-        // Puedes obtener el código de idioma de la cultura actual
-        string languageCode = currentCulture.Name;
 
-        // O puedes obtener el código de idioma en formato "es-ES", "es-CA", etc.
-        string languageCodeFormatted = $"{currentCulture.TwoLetterISOLanguageName}-{currentCulture.Name.Split('-')[1]}";
 
-        return languageCodeFormatted;
-    }
-    public void SetLang(string lang)
+    public void UpdateLang()
     {
         ResourceDictionary dic;
 
-        switch(lang)
+        switch(Language.LangCode)
         {
             case "es-ES":
                 dic =new es_ES();
@@ -41,6 +40,12 @@ public partial class App : Application
                 dic = new en_UK();
                 break;
         }
+        if(!Equals(AntDic,dic) && !Equals(AntDic, null))
+        {
+            Current.Resources.MergedDictionaries.Remove(AntDic);
+        }
         Current.Resources.MergedDictionaries.Add(dic);
+        AntDic = dic;
+     
     }
 }

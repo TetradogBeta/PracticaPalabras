@@ -18,6 +18,9 @@ public partial class DictionaryPage : ContentPage
     }
     public string Text { get => text; set { text = value;OnPropertyChanged();Save(); } }
 
+ 
+
+
     public static IEnumerable<Word> AllWords => text.Contains('\r')?text.Split('\r').Select(p=>Word.FromLine(p)) :text.Length>0?new Word[] { Word.FromLine(text) } :Array.Empty<Word>();
  
     public static void Save(string valor=null)

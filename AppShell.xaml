@@ -4,6 +4,8 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:PracticaPalabrasMAUI"
+    xmlns:info="clr-namespace:Microsoft.Maui.ApplicationModel;assembly=Microsoft.Maui.Essentials"
+    
     Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
@@ -14,4 +16,11 @@
         Title="{StaticResource Dictionary}"
         ContentTemplate="{DataTemplate local:DictionaryPage}"
         Route="DictionaryPage" />
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="10">
+            <HorizontalStackLayout x:Name="lstLangs" Padding="10"/>
+            <Label Text="{x:Static info:AppInfo.Name}"/>
+            <Label Text="{x:Static info:AppInfo.VersionString}"/>
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
 </Shell>
