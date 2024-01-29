@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PracticaPalabrasMAUI.es_CA">
 
-    
+    <x:String x:Key="Check">Comprovar</x:String>
         <x:String x:Key="Imagine">Imagina</x:String>
         <x:String x:Key="Play">Practicar</x:String>
         <x:String x:Key="Dictionary">Diccionari</x:String>

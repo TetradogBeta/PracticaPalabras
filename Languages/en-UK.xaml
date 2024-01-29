@@ -2,10 +2,10 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PracticaPalabrasMAUI.en_UK">
-    
 
-     
-        <x:String x:Key="Imagine">Imagine</x:String>
+
+    <x:String x:Key="Check">Check</x:String>
+    <x:String x:Key="Imagine">Imagine</x:String>
         <x:String x:Key="Play">Practice</x:String>
     <x:String x:Key="Dictionary">Dictionary</x:String>
     <x:String x:Key="Current">Current</x:String>
