@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace PracticaPalabrasMAUI;
 
@@ -137,7 +138,7 @@ public partial class MainPage : ContentPage
 
     }
 
-    private async void Button_Clicked(object sender = null, EventArgs e = null)
+    private async void CheckWord(object sender = null, EventArgs e = null)
     {
         Word word = Actual;
         string uri;
@@ -188,7 +189,7 @@ public partial class MainPage : ContentPage
         Editor entry = (Editor)sender;
         if (entry != null && (entry.Text.EndsWith(Environment.NewLine)))
         {
-            Button_Clicked();
+            CheckWord();
         }
     }
 }
@@ -218,22 +219,22 @@ public class Word : INotifyPropertyChanged
         get
         {
 
-            string result = "";
+            StringBuilder result = new();
 
             for (int i = 0; i < Content.Length; i++)
             {
-                if (Char.IsUpper(Content[i]))
+                if (char.IsUpper(Content[i]))
                 {
-                    result += "_";
+                    result.Append('_');
                 }
                 else
                 {
-                    result += Content[i];
+                    result.Append(Content[i]);
                 }
             }
 
 
-            return result;
+            return result.ToString();
         }
     }
 

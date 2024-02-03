@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
+
 
 namespace PracticaPalabrasMAUI
 {
     public class Speak
     {
-        public static bool SpeakAllWord { get; set; } = true;
+        public static bool SpeakAllWord { 
+            get => Preferences.Get(nameof(SpeakAllWord), true);
+            set => Preferences.Set(nameof(SpeakAllWord), value);
+        }
 
         public string LangCode { get; set; }
         public SortedList<string, string> DicComplexPronuntiation { get;private set; }=new SortedList<string, string>();
