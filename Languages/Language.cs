@@ -11,9 +11,9 @@ namespace PracticaPalabrasMAUI
     {
         private static string langCode;
 
-        public static string LangCodeEsp => "es-ES";
-        public static string LangCodeCat => "es-CA";
-        public static string LangCodeEng => "en-UK";
+        public const string LangCodeEsp = "es-ES";
+        public const string LangCodeCat = "es-CA";
+        public const string LangCodeEng = "en-UK";
         public static string[] LangCodes => new string[] { LangCodeEng, LangCodeEsp, LangCodeCat };
         public static string LangCode { get => langCode; set { langCode = value; Preferences.Set(nameof(LangCode), langCode); } }
 
@@ -40,5 +40,24 @@ namespace PracticaPalabrasMAUI
 
 
 
+    }
+
+
+
+    public static class ExtensionLang
+    {
+        public static void Config(this Speak speak)
+        {
+            switch (Language.LangCode)
+            {
+                case Language.LangCodeCat:
+                    speak.ConfigCat();
+                    break;
+                case Language.LangCodeEsp:
+                    speak.ConfigEsp();
+                    break;
+                //aqui van el resto de configuraciones
+            }
+        }
     }
 }

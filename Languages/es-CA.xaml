@@ -4,9 +4,9 @@
              x:Class="PracticaPalabrasMAUI.es_CA">
 
     <x:String x:Key="Check">Comprovar</x:String>
-        <x:String x:Key="Imagine">Imagina</x:String>
-        <x:String x:Key="Play">Practicar</x:String>
-        <x:String x:Key="Dictionary">Diccionari</x:String>
+    <x:String x:Key="Imagine">Imagina</x:String>
+    <x:String x:Key="Play">Practicar</x:String>
+    <x:String x:Key="Dictionary">Diccionari</x:String>
     <x:String x:Key="Current">Actual</x:String>
     <x:String x:Key="Max">Màxim</x:String>
 </ResourceDictionary>

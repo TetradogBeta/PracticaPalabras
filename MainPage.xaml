@@ -22,10 +22,10 @@
 
         <Label Grid.Row="1" Text="{Binding Source={StaticResource actual}, Path=HiddenContent,Mode=OneWay}" FontSize="Header" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
-        <Grid Grid.Row="2" ColumnDefinitions="*,150" >
+        <Grid Grid.Row="2" >
  
             <Entry x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Entry_TextChanged" />
-            <Button Grid.Column="1" Text="{StaticResource Check}" Clicked="Button_Clicked" />
+
 
         </Grid>
         <Label Grid.Row="3" Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium"/>
