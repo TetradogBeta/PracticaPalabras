@@ -6,3 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Performance", "CA1854:Preferir el método \"IDictionary.TryGetValue(TKey, out TValue)\"", Justification = "<pendiente>", Scope = "member", Target = "~M:PracticaPalabrasMAUI.VisualitzationWordPage.ApplyQueryAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})")]
+[assembly: SuppressMessage("Performance", "CA1854:Preferir el método \"IDictionary.TryGetValue(TKey, out TValue)\"", Justification = "<pendiente>", Scope = "member", Target = "~M:PracticaPalabrasMAUI.MainPage.CheckWord(System.Object,System.EventArgs)")]

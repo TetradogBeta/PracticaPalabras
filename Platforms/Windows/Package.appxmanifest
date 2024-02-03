@@ -6,13 +6,13 @@
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   IgnorableNamespaces="uap rescap">
 
-  <Identity Name="maui-package-name-placeholder" Publisher="CN=gabriel.cat.developer" Version="1.0.3.0" />
+  <Identity Name="46962GabrielCatDeveloper.PracticaPalabras" Publisher="CN=38E3E766-C308-4EED-8270-05D3BD967301" Version="1.1.1.0" />
 
-  <mp:PhoneIdentity PhoneProductId="B8742AE6-DA6A-49BC-A8F4-E4D1CD950CF5" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="2b28a23a-c705-42e5-a151-891922e26ec4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>$placeholder$</DisplayName>
-    <PublisherDisplayName>User Name</PublisherDisplayName>
+    <DisplayName>Practica Palabras</DisplayName>
+    <PublisherDisplayName>GabrielCatDeveloper</PublisherDisplayName>
     <Logo>$placeholder$.png</Logo>
   </Properties>
 
@@ -28,7 +28,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="$placeholder$"
+        DisplayName="Practica Palabras"
         Description="$placeholder$"
         Square150x150Logo="$placeholder$.png"
         Square44x44Logo="$placeholder$.png"

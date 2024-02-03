@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
     private int current;
 
     const int INDEX = 60;
-    const int TOTALREPEAT = 5;
+    static int TotalRepeat => 5;
 
     SortedList<string,int> DicRepeat {  get; set; }
 
@@ -167,11 +167,11 @@ public partial class MainPage : ContentPage
                 Current = 0;
                 if (!DicRepeat.ContainsKey(word.Content))
                 {
-                    DicRepeat.Add(word.Content, TOTALREPEAT);
+                    DicRepeat.Add(word.Content, TotalRepeat);
                 }
                 else
                 {
-                    DicRepeat[word.Content] =TOTALREPEAT;
+                    DicRepeat[word.Content] =TotalRepeat;
                 }
                 uri = $"{nameof(VisualitzationWordPage)}?{nameof(VisualitzationWordPage.Word)}={word}";
                 await Shell.Current.GoToAsync(uri);

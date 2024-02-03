@@ -24,7 +24,7 @@
 
         <Grid Grid.Row="2" >
  
-            <Editor x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged" />
+            <Editor x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged"  />
 
 
         </Grid>
