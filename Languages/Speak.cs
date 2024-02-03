@@ -8,12 +8,12 @@ namespace PracticaPalabrasMAUI
 {
     public class Speak
     {
+        public static bool SpeakAllWord { get; set; } = true;
 
         public string LangCode { get; set; }
         public SortedList<string, string> DicComplexPronuntiation { get;private set; }=new SortedList<string, string>();
-        public bool Can {  get; set; }
 
-        public bool SpeakAllWord { get; set; } = true;
+
 
         public async Task Read(string word, VisualitzationWordPage page)
         {
@@ -26,7 +26,7 @@ namespace PracticaPalabrasMAUI
             string wordDigested;
             string toSpeak;
 
-            Can = true;
+        
 
             for(int i=0;i<complex.Count;i++)
             {
@@ -40,7 +40,7 @@ namespace PracticaPalabrasMAUI
             }
             page.Word = "";
             wordDigested= wordDigestedBl.ToString();
-            for(int i = wordDigested.Length - 1; i >= 0 && Can; i--)
+            for(int i = wordDigested.Length - 1; i >= 0 && page.Can; i--)
             {
                 if (char.IsDigit(wordDigested[i]))
                 {
@@ -52,13 +52,13 @@ namespace PracticaPalabrasMAUI
                     toSpeak = wordDigested[i] + "";
                     page.Word = wordDigested[i] + page.Word;
                 }
-                if (Can)
+                if (page.Can)
                 {
                     await TextToSpeech.Default.SpeakAsync(toSpeak);
                     await Task.Delay(1000);
                 }
             }
-            if(Can && SpeakAllWord)
+            if(page.Can && SpeakAllWord)
             {
                 await TextToSpeech.Default.SpeakAsync(word);
             }

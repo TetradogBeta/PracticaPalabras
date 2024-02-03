@@ -17,7 +17,7 @@ public partial class VisualitzationWordPage : ContentPage, IQueryAttributable
         speak = new Speak();
     }
     public string Word { get => word; set { word = value;OnPropertyChanged(); } }
-    public bool Can { get => can; set { can = value;speak.Can = value; } }
+    public bool Can { get => can; set { can = value; } }
 
     protected override void OnNavigatedFrom(NavigatedFromEventArgs args)
     {

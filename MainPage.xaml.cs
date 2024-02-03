@@ -9,11 +9,21 @@ public partial class MainPage : ContentPage
     private int max;
     private int current;
 
-    private Random Random { get; set; }
+    const int INDEX = 60;
+    const int TOTALREPEAT = 5;
+
+    SortedList<string,int> DicRepeat {  get; set; }
+
+    SortedList<string,Word> Dic {  get; set; }
+
+    Random Random { get; set; }
     public MainPage()
     {
 
         Random = new Random();
+        DicRepeat = new SortedList<string,int>();
+        Dic = new SortedList<string,Word>();
+        
         text = string.Empty;
         InitializeComponent();
         max = Preferences.Get(nameof(Max), 0);
@@ -70,14 +80,26 @@ public partial class MainPage : ContentPage
 
         Word newWorld;
         string uri;
+        string repeat;
+     
 
         if (Words.Count > 0)
         {
-            do
+           
+            if (DicRepeat.Count > 0 && Random.Next(100) < INDEX)
             {
-                newWorld = Words[Random.Next(Words.Count)];
-            } while (Words.Count > 1 && newWorld.Content == Actual.Content);
-            Actual = newWorld;
+                repeat = DicRepeat.Keys[Random.Next(DicRepeat.Count)];
+                Actual = Dic[repeat];
+
+            }
+            else
+            {
+                do
+                {
+                    newWorld = Words[Random.Next(Words.Count)];
+                } while (Words.Count > 1 && newWorld.Content == Actual.Content);
+                Actual = newWorld;
+            }
         }
         else
         {
@@ -85,11 +107,32 @@ public partial class MainPage : ContentPage
             await Shell.Current.GoToAsync(uri);
         }
     }
+
+    private void UpdateRepetedsDic()
+    {
+
+        foreach (string word in DicRepeat.Keys.ToArray())
+        {
+            
+            if (!Dic.ContainsKey(word))
+            {
+                DicRepeat.Remove(word);
+            }
+        }
+
+    }
+
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
         txtWord.Text = "";
         Words = DictionaryPage.AllWords.ToList();
+        Dic.Clear();
+        foreach(Word word in Words)
+        {
+            Dic.Add(word.Content, word);
+        }
+        UpdateRepetedsDic();
         await UpdateWord();
 
     }
@@ -103,6 +146,17 @@ public partial class MainPage : ContentPage
 
             if (word.ToString() == Text.Trim().ToLower())
             {
+                if (DicRepeat.ContainsKey(word.Content))
+                {
+                    if (DicRepeat[word.Content] > 0)
+                    {
+                        DicRepeat[word.Content]--;
+                    }
+                    else
+                    {
+                        DicRepeat.Remove(word.Content);
+                    }
+                }
                 Text = "";
                 Current++;
                 await UpdateWord();
@@ -110,6 +164,14 @@ public partial class MainPage : ContentPage
             else
             {
                 Current = 0;
+                if (!DicRepeat.ContainsKey(word.Content))
+                {
+                    DicRepeat.Add(word.Content, TOTALREPEAT);
+                }
+                else
+                {
+                    DicRepeat[word.Content] =TOTALREPEAT;
+                }
                 uri = $"{nameof(VisualitzationWordPage)}?{nameof(VisualitzationWordPage.Word)}={word}";
                 await Shell.Current.GoToAsync(uri);
             }
@@ -121,10 +183,10 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void Entry_TextChanged(object sender, TextChangedEventArgs e)
+    private void Editor_TextChanged(object sender, TextChangedEventArgs e)
     {
-        Entry entry = (Entry)sender;
-        if (entry != null && entry.Text.EndsWith(' '))
+        Editor entry = (Editor)sender;
+        if (entry != null && (entry.Text.EndsWith(Environment.NewLine)))
         {
             Button_Clicked();
         }

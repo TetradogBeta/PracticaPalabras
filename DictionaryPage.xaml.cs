@@ -1,4 +1,5 @@
 using Microsoft.Maui.Controls;
+using System.Collections.Generic;
 
 namespace PracticaPalabrasMAUI;
 
@@ -21,7 +22,22 @@ public partial class DictionaryPage : ContentPage
  
 
 
-    public static IEnumerable<Word> AllWords => text.Contains('\r')?text.Split('\r').Where(l=>l.Trim().Length>0).Select(p=>Word.FromLine(p)) :text.Length>0?new Word[] { Word.FromLine(text) } :Array.Empty<Word>();
+    public static IEnumerable<Word> AllWords
+    {
+        get
+        {
+            IEnumerable<Word> res;
+            if (text.Contains(Environment.NewLine[0]))
+            {
+                res = text.Split(Environment.NewLine[0]).Where(l => l.Trim().Length > 0).Select(p => Word.FromLine(p));
+            }
+            else
+            {
+                res = text.Length > 0 ? new Word[] { Word.FromLine(text) } : Array.Empty<Word>();
+            }
+            return res;
+        }
+    }
  
     public static void Save(string valor=null)
     {
