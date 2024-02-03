@@ -8,7 +8,7 @@
         <local:Word x:Key="actual"/>
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="30,5*,*,30">
+    <Grid RowDefinitions="30,3*,*,30">
     
         <HorizontalStackLayout>
             <Label Text="{StaticResource Max}" Padding="10,0,0,0"/>
@@ -22,9 +22,9 @@
 
         <Label Grid.Row="1" Text="{Binding Source={StaticResource actual}, Path=HiddenContent,Mode=OneWay}" FontSize="Header" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
-        <Grid Grid.Row="2" >
- 
-            <Editor x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged"  />
+        <Grid Grid.Row="2" RowDefinitions="30,*" >
+            <Label Text="{StaticResource ExplicationHowToPlay}" />
+            <Editor Grid.Row="1" x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged"  />
 
 
         </Grid>

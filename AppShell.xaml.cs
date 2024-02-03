@@ -27,8 +27,7 @@ public partial class AppShell : Shell
 			{
 				Label l = s as Label;
 				Language.LangCode = l.Text;
-
-
+              
             };
 			lblLang.GestureRecognizers.Add(tabLbl);
 			lstLangs.Add(lblLang);

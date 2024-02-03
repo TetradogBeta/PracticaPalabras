@@ -19,10 +19,10 @@ namespace PracticaPalabrasMAUI
         {
             //l·l,ny,ó,à
             //word:piranya -> pira0a
-            List<string> list = new List<string>();//ny,l·l en el orden de aparición
-            List<string> complexList = new List<string>();
+            List<string> list = new();//ny,l·l en el orden de aparición
+            List<string> complexList = new();
             IList<string> complex = DicComplexPronuntiation.Keys;
-            StringBuilder wordDigestedBl= new StringBuilder(word);
+            StringBuilder wordDigestedBl= new(word);
             string wordDigested;
             string toSpeak;
 
@@ -30,9 +30,9 @@ namespace PracticaPalabrasMAUI
 
             for(int i=0;i<complex.Count;i++)
             {
-                if (word.Contains(complex[i]))
+                if (word.Contains(complex[i].ToUpper()))
                 {
-                    wordDigestedBl.Replace(complex[i], list.Count.ToString());//suponiendo que no superan los 10 caracteres complejos
+                    wordDigestedBl.Replace(complex[i].ToUpper(), list.Count.ToString());//suponiendo que no superan los 10 caracteres complejos
                     list.Add(DicComplexPronuntiation[complex[i]]);
                     complexList.Add(complex[i]);
                     
@@ -45,7 +45,7 @@ namespace PracticaPalabrasMAUI
                 if (char.IsDigit(wordDigested[i]))
                 {
                     toSpeak = list[int.Parse(wordDigested[i]+"")];
-                    page.Word = complexList[int.Parse(wordDigested[i]+"")] + page.Word;
+                    page.Word = complexList[int.Parse(wordDigested[i]+"")].ToUpper() + page.Word;
                 }
                 else
                 {
@@ -54,13 +54,13 @@ namespace PracticaPalabrasMAUI
                 }
                 if (page.Can)
                 {
-                    await TextToSpeech.Default.SpeakAsync(toSpeak);
+                    await TextToSpeech.SpeakAsync(toSpeak);
                     await Task.Delay(1000);
                 }
             }
             if(page.Can && SpeakAllWord)
             {
-                await TextToSpeech.Default.SpeakAsync(word);
+                await TextToSpeech.SpeakAsync(word);
             }
         }
     }

@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PracticaPalabrasMAUI.es_CA">
 
+
+    <x:String x:Key="ExplicationHowToAddNewWords1">paraula -> paRaula -> pa_aula</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords2">paraula;pista</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords3">ENTER entre paraules</x:String>
+    <x:String x:Key="ExplicationHowToPlay">Prem ENTER per comprovar</x:String>
     <x:String x:Key="Check">Comprovar</x:String>
     <x:String x:Key="Imagine">Imagina</x:String>
     <x:String x:Key="Play">Practicar</x:String>
     <x:String x:Key="Dictionary">Diccionari</x:String>
     <x:String x:Key="Current">Actual</x:String>
     <x:String x:Key="Max">Màxim</x:String>
+    
 </ResourceDictionary>

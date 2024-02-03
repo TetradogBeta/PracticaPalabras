@@ -13,11 +13,9 @@ public partial class MainPage : ContentPage
     const int INDEX = 60;
     static int TotalRepeat => 5;
 
-    SortedList<string,int> DicRepeat {  get; set; }
 
-    SortedList<string,Word> Dic {  get; set; }
 
-    Random Random { get; set; }
+ 
     public MainPage()
     {
 
@@ -29,14 +27,16 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         max = Preferences.Get(nameof(Max), 0);
         BindingContext = this;
-        
-        
+         
    
     }
 
-    public IList<Word> Words { get; set; }
+    Random Random { get; set; }
+    IList<Word> Words { get; set; }
 
+    SortedList<string,int> DicRepeat {  get; set; }
 
+    SortedList<string,Word> Dic {  get; set; }
     public int Max { 
         get => max; 
         set { 
@@ -187,7 +187,7 @@ public partial class MainPage : ContentPage
     private void Editor_TextChanged(object sender, TextChangedEventArgs e)
     {
         Editor entry = (Editor)sender;
-        if (entry != null && (entry.Text.EndsWith(Environment.NewLine)))
+        if (entry != null && entry.Text.EndsWith(Environment.NewLine[0]))//cojo solo el primer caracter ya que en Windows ponen dos pero el Editor solo usa el primero...
         {
             CheckWord();
         }
@@ -209,7 +209,7 @@ public class Word : INotifyPropertyChanged
     public string Content { 
         get => content; 
         set { 
-            content = value; 
+            content = value.Trim(); 
             OnPropertyChanged(); 
             OnPropertyChanged(nameof(HiddenContent));
         } 
