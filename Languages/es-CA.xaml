@@ -4,7 +4,7 @@
              x:Class="PracticaPalabrasMAUI.es_CA">
 
 
-    <x:String x:Key="ExplicationHowToAddNewWords1">paraula -> paRaula -> pa_aula</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords1">paraula → paRaula → pa_aula</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords2">paraula;pista</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords3">ENTER entre paraules</x:String>
     <x:String x:Key="ExplicationHowToPlay">Prem ENTER per comprovar</x:String>
