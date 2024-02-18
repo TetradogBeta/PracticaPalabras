@@ -4,12 +4,20 @@
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net7.0-windows10.0.19041.0</ActiveDebugFramework>
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
-    <UapAppxPackageBuildMode>StoreAndSideload</UapAppxPackageBuildMode>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
     <AppxShowAllApps>False</AppxShowAllApps>
-    <_LastSelectedProfileId>MSIX-win10-x64.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>MSIX-win10-x641.pubxml</_LastSelectedProfileId>
     <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_33</DefaultDevice>
+    <Source>C:\Users\gabri\Downloads\Aprende.png</Source>
+    <SmallTileSource>C:\Users\gabri\Downloads\Aprende.png</SmallTileSource>
+    <MediumTileSource>C:\Users\gabri\Downloads\Aprende.png</MediumTileSource>
+    <WideTileSource>C:\Users\gabri\Downloads\Aprende.png</WideTileSource>
+    <LargeTileSource>C:\Users\gabri\Downloads\Aprende.png</LargeTileSource>
+    <AppIconSource>C:\Users\gabri\Downloads\Aprende.png</AppIconSource>
+    <SplashScreenSource>C:\Users\gabri\Downloads\Aprende.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\gabri\Downloads\Aprende.png</PackageLogoSource>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
@@ -32,5 +40,10 @@
     <MauiXaml Update="VisualitzationWordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Platforms\Windows\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
 </Project>

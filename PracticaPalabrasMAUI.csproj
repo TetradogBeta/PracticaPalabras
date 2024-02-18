@@ -34,9 +34,10 @@
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-		<PackageCertificateThumbprint>58A534A8D86B2A741E65A6613843E7B222C97E48</PackageCertificateThumbprint>
+		<PackageCertificateThumbprint>9BEA0D50E72DD8962FC80E511A8BF2802B6B24C2</PackageCertificateThumbprint>
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA512</AppxPackageSigningTimestampDigestAlgorithm>
 		<GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+		<DefaultLanguage>en</DefaultLanguage>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
