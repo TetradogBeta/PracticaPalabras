@@ -8,6 +8,10 @@
     
     Shell.FlyoutBehavior="Flyout">
 
+    <Shell.FlyoutHeader>
+        <Image Source="gramatica.svg" HeightRequest="120" Margin="10"/>
+    </Shell.FlyoutHeader>
+
     <ShellContent
         Title="{StaticResource Play}"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -16,8 +20,11 @@
         Title="{StaticResource Dictionary}"
         ContentTemplate="{DataTemplate local:DictionaryPage}"
         Route="DictionaryPage" />
+
     <Shell.FlyoutFooter>
         <VerticalStackLayout Padding="10">
+            <Label Text="{StaticResource LangToChange}" IsVisible="{Binding Path=IsActualLang,Mode=OneWay}"/>
+            <Label Text="{StaticResource LangChanged}" IsVisible="{Binding Path=NotIsActualLang,Mode=OneWay}"/>
             <HorizontalStackLayout x:Name="lstLangs" Padding="10"/>
             <Label Text="{x:Static info:AppInfo.Name}"/>
             <Label Text="{x:Static info:AppInfo.VersionString}"/>

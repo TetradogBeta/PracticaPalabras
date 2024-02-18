@@ -13,5 +13,6 @@
     <x:String x:Key="Dictionary">Diccionario</x:String>
     <x:String x:Key="Current">Actual</x:String>
     <x:String x:Key="Max">Máximo</x:String>
-    
+    <x:String x:Key="LangToChange">Puedes cambiar el idioma actual.</x:String>
+    <x:String x:Key="LangChanged">El idioma de la interfaz se actualizará en el próximo reinicio de la aplicación.</x:String>
 </ResourceDictionary>

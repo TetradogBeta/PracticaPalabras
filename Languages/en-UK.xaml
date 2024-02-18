@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PracticaPalabrasMAUI.en_UK">
 
-    <x:String x:Key="ExplicationHowToAddNewWords1">word -> woRd -> wo_d</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords1">word -> woRd -> wo_d</x:String> 
     <x:String x:Key="ExplicationHowToAddNewWords2">word;clue</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords3">ENTER between words</x:String>
     <x:String x:Key="ExplicationHowToPlay">Press ENTER to check</x:String>
@@ -13,5 +13,6 @@
     <x:String x:Key="Dictionary">Dictionary</x:String>
     <x:String x:Key="Current">Current</x:String>
     <x:String x:Key="Max">Max</x:String>
-    
+    <x:String x:Key="LangToChange">You can change the current language.</x:String>
+    <x:String x:Key="LangChanged">The interface language will update upon the next app restart.</x:String>
 </ResourceDictionary>
