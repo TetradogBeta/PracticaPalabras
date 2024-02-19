@@ -4,7 +4,7 @@ namespace PracticaPalabrasMAUI;
 
 public partial class AppShell : Shell
 {
-    private bool notIsActualLang;
+
 
     //tengo que sacar los calores del Resources
 
@@ -14,7 +14,7 @@ public partial class AppShell : Shell
 
 
 
-	string LangCodeAnt { get; set; }
+
 	public AppShell()
 	{
 		Label lblLang=null;
@@ -34,14 +34,6 @@ public partial class AppShell : Shell
 			tabLbl.Tapped += (s,e) =>
 			{
 				Label l = s as Label;
-
-				if (Equals(LangCodeAnt,null))
-				{
-					LangCodeAnt = Language.LangCode;
-				}
-			
-				
-				
 
 				Language.LangCode = l.Text;
                 App.CurrentApp.UpdateLang();
@@ -75,7 +67,7 @@ public partial class AppShell : Shell
 			{          
 				l.TextColor = ActualUI;
             }
-            else if (Language.LangCodes.Contains(l.Text) && LangCodeAnt != l.Text)
+            else if (Language.LangCodes.Contains(l.Text))
 			{
 				l.TextColor = DefaultColor;
 			}
