@@ -11,24 +11,24 @@
     <Grid RowDefinitions="30,3*,*,30">
     
         <HorizontalStackLayout>
-            <Label Text="{StaticResource Max}" Padding="10,0,0,0"/>
+            <Label Text="{DynamicResource Max}" Padding="10,0,0,0"/>
             <Label Text="=" Padding="10,0,5,0"/>
             <Label Text="{Binding Path=Max,Mode=TwoWay}" Padding="0,0,30,0"/>
 
-            <Label Text="{StaticResource Current}"/>
+            <Label Text="{DynamicResource Current}"/>
             <Label Text="=" Padding="10,0,5,0"/>
             <Label Text="{Binding Path=Current,Mode=TwoWay}"/>
         </HorizontalStackLayout>
 
-        <Label Grid.Row="1" Text="{Binding Source={StaticResource actual}, Path=HiddenContent,Mode=OneWay}" FontSize="Header" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label Grid.Row="1" Text="{Binding Source={DynamicResource actual}, Path=HiddenContent,Mode=OneWay}" FontSize="Header" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
 
         <Grid Grid.Row="2" RowDefinitions="30,*" >
-            <Label Text="{StaticResource ExplicationHowToPlay}" />
+            <Label Text="{DynamicResource ExplicationHowToPlay}" />
             <Editor Grid.Row="1" x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged"  />
 
 
         </Grid>
-        <Label Grid.Row="3" Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium"/>
+        <Label Grid.Row="3" Text="{Binding Source={DynamicResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium"/>
 
 
 

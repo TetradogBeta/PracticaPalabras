@@ -13,18 +13,18 @@
     </Shell.FlyoutHeader>
 
     <ShellContent
-        Title="{StaticResource Play}"
+        Title="{DynamicResource Play}"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
-        Title="{StaticResource Dictionary}"
+        Title="{DynamicResource Dictionary}"
         ContentTemplate="{DataTemplate local:DictionaryPage}"
         Route="DictionaryPage" />
 
     <Shell.FlyoutFooter>
         <VerticalStackLayout Padding="10">
-            <Label Text="{StaticResource LangToChange}" IsVisible="{Binding Path=IsActualLang,Mode=OneWay}"/>
-            <Label Text="{StaticResource LangChanged}" IsVisible="{Binding Path=NotIsActualLang,Mode=OneWay}"/>
+            <Label Text="{DynamicResource  LangToChange}" />
+            
             <HorizontalStackLayout x:Name="lstLangs" Padding="10"/>
             <Label Text="{x:Static info:AppInfo.Name}"/>
             <Label Text="{x:Static info:AppInfo.VersionString}"/>

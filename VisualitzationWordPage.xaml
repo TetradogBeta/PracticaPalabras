@@ -5,7 +5,7 @@
              Title="">
 
     <Grid RowDefinitions="2*,*,2*">
-        <Label Text="{StaticResource Imagine}" FontSize="100" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+        <Label Text="{DynamicResource Imagine}" FontSize="100" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
         <Label Grid.Row="1"
                 Text="{Binding Path=Word,Mode=OneWay}"
                 FontSize="Header"

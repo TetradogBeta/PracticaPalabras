@@ -8,7 +8,7 @@ public partial class AppShell : Shell
 
     //tengo que sacar los calores del Resources
 
-    static  Color ActualSpeak => Colors.Orange;
+
 	static Color DefaultColor => Colors.Gray;
 	static Color ActualUI => Colors.Blue;
 
@@ -44,7 +44,9 @@ public partial class AppShell : Shell
 				
 
 				Language.LangCode = l.Text;
-				UpdateLangLabelColor(l.Text);
+                App.CurrentApp.UpdateLang();
+                UpdateLangLabelColor(l.Text);
+				
               
             };
 			lblLang.GestureRecognizers.Add(tabLbl);
@@ -63,40 +65,15 @@ public partial class AppShell : Shell
 		
 	}
 
-    public bool NotIsActualLang
-    {
-        get => notIsActualLang; 
-
-		set { 
-
-			notIsActualLang = value;
-
-			OnPropertyChanged(); 
-			OnPropertyChanged(nameof(IsActualLang));
-		}
-    }
-	public bool IsActualLang => !NotIsActualLang;
   
     private void UpdateLangLabelColor(string langActual)
     {
-		bool actualLangSelected;
+	
         foreach (Label l in lstLangs.Children.OfType<Label>())
 		{
 			if(l.Text == langActual)
-			{
-				actualLangSelected = Equals(LangCodeAnt, null) || LangCodeAnt == langActual;
-
-                if (actualLangSelected)
-				{
-					l.TextColor = ActualUI;
-				}
-				else { 
-
-					l.TextColor = ActualSpeak;
-				}
-				NotIsActualLang = !actualLangSelected;
-
-
+			{          
+				l.TextColor = ActualUI;
             }
             else if (Language.LangCodes.Contains(l.Text) && LangCodeAnt != l.Text)
 			{

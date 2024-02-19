@@ -1,5 +1,7 @@
 ﻿
 
+using System.ComponentModel;
+
 namespace PracticaPalabrasMAUI;
 
 public partial class App : Application
@@ -46,6 +48,7 @@ public partial class App : Application
         }
         Current.Resources.MergedDictionaries.Add(dic);
         AntDic = dic;
+       
      
     }
 }
