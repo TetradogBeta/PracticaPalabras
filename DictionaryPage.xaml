@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PracticaPalabrasMAUI.DictionaryPage"
              Title="{DynamicResource Dictionary}">
-    <Grid RowDefinitions="30,*">
-        <HorizontalStackLayout>
+    <Grid RowDefinitions="70,*">
+        <VerticalStackLayout BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray500}}">
             <Label Text="{DynamicResource ExplicationHowToAddNewWords1}"  />
-            <Label Text="{DynamicResource ExplicationHowToAddNewWords2}"  Padding="30,0,30,0" />
+            <Label Text="{DynamicResource ExplicationHowToAddNewWords2}"  />
             <Label Text="{DynamicResource ExplicationHowToAddNewWords3}"  />
-        </HorizontalStackLayout>
-        <Editor Grid.Row="1" Text="{Binding Path=Text,Mode=TwoWay}" />
+        </VerticalStackLayout>
+        <Editor Grid.Row="1" Text="{Binding Path=Text,Mode=TwoWay}"  />
     </Grid>
 </ContentPage>

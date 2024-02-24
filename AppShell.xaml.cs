@@ -6,21 +6,15 @@ public partial class AppShell : Shell
 {
 
 
-    //tengo que sacar los calores del Resources
+	//tengo que sacar los calores del Resources
 
-
-	static Color DefaultColor => Colors.Gray;
-	static Color ActualUI => Colors.Blue;
-
-
-
-
-	public AppShell()
+    public AppShell()
 	{
 		Label lblLang=null;
         TapGestureRecognizer tabLbl;
 		InitializeComponent();
-		BindingContext= this;
+
+        BindingContext = this;
 		
 		foreach(string lang in Language.LangCodes)
 		{
@@ -65,12 +59,12 @@ public partial class AppShell : Shell
 		{
 			if(l.Text == langActual)
 			{          
-				l.TextColor = ActualUI;
+				l.TextColor = (Color)App.CurrentApp.Colors["LangActivated"];
             }
             else if (Language.LangCodes.Contains(l.Text))
 			{
-				l.TextColor = DefaultColor;
-			}
+				l.TextColor = (Color)App.CurrentApp.Colors["LangDesactivated"];
+            }
 		}
     }
 }

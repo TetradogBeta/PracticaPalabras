@@ -13,16 +13,22 @@ public partial class App : Application
     private ResourceDictionary AntDic { get; set; }
     public App()
 	{
-  
-		InitializeComponent();
+        CurrentApp = this;
+
+        InitializeComponent();
+
         UpdateLang();
 
         MainPage = new AppShell();
 
-        CurrentApp = this;
+       
         
 
     }
+
+    public ResourceDictionary Colors=> Current.Resources.MergedDictionaries.First();
+
+
 
 
 
