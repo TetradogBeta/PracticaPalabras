@@ -131,7 +131,10 @@ public partial class MainPage : ContentPage
         Dic.Clear();
         foreach(Word word in Words)
         {
-            Dic.Add(word.Content, word);
+            if (!Dic.ContainsKey(word.Content))
+            {
+                Dic.Add(word.Content, word);
+            }
         }
         UpdateRepetedsDic();
         await UpdateWord();
