@@ -2,17 +2,24 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PracticaPalabrasMAUI.es_ES">
-
+    
+    <x:String x:Key="Dictionary">Diccionario</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords1">palabra → palabRa → palab_a</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords2">palabra;pista</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords3">ENTER entre palabras</x:String>
-    <x:String x:Key="ExplicationHowToPlay">Presiona ENTER para verificar</x:String>
-    <x:String x:Key="Check">Comprobar</x:String>
-    <x:String x:Key="Imagine">Imagina</x:String>
+    
+    
     <x:String x:Key="Play">Practicar</x:String>
-    <x:String x:Key="Dictionary">Diccionario</x:String>
     <x:String x:Key="Current">Actual</x:String>
     <x:String x:Key="Max">Máximo</x:String>
+    <x:String x:Key="ExplicationHowToPlay">Presiona ENTER para verificar</x:String>
+    <x:String x:Key="Check">Comprobar</x:String>
+    
+    
+    <x:String x:Key="Imagine">Imagina</x:String>
+    <x:String x:Key="CloseEyes">Cierra los ojos</x:String>
+
+
     <x:String x:Key="LangToChange">Puedes cambiar el idioma actual.</x:String>
-    <x:String x:Key="LangChanged">El idioma de la interfaz se actualizará en el próximo reinicio de la aplicación.</x:String>
+ 
 </ResourceDictionary>

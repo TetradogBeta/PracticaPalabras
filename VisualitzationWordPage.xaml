@@ -13,6 +13,7 @@
                 VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center"
             />
+        <Label Grid.Row="2" Text="{DynamicResource CloseEyes}" FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
     </Grid>
    
 </ContentPage>

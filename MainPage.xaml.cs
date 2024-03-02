@@ -10,6 +10,8 @@ public partial class MainPage : ContentPage
     private int max;
     private int current;
 
+    const int NODATA = 2000;
+
     const int INDEX = 60;
     static int TotalRepeat => 5;
 
@@ -42,9 +44,12 @@ public partial class MainPage : ContentPage
         set { 
             max = value;
             Preferences.Set(nameof(Max), max);
+            Record = DateTime.UtcNow;
             OnPropertyChanged();
         }
     }
+    public bool HasRecord => Record.Year != NODATA;
+    public DateTime Record { get => Preferences.Get(nameof(Record),new DateTime(NODATA,1,1).ToUniversalTime()); set =>Preferences.Set(nameof(Record), value); }
     public int Current { 
         get => current; 
         set { 

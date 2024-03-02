@@ -8,7 +8,7 @@
         <local:Word x:Key="actual"/>
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="30,3*,*,30">
+    <Grid RowDefinitions="30,3*,*,60">
     
         <HorizontalStackLayout>
             <Label Text="{DynamicResource Max}" Padding="10,0,0,0"/>
@@ -28,8 +28,9 @@
 
 
         </Grid>
-        <Label Grid.Row="3" Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium"/>
-
+        <ScrollView Grid.Row="3">
+            <Label Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium" />
+        </ScrollView>
 
 
     </Grid>
