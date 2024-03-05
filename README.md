@@ -12,7 +12,7 @@ Los datos generados o ingresados por el usuario, como configuraciones de la apli
 
 ## Contacto
 
-Si tienes alguna pregunta o inquietud sobre esta política de privacidad, por favor contáctanos a través de gabriel.cat.developer@hotmail.com
+Si tienes alguna pregunta o inquietud sobre esta política de privacidad, por favor contáctanos a través de gabriel.cat.developer+practicaPalabras@hotmail.com
 
 ## Cambios en la Política de Privacidad
 
