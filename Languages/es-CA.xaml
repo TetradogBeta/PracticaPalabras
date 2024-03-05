@@ -7,7 +7,8 @@
     <x:String x:Key="ExplicationHowToAddNewWords1">paraula → paRaula → pa_aula</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords2">paraula;pista</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords3">ENTER entre paraules</x:String>
-
+    <x:String x:Key="DictionaryDuplication">S'han trobat duplicats, només es guardarà la primera aparició</x:String>
+    
     <x:String x:Key="Play">Practicar</x:String>
     <x:String x:Key="ExplicationHowToPlay">Prem ENTER per comprovar</x:String>
     <x:String x:Key="Check">Comprovar</x:String>

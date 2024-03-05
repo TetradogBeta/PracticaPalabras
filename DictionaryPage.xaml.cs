@@ -19,7 +19,15 @@ public partial class DictionaryPage : ContentPage
         BindingContext = this;
 
     }
-    public string Text { get => text; set { text = value; OnPropertyChanged(); Save(); } }
+    public string Text { 
+        get => text; 
+        set { 
+            text = value;
+            OnPropertyChanged();
+            OnPropertyChanged(nameof(HasDuplicateds));
+            Save();
+        }
+    }
 
     private static string TextToSave { get {
 
@@ -32,13 +40,14 @@ public partial class DictionaryPage : ContentPage
             return sb.ToString();
      } }
 
+    public bool HasDuplicateds => AllWords.Count != AllWordsDirty.Count();
 
-    public static IList<Word> AllWords
+    static IEnumerable<Word> AllWordsDirty
     {
         get
         {
             IEnumerable<Word> res;
-            SortedList<string, Word> dic = new SortedList<string, Word>();
+          
 
             if (text.Contains(Environment.NewLine[0]))
             {
@@ -49,7 +58,19 @@ public partial class DictionaryPage : ContentPage
                 res = text.Length > 0 ? new Word[] { Word.FromLine(text) } : Array.Empty<Word>();
             }
      
-            foreach (Word word in res)
+   
+            return res;
+        }
+    }
+    public static IList<Word> AllWords
+    {
+        get
+        {
+          
+            SortedList<string, Word> dic = new SortedList<string, Word>();
+
+
+            foreach (Word word in AllWordsDirty)
             {
                 if (!dic.ContainsKey(word.Content))
                 {
@@ -59,7 +80,6 @@ public partial class DictionaryPage : ContentPage
             return dic.Values;
         }
     }
- 
     public static void Save(string valor=null)
     {
         File.WriteAllText(FilePath, valor ?? TextToSave);

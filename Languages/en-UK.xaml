@@ -4,10 +4,11 @@
              x:Class="PracticaPalabrasMAUI.en_UK">
 
 
-    <x:String x:Key="Dictionary">Dictionary</x:String>
+    <x:String x:Key="Dictionary">Dictionary</x:String> 
     <x:String x:Key="ExplicationHowToAddNewWords1">word → woRd → wo_d</x:String> 
     <x:String x:Key="ExplicationHowToAddNewWords2">word;clue</x:String>
     <x:String x:Key="ExplicationHowToAddNewWords3">ENTER between words</x:String>
+    <x:String x:Key="DictionaryDuplication">Duplicates found, only the first occurrence will be saved</x:String>
     
     <x:String x:Key="Play">Practice</x:String>
     <x:String x:Key="Current">Current</x:String>
