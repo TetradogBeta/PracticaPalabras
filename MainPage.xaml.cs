@@ -130,17 +130,19 @@ public partial class MainPage : ContentPage
 
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
+   
         base.OnNavigatedTo(args);
         txtWord.Text = "";
-        Words = DictionaryPage.AllWords.ToList();
+     
         Dic.Clear();
-        foreach(Word word in Words)
+        foreach(Word word in DictionaryPage.AllWords)
         {
             if (!Dic.ContainsKey(word.Content))
             {
                 Dic.Add(word.Content, word);
             }
         }
+        Words= Dic.Values;
         UpdateRepetedsDic();
         await UpdateWord();
 
@@ -222,6 +224,8 @@ public class Word : INotifyPropertyChanged
             OnPropertyChanged(nameof(HiddenContent));
         } 
     }
+
+    public string ToSaveString => $"{Content};{Clue}";
     public string HiddenContent
     {
         get

@@ -1,32 +1,45 @@
 using Microsoft.Maui.Controls;
 using System.Collections.Generic;
+using System.Text;
+
 
 namespace PracticaPalabrasMAUI;
 
 public partial class DictionaryPage : ContentPage
 {
-    
+
     private static string text = Load();
     private static string FilePath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "dictionary.txt");
 
-    
+
 
     public DictionaryPage()
     {
         InitializeComponent();
         BindingContext = this;
-       
+
     }
-    public string Text { get => text; set { text = value;OnPropertyChanged();Save(); } }
+    public string Text { get => text; set { text = value; OnPropertyChanged(); Save(); } }
 
- 
+    private static string TextToSave { get {
+
+             StringBuilder sb = new StringBuilder();
+            foreach (Word word in AllWords)
+            {
+                sb.AppendLine(word.ToSaveString);
+                
+            }
+            return sb.ToString();
+     } }
 
 
-    public static IEnumerable<Word> AllWords
+    public static IList<Word> AllWords
     {
         get
         {
             IEnumerable<Word> res;
+            SortedList<string, Word> dic = new SortedList<string, Word>();
+
             if (text.Contains(Environment.NewLine[0]))
             {
                 res = text.Split(Environment.NewLine[0]).Where(l => l.Trim().Length > 0).Select(p => Word.FromLine(p));
@@ -35,13 +48,21 @@ public partial class DictionaryPage : ContentPage
             {
                 res = text.Length > 0 ? new Word[] { Word.FromLine(text) } : Array.Empty<Word>();
             }
-            return res;
+     
+            foreach (Word word in res)
+            {
+                if (!dic.ContainsKey(word.Content))
+                {
+                    dic.Add(word.Content, word);
+                }
+            }
+            return dic.Values;
         }
     }
  
     public static void Save(string valor=null)
     {
-        File.WriteAllText(FilePath, valor ?? text);
+        File.WriteAllText(FilePath, valor ?? TextToSave);
     }
 
     public static string Load()
