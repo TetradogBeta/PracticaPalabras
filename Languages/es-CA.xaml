@@ -18,7 +18,7 @@
     
 
     <x:String x:Key="Imagine">Imagina</x:String>
-    <x:String x:Key="CloseEyes">Tenca els ulls</x:String>
+    <x:String x:Key="CloseEyes">Tanca els ulls</x:String>
     
     <x:String x:Key="LangToChange">Pots canviar  l'idioma actual.</x:String>
   
