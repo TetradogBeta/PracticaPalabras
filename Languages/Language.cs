@@ -48,10 +48,15 @@ namespace PracticaPalabrasMAUI
                 case Language.LangCodeCat:
                     speak.ConfigCat();
                     break;
+
                 case Language.LangCodeEsp:
                     speak.ConfigEsp();
                     break;
-                //aqui van el resto de configuraciones
+//aqui van el resto de configuraciones
+                default:
+                    speak.DicComplexPronuntiation.Clear();
+                    break;
+                    
             }
         }
     }
