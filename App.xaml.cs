@@ -21,9 +21,19 @@ public partial class App : Application
 
         MainPage = new AppShell();
 
-       
-        
+        RequestedThemeChanged += (s, e) => { Current.UserAppTheme = Theme; };
+        Current.UserAppTheme = Theme;
 
+    }
+
+    public AppTheme Theme
+    {
+        get =>Enum.Parse<AppTheme>( Preferences.Get(nameof(Theme), AppTheme.Unspecified.ToString()));
+        set
+        {
+            Preferences.Set(nameof(Theme), value.ToString());
+            Current.UserAppTheme = value;
+        }
     }
 
     public ResourceDictionary Colors=> Current.Resources.MergedDictionaries.First();

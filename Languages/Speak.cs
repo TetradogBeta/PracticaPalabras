@@ -13,9 +13,38 @@ namespace PracticaPalabrasMAUI
         public string LangCode { get; set; }
         public SortedList<string, string> DicComplexPronuntiation { get;private set; }=new SortedList<string, string>();
 
+        public string ToHidden(string word)
+        {
+            //l·l,ny,ó,à
+            //word:piranya -> pira0a
+            IList<string> complex = DicComplexPronuntiation.Keys;
+            StringBuilder wordDigestedBl = new(word);
+            StringBuilder result = new();
 
+            for (int i = 0; i < complex.Count; i++)
+            {
+                if (word.Contains(complex[i].ToUpper()))
+                {
+                    wordDigestedBl.Replace(complex[i].ToUpper(), "_");
+                }
+            }
+            
 
-        public async Task Read(string word, VisualitzationWordPage page)
+            for (int i = 0; i < wordDigestedBl.Length; i++)
+            {
+                if (char.IsUpper(wordDigestedBl[i]))
+                {
+                    result.Append('_');
+                }
+                else
+                {
+                    result.Append(wordDigestedBl[i]);
+                }
+            }
+            return result.ToString();
+        }
+
+            public async Task Read(string word, VisualitzationWordPage page)
         {
             //l·l,ny,ó,à
             //word:piranya -> pira0a

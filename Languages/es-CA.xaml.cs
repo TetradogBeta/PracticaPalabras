@@ -27,7 +27,7 @@ public static class ExtensionCat
             speak.DicComplexPronuntiation.Add("l·l", "l geminada");
             speak.DicComplexPronuntiation.Add("ny", "eña");
             speak.DicComplexPronuntiation.Add("-", "guió");
-            speak.DicComplexPronuntiation.Add("\"", "apostrof");
+            speak.DicComplexPronuntiation.Add("\"", "cometes");
             speak.DicComplexPronuntiation.Add("'", "apostrof");
             speak.DicComplexPronuntiation.Add(" ", "espai");
             speak.DicComplexPronuntiation.Add("ç", "sé trancada");
