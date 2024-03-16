@@ -8,15 +8,22 @@ namespace PracticaPalabrasMAUI;
 public partial class DictionaryPage : ContentPage
 {
 
-    private static string text = Load();
-    private static string FilePath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "dictionary.txt");
+    private static string FileDir => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Language.LangCode);
+    private static string FilePath => Path.Combine(FileDir, "dictionary.txt");
 
 
+
+    private string text;
 
     public DictionaryPage()
     {
         InitializeComponent();
         BindingContext = this;
+      
+        App.CurrentApp.langChanged += LoadText;
+
+        LoadText();
+    
 
     }
     public string Text { 
@@ -25,14 +32,14 @@ public partial class DictionaryPage : ContentPage
             text = value;
             OnPropertyChanged();
             OnPropertyChanged(nameof(HasDuplicateds));
-            Save();
+            Save(TextToSave);
         }
     }
 
-    private static string TextToSave { get {
+    string TextToSave { get {
 
              StringBuilder sb = new StringBuilder();
-            foreach (Word word in AllWords)
+            foreach (Word word in Clear(Parse(Text)))
             {
                 sb.AppendLine(word.ToSaveString);
                 
@@ -40,52 +47,72 @@ public partial class DictionaryPage : ContentPage
             return sb.ToString();
      } }
 
-    public bool HasDuplicateds => AllWords.Count != AllWordsDirty.Count();
+    public bool HasDuplicateds { 
+        get { 
 
-    static IEnumerable<Word> AllWordsDirty
-    {
-        get
-        {
-            IEnumerable<Word> res;
-          
-
-            if (text.Contains(Environment.NewLine[0]))
-            {
-                res = text.Split(Environment.NewLine[0]).Where(l => l.Trim().Length > 0).Select(p => Word.FromLine(p));
-            }
-            else
-            {
-                res = text.Length > 0 ? new Word[] { Word.FromLine(text) } : Array.Empty<Word>();
-            }
-     
-   
-            return res;
+            IEnumerable<Word> dirty = Parse(Text);
+            return Clear(dirty).Count != dirty.Count();
         }
     }
-    public static IList<Word> AllWords
+
+
+    void LoadText(object sender=null, EventArgs e=null)
     {
-        get
+        Text = Load();
+    }
+
+    static IEnumerable<Word> AllWordsDirty => Parse(Load());
+
+    public static IList<Word> AllWords => Clear(AllWordsDirty);
+
+
+
+
+    static IEnumerable<Word> Parse(string text)
+    {
+        IEnumerable<Word> res;
+
+        if(text == null)
         {
-          
-            SortedList<string, Word> dic = new SortedList<string, Word>();
-
-
-            foreach (Word word in AllWordsDirty)
-            {
-                if (!dic.ContainsKey(word.Content))
-                {
-                    dic.Add(word.Content, word);
-                }
-            }
-            return dic.Values;
+            text = string.Empty;
         }
+
+        if (text.Contains(Environment.NewLine[0]))
+        {
+            res = text.Split(Environment.NewLine[0]).Where(l => l.Trim().Length > 0).Select(p => Word.FromLine(p));
+        }
+        else
+        {
+            res = text.Length > 0 ? new Word[] { Word.FromLine(text) } : Array.Empty<Word>();
+        }
+        return res;
     }
-    public static void Save(string valor=null)
+    static IList<Word> Clear(IEnumerable<Word> words)
     {
-        File.WriteAllText(FilePath, valor ?? TextToSave);
+        SortedList<string, Word> dic = new SortedList<string, Word>();
+
+
+        foreach (Word word in words)
+        {
+            if (!dic.ContainsKey(word.Content))
+            {
+                dic.Add(word.Content, word);
+            }
+        }
+        return dic.Values;
+    }
+    static void Save(string valor=null)
+    {
+
+        if (!Directory.Exists(FileDir))
+        {
+            Directory.CreateDirectory(FileDir);
+        }
+        
+        File.WriteAllText(FilePath, valor);
     }
 
-    public static string Load()
+    static string Load()
     {
         if (File.Exists(FilePath))
         {

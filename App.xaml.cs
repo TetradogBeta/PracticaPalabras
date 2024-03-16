@@ -11,6 +11,8 @@ public partial class App : Application
     public static App CurrentApp { get; set; }
 
     private ResourceDictionary AntDic { get; set; }
+
+    public event EventHandler langChanged;
     public App()
 	{
         CurrentApp = this;
@@ -64,6 +66,10 @@ public partial class App : Application
         }
         Current.Resources.MergedDictionaries.Add(dic);
         AntDic = dic;
+        if(langChanged != null)
+        {
+            langChanged(this, new EventArgs());
+        }
        
      
     }

@@ -29,7 +29,7 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         max = Preferences.Get(nameof(Max), 0);
         BindingContext = this;
-         
+        App.CurrentApp.langChanged +=async (s, e) =>await Load();
    
     }
 
@@ -132,20 +132,25 @@ public partial class MainPage : ContentPage
     {
    
         base.OnNavigatedTo(args);
+        await Load();
+
+    }
+
+    private async Task Load()
+    {
         txtWord.Text = "";
-     
+
         Dic.Clear();
-        foreach(Word word in DictionaryPage.AllWords)
+        foreach (Word word in DictionaryPage.AllWords)
         {
             if (!Dic.ContainsKey(word.Content))
             {
                 Dic.Add(word.Content, word);
             }
         }
-        Words= Dic.Values;
+        Words = Dic.Values;
         UpdateRepetedsDic();
         await UpdateWord();
-
     }
 
     private async void CheckWord(object sender = null, EventArgs e = null)
