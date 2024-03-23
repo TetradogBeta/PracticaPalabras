@@ -19,6 +19,11 @@
         ContentTemplate="{DataTemplate local:DictionaryPage}"
         Route="DictionaryPage" />
 
+    <ShellContent
+        Title="{DynamicResource Configuration}"
+        ContentTemplate="{DataTemplate local:ConfigurationPage}"
+        Route="ConfigurationPage" />
+
     <Shell.FlyoutFooter>
         <VerticalStackLayout Padding="10">
             

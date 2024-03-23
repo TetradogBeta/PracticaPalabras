@@ -1,3 +1,4 @@
+using Microsoft.Web.WebView2.Core;
 using System.Net;
 using System.Text;
 
@@ -15,6 +16,7 @@ public partial class VisualitzationWordPage : ContentPage, IQueryAttributable
         InitializeComponent();
         BindingContext = this;
         speak = new Speak();
+        
     }
     public string Word { get => word; set { word = value;OnPropertyChanged(); } }
     public bool Can { get => can; set { can = value; } }

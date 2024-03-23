@@ -21,5 +21,11 @@
     <x:String x:Key="CloseEyes">Tanca els ulls</x:String>
     
     <x:String x:Key="LangToChange">Pots canviar  l'idioma actual.</x:String>
-  
+
+
+    <x:String x:Key="Configuration">Configuració</x:String>
+    <x:String x:Key="ImagineRatio">El nombre de vegades que t'equivoques per fer l'exercici d'imaginar la paraula.</x:String>
+    <x:String x:Key="ImagineDisabled">desactivat</x:String>
+    <x:String x:Key="SpeakAllWord">Parlar la paraula completa al final de l'exercici d'imaginar</x:String>
+
 </ResourceDictionary>

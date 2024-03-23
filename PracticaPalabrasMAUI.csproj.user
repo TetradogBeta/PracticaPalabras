@@ -40,6 +40,9 @@
     <MauiXaml Update="DictionaryPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="ConfigurationPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="VisualitzationWordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

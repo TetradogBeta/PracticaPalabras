@@ -12,11 +12,11 @@ public partial class MainPage : ContentPage
 
     const int NODATA = 2000;
 
-    const int INDEX = 60;
-    static int TotalRepeat => 5;
+    const int INDEX = 30;
+    static int TotalRepeat => 3;
 
 
-
+           
  
     public MainPage()
     {
@@ -24,19 +24,31 @@ public partial class MainPage : ContentPage
         Random = new Random();
         DicRepeat = new SortedList<string,int>();
         Dic = new SortedList<string,Word>();
-        
+        DicWrongWords = new SortedList<string, int>();
         text = string.Empty;
         InitializeComponent();
         max = Preferences.Get(nameof(Max), 0);
         BindingContext = this;
         App.CurrentApp.langChanged +=async (s, e) =>await Load();
-   
+        Loaded +=async (s, e) => await UpdateWord();
+
+
+    }
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        if (!Equals(Words, null))
+        {
+            Text= string.Empty;
+            await UpdateWord();
+        }
     }
 
     Random Random { get; set; }
     IList<Word> Words { get; set; }
 
     SortedList<string,int> DicRepeat {  get; set; }
+    SortedList<string, int> DicWrongWords { get; set; }
 
     SortedList<string,Word> Dic {  get; set; }
     public int Max { 
@@ -106,6 +118,7 @@ public partial class MainPage : ContentPage
                 } while (Words.Count > 1 && newWorld.Content == Actual.Content);
                 Actual = newWorld;
             }
+            txtWord.Focus();
         }
         else
         {
@@ -114,7 +127,7 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void UpdateRepetedsDic()
+    private void UpdateDics()
     {
 
         foreach (string word in DicRepeat.Keys.ToArray())
@@ -123,6 +136,18 @@ public partial class MainPage : ContentPage
             if (!Dic.ContainsKey(word))
             {
                 DicRepeat.Remove(word);
+              
+            }
+        }
+
+        foreach(string word in DicWrongWords.Keys.ToArray())
+        {
+            if(!Dic.ContainsKey(word))
+            {
+                DicWrongWords.Remove(word);
+            }else if (DicWrongWords[word] > ConfigurationPage.Instance.ImagineRate)
+            {
+                DicWrongWords[word]= ConfigurationPage.Instance.ImagineRate -1;
             }
         }
 
@@ -133,13 +158,14 @@ public partial class MainPage : ContentPage
    
         base.OnNavigatedTo(args);
         await Load();
-
+        
     }
+
 
     private async Task Load()
     {
         txtWord.Text = "";
-
+   
         Dic.Clear();
         foreach (Word word in DictionaryPage.AllWords)
         {
@@ -149,8 +175,10 @@ public partial class MainPage : ContentPage
             }
         }
         Words = Dic.Values;
-        UpdateRepetedsDic();
+        UpdateDics();
         await UpdateWord();
+    
+
     }
 
     private async void CheckWord(object sender = null, EventArgs e = null)
@@ -172,10 +200,11 @@ public partial class MainPage : ContentPage
                     {
                         DicRepeat.Remove(word.Content);
                     }
+                 
                 }
-                Text = "";
                 Current++;
-                await UpdateWord();
+                await Next();
+
             }
             else
             {
@@ -188,8 +217,24 @@ public partial class MainPage : ContentPage
                 {
                     DicRepeat[word.Content] =TotalRepeat;
                 }
-                uri = $"{nameof(VisualitzationWordPage)}?{nameof(VisualitzationWordPage.Word)}={word}";
-                await Shell.Current.GoToAsync(uri);
+                if (!DicWrongWords.ContainsKey(word.Content))
+                {
+                    DicWrongWords.Add(word.Content, 1);
+                }
+                else
+                {
+                    DicWrongWords[word.Content]= DicWrongWords[word.Content] + 1;
+                }
+                if (DicWrongWords[word.Content] == ConfigurationPage.Instance.ImagineRate)
+                {
+                    uri = $"{nameof(VisualitzationWordPage)}?{nameof(VisualitzationWordPage.Word)}={word}";
+                    await Shell.Current.GoToAsync(uri);
+                    DicWrongWords[word.Content] = 0;
+                }
+                else
+                {
+                    await Next();
+                }
             }
 
 
@@ -197,6 +242,12 @@ public partial class MainPage : ContentPage
 
 
         }
+    }
+    private async Task Next()
+    {
+        Text = "";
+
+        await UpdateWord();
     }
 
     private void Editor_TextChanged(object sender, TextChangedEventArgs e)

@@ -21,4 +21,11 @@
 
     <x:String x:Key="LangToChange">You can change the current language.</x:String>
 
+    <x:String x:Key="Configuration">Configuration</x:String>
+    <x:String x:Key="ImagineRatio">The number of times you make a mistake to do the exercise of imagining the word.</x:String>
+    <x:String x:Key="ImagineDisabled">disabled</x:String>
+    <x:String x:Key="SpeakAllWord">Speak the complete word at the end of the imagine exercise</x:String>
+    
+
+
 </ResourceDictionary>

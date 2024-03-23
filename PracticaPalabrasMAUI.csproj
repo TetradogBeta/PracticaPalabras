@@ -108,6 +108,9 @@
 	  <MauiXaml Update="DictionaryPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ConfigurationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="VisualitzationWordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -126,6 +129,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiAsset>
 	  <MauiAsset Include="Languages\es-ES.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="ConfigurationPage.xaml.cs">
+	    <DependentUpon>ConfigurationPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

@@ -1,0 +1,54 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaPalabrasMAUI.ConfigurationPage"
+             Title="{DynamicResource Configuration}">
+    <VerticalStackLayout>
+        <Grid RowDefinitions="*,*">
+
+          
+        <!-- Título de la sección -->
+        <Label Text="{DynamicResource ImagineRatio}"
+               FontSize="20"
+               FontAttributes="Bold"
+            />
+        <!-- Contenedor del deslizador y la etiqueta de valor -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,30,100">
+
+            <Slider x:Name="slImagineRatio"
+                    Minimum="0"
+                    Maximum="10"
+                    Value="{Binding Path=ImagineRate, Mode=TwoWay}"
+                    VerticalOptions="CenterAndExpand"
+                    Grid.Column="0" />
+
+            <Label Text="{Binding Value, Source={x:Reference slImagineRatio}, StringFormat='{0:F0}'}"
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="16"
+                   Margin="10,0,0,0"
+                   Grid.Column="1" />
+
+            <!-- Mensaje de "Imagine Disabled" -->
+            <Label x:Name="lblImagineDisabled"
+               Text="{DynamicResource ImagineDisabled}"
+               IsVisible="{Binding Path=IsImagineDisabled, Mode=OneWay}"
+               FontSize="16"
+               FontAttributes="Italic"
+               TextColor="Gray"
+               Grid.Column="2"
+               VerticalOptions="CenterAndExpand" />
+        </Grid>
+
+    </Grid>
+        <Grid ColumnDefinitions="*,30">
+            <Label Text="{DynamicResource SpeakAllWord}"
+               FontSize="20"
+               FontAttributes="Bold">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <CheckBox Grid.Column="1" IsChecked="{Binding Path=SpeakAllWord,Mode=TwoWay}"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
+

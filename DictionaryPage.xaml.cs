@@ -23,9 +23,11 @@ public partial class DictionaryPage : ContentPage
         App.CurrentApp.langChanged += LoadText;
 
         LoadText();
+
     
 
     }
+ 
     public string Text { 
         get => text; 
         set { 

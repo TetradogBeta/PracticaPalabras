@@ -8,7 +8,7 @@
         <local:Word x:Key="actual"/>
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="30,3*,*,60">
+    <Grid RowDefinitions="30,3*,60,*,10">
     
         <HorizontalStackLayout>
             <Label Text="{DynamicResource Max}" Padding="10,0,0,0"/>
@@ -21,16 +21,18 @@
         </HorizontalStackLayout>
 
         <Label Grid.Row="1" Text="{Binding Source={StaticResource actual}, Path=HiddenContent,Mode=OneWay}" FontSize="Header" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-
-        <Grid Grid.Row="2" RowDefinitions="30,*" >
+       
+        <ScrollView Grid.Row="2">
+            <Label Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium" />
+        </ScrollView>
+       
+        <Grid Grid.Row="3" RowDefinitions="30,*" >
             <Label Text="{DynamicResource ExplicationHowToPlay}" />
             <Editor Grid.Row="1" x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged"  />
 
 
         </Grid>
-        <ScrollView Grid.Row="3">
-            <Label Text="{Binding Source={StaticResource actual}, Path=Clue,Mode=OneWay}" FontSize="Medium" />
-        </ScrollView>
+     
 
 
     </Grid>
