@@ -27,6 +27,8 @@ public partial class DictionaryPage : ContentPage
     
 
     }
+
+ 
  
     public string Text { 
         get => text; 
@@ -56,16 +58,24 @@ public partial class DictionaryPage : ContentPage
             return Clear(dirty).Count != dirty.Count();
         }
     }
+    static IEnumerable<Word> AllWordsDirty => Parse(Load());
 
+    public static IList<Word> AllWords => Clear(AllWordsDirty);
+
+
+
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+        Text=Load();
+    }
 
     void LoadText(object sender=null, EventArgs e=null)
     {
         Text = Load();
     }
 
-    static IEnumerable<Word> AllWordsDirty => Parse(Load());
 
-    public static IList<Word> AllWords => Clear(AllWordsDirty);
 
 
 
@@ -93,15 +103,16 @@ public partial class DictionaryPage : ContentPage
     {
         SortedList<string, Word> dic = new SortedList<string, Word>();
 
-
+        List<Word> ls = new List<Word>();
         foreach (Word word in words)
         {
             if (!dic.ContainsKey(word.Content))
             {
                 dic.Add(word.Content, word);
+                ls.Add(word);
             }
         }
-        return dic.Values;
+        return ConfigurationPage.Instance.SortDictionary? dic.Values : ls;
     }
     static void Save(string valor=null)
     {

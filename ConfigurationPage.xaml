@@ -44,10 +44,20 @@
                FontSize="20"
                FontAttributes="Bold">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    <TapGestureRecognizer Tapped="TapChangeSpeak" />
                 </Label.GestureRecognizers>
             </Label>
             <CheckBox Grid.Column="1" IsChecked="{Binding Path=SpeakAllWord,Mode=TwoWay}"/>
+        </Grid>
+        <Grid ColumnDefinitions="*,30">
+            <Label Text="{DynamicResource SortDictionary}"
+               FontSize="20"
+               FontAttributes="Bold">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapChangeSort" />
+                </Label.GestureRecognizers>
+            </Label>
+            <CheckBox Grid.Column="1" IsChecked="{Binding Path=SortDictionary,Mode=TwoWay}"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

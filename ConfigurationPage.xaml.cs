@@ -39,8 +39,23 @@ public partial class ConfigurationPage : ContentPage
 		}
 	}
 
-    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+	public bool SortDictionary
+	{
+		get => Preferences.Get(nameof(SortDictionary), false);
+		set
+		{
+			Preferences.Set(nameof(SortDictionary), value);
+			OnPropertyChanged();
+		}
+	}
+
+    private void TapChangeSpeak(object sender, TappedEventArgs e)
     {
 		SpeakAllWord = !SpeakAllWord;
+    }
+
+    private void TapChangeSort(object sender, TappedEventArgs e)
+    {
+		SortDictionary=!SortDictionary;
     }
 }

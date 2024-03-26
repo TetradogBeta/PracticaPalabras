@@ -28,7 +28,7 @@
        
         <Grid Grid.Row="3" RowDefinitions="30,*" >
             <Label Text="{DynamicResource ExplicationHowToPlay}" />
-            <Editor Grid.Row="1" x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged"  />
+            <Editor Grid.Row="1" x:Name="txtWord"  FontSize="Large" Text="{Binding Path=Text,Mode=TwoWay}" TextChanged="Editor_TextChanged" IsTextPredictionEnabled="False"  IsSpellCheckEnabled="False"  />
 
 
         </Grid>

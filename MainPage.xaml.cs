@@ -34,15 +34,7 @@ public partial class MainPage : ContentPage
 
 
     }
-    protected override async void OnAppearing()
-    {
-        base.OnAppearing();
-        if (!Equals(Words, null))
-        {
-            Text= string.Empty;
-            await UpdateWord();
-        }
-    }
+ 
 
     Random Random { get; set; }
     IList<Word> Words { get; set; }
@@ -145,9 +137,10 @@ public partial class MainPage : ContentPage
             if(!Dic.ContainsKey(word))
             {
                 DicWrongWords.Remove(word);
-            }else if (DicWrongWords[word] > ConfigurationPage.Instance.ImagineRate)
+
+            }else if (ConfigurationPage.Instance.ImagineRate>0 && DicWrongWords[word] > ConfigurationPage.Instance.ImagineRate)
             {
-                DicWrongWords[word]= ConfigurationPage.Instance.ImagineRate -1;
+                DicWrongWords[word]= ConfigurationPage.Instance.ImagineRate - 1;
             }
         }
 

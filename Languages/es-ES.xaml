@@ -28,4 +28,5 @@
     <x:String x:Key="ImagineRatio">El número de veces que te equivocas para hacer el ejercicio de imaginar la palabra.</x:String>
     <x:String x:Key="ImagineDisabled">desactivado</x:String>
     <x:String x:Key="SpeakAllWord">Hablar la palabra completa al final del ejercicio de imaginar</x:String>
+    <x:String x:Key="SortDictionary">¿Guardar el diccionario ordenado?</x:String>
 </ResourceDictionary>
