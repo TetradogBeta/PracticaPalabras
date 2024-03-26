@@ -15,7 +15,7 @@
 		<ApplicationTitle>Practica Palabras</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.practicapalabrasmaui</ApplicationId>
+		<ApplicationId>com.gabrielcatdeveloper.practicapalabras</ApplicationId>
 		<ApplicationIdGuid>d0b2a60b-39c3-4892-b962-3ec3a1a2d969</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -29,7 +29,7 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
-		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+		<AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
 		<AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
