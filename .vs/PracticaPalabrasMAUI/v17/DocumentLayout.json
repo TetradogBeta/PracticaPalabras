@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\practicapalabrasmaui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:practicapalabrasmaui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\configurationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:configurationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:dictionarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\languages\\es-ca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:languages\\es-ca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\languages\\en-uk.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:languages\\en-uk.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\languages\\es-es.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:languages\\es-es.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\configurationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:configurationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:dictionarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\visualitzationwordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:visualitzationwordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\visualitzationwordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:visualitzationwordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gabri\\AppData\\Local\\SourceServer\\d59574c2f14d7d3abf985a234631a350b1363c79c25c1509905b5acc7c20395b\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|c:\\users\\gabri\\desktop\\practicapalabras\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48C79070-D4DD-4991-BCC2-200141DD3131}|PracticaPalabrasMAUI.csproj|solutionrelative:word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 217,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PracticaPalabrasMAUI",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\PracticaPalabrasMAUI.csproj",
+              "RelativeDocumentMoniker": "PracticaPalabrasMAUI.csproj",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\PracticaPalabrasMAUI.csproj",
+              "RelativeToolTip": "PracticaPalabrasMAUI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-26T20:39:54.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConfigurationPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\ConfigurationPage.xaml.cs",
+              "RelativeDocumentMoniker": "ConfigurationPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\ConfigurationPage.xaml.cs",
+              "RelativeToolTip": "ConfigurationPage.xaml.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T12:49:01.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DictionaryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\DictionaryPage.xaml",
+              "RelativeDocumentMoniker": "DictionaryPage.xaml",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\DictionaryPage.xaml",
+              "RelativeToolTip": "DictionaryPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-23T15:25:05.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-23T14:08:31.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigurationPage.xaml",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\ConfigurationPage.xaml",
+              "RelativeDocumentMoniker": "ConfigurationPage.xaml",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\ConfigurationPage.xaml",
+              "RelativeToolTip": "ConfigurationPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-23T13:25:46.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "en-UK.xaml",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Languages\\en-UK.xaml",
+              "RelativeDocumentMoniker": "Languages\\en-UK.xaml",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Languages\\en-UK.xaml",
+              "RelativeToolTip": "Languages\\en-UK.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwBsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-23T13:52:07.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "es-CA.xaml",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Languages\\es-CA.xaml",
+              "RelativeDocumentMoniker": "Languages\\es-CA.xaml",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Languages\\es-CA.xaml",
+              "RelativeToolTip": "Languages\\es-CA.xaml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwB0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-23T13:51:12.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VisualitzationWordPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\VisualitzationWordPage.xaml.cs",
+              "RelativeDocumentMoniker": "VisualitzationWordPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\VisualitzationWordPage.xaml.cs",
+              "RelativeToolTip": "VisualitzationWordPage.xaml.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAACsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T10:50:35.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "es-ES.xaml",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Languages\\es-ES.xaml",
+              "RelativeDocumentMoniker": "Languages\\es-ES.xaml",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Languages\\es-ES.xaml",
+              "RelativeToolTip": "Languages\\es-ES.xaml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-23T13:51:54.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T10:46:57.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DictionaryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\DictionaryPage.xaml.cs",
+              "RelativeDocumentMoniker": "DictionaryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\DictionaryPage.xaml.cs",
+              "RelativeToolTip": "DictionaryPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T14:35:00.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VisualitzationWordPage.xaml",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\VisualitzationWordPage.xaml",
+              "RelativeDocumentMoniker": "VisualitzationWordPage.xaml",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\VisualitzationWordPage.xaml",
+              "RelativeToolTip": "VisualitzationWordPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-23T14:05:42.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\AppData\\Local\\SourceServer\\d59574c2f14d7d3abf985a234631a350b1363c79c25c1509905b5acc7c20395b\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\SourceServer\\d59574c2f14d7d3abf985a234631a350b1363c79c25c1509905b5acc7c20395b\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gabri\\AppData\\Local\\SourceServer\\d59574c2f14d7d3abf985a234631a350b1363c79c25c1509905b5acc7c20395b\\MainPage.xaml.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\SourceServer\\d59574c2f14d7d3abf985a234631a350b1363c79c25c1509905b5acc7c20395b\\MainPage.xaml.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAAJUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T14:32:53.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Word.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Word.cs",
+              "RelativeDocumentMoniker": "Word.cs",
+              "ToolTip": "C:\\Users\\gabri\\Desktop\\PracticaPalabras\\Word.cs",
+              "RelativeToolTip": "Word.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T10:47:27.079Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
