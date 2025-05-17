@@ -1,4 +1,3 @@
-using Microsoft.Web.WebView2.Core;
 using System.Net;
 using System.Text;
 
@@ -37,13 +36,13 @@ public partial class VisualitzationWordPage : ContentPage, IQueryAttributable
             Can = true;
             Word = WebUtility.UrlDecode(query[nameof(Word)].ToString()).ToUpper();
 
-            Task.Run(async() =>
+            MainThread.BeginInvokeOnMainThread(async () =>
             {
                 string word = Word;
                 await Task.Delay(1000 * 5);
                 await speak.Read(word,this);
                 if (Can)
-                {
+                {                   
                     await Navigation.PopAsync();
                 }
 

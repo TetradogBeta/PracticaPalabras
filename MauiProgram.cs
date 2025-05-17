@@ -18,9 +18,7 @@ public static class MauiProgram
 
         Routing.RegisterRoute(nameof(VisualitzationWordPage), typeof(VisualitzationWordPage));
         Routing.RegisterRoute(nameof(DictionaryPage), typeof(DictionaryPage));
-#if DEBUG
-        builder.Logging.AddDebug();
-#endif
+ //builder.Logging.AddDebug();
 
 		return builder.Build();
 	}

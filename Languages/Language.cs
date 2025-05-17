@@ -9,7 +9,7 @@ namespace PracticaPalabrasMAUI
         public const string LangCodeEsp = "es-ES";
         public const string LangCodeCat = "es-CA";
         public const string LangCodeEng = "en-UK";
-        public static string[] LangCodes => new string[] { LangCodeEng, LangCodeEsp, LangCodeCat };
+        public static string[] LangCodes => [LangCodeEng, LangCodeEsp, LangCodeCat];
         public static string LangCode { get => langCode; set { langCode = value; Preferences.Set(nameof(LangCode), langCode); } }
 
         static Language()
