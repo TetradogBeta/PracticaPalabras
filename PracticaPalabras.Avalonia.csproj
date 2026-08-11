@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net9.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(IncludeAndroid)' == 'true'">$(TargetFrameworks);net9.0-android</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseAvalonia>true</UseAvalonia>
+    <AvaloniaUseCompiledBindingsByDefault>false</AvaloniaUseCompiledBindingsByDefault>
+    <RootNamespace>PracticaPalabras</RootNamespace>
+    <AssemblyName>PracticaPalabras</AssemblyName>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationTitle>Practica Palabras</ApplicationTitle>
+    <ApplicationId>com.gabrielcatdeveloper.practicapalabras</ApplicationId>
+    <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net9.0-android'">24.0</SupportedOSPlatformVersion>
+    <TargetPlatformMinVersion Condition="'$(TargetFramework)' == 'net9.0-android'">24.0</TargetPlatformMinVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.20" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.20" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.20" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.20" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net9.0-android'">
+    <PackageReference Include="Avalonia.Android" Version="11.3.20" />
+  </ItemGroup>
+</Project>

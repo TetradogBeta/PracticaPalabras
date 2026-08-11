@@ -1,0 +1,34 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <x:String x:Key="Dictionary">Diccionari</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords1">paraula → paRaula → pa_aula</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords2">paraula;pista</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords3">ENTER entre paraules</x:String>
+    <x:String x:Key="DictionaryDuplication">S'han trobat duplicats, només es guardarà la primera aparició</x:String>
+
+    <x:String x:Key="Play">Practicar</x:String>
+    <x:String x:Key="ExplicationHowToPlay">Prem ENTER per comprovar</x:String>
+    <x:String x:Key="Check">Comprovar</x:String>
+    <x:String x:Key="Current">Actual</x:String>
+    <x:String x:Key="Max">Màxim</x:String>
+
+    <x:String x:Key="Imagine">Imagina</x:String>
+    <x:String x:Key="CloseEyes">Tanca els ulls</x:String>
+
+    <x:String x:Key="LangToChange">Pots canviar l'idioma actual.</x:String>
+
+    <x:String x:Key="Configuration">Configuració</x:String>
+    <x:String x:Key="ImagineRatio">El nombre de vegades que t'equivoques per fer l'exercici d'imaginar la paraula.</x:String>
+    <x:String x:Key="ImagineDisabled">desactivat</x:String>
+    <x:String x:Key="SpeakAllWord">Parlar la paraula completa al final de l'exercici d'imaginar</x:String>
+    <x:String x:Key="SortDictionary">Dessar el diccionari ordenat?</x:String>
+
+    <x:String x:Key="Theme">Tema</x:String>
+    <x:String x:Key="ThemeSystem">Sistema</x:String>
+    <x:String x:Key="ThemeLight">Clar</x:String>
+    <x:String x:Key="ThemeDark">Fosc</x:String>
+    <x:String x:Key="PersistProgress">Desar el progrés entre sessions</x:String>
+    <x:String x:Key="ClearProgress">Esborrar el progrés desat</x:String>
+
+</ResourceDictionary>

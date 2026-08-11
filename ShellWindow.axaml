@@ -1,0 +1,130 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:PracticaPalabras.Views"
+        x:Class="PracticaPalabras.ShellWindow"
+        Title="Practica Palabras"
+        MinWidth="320" MinHeight="480"
+        Width="960" Height="680"
+        WindowStartupLocation="CenterScreen">
+
+    <SplitView x:Name="SplitView"
+               IsPaneOpen="False"
+               DisplayMode="CompactOverlay"
+               OpenPaneLength="260"
+               CompactPaneLength="0"
+               PaneBackground="{DynamicResource SurfaceContainerLowColor}">
+
+        <SplitView.Pane>
+            <Grid RowDefinitions="Auto,*,Auto">
+
+                <Button Grid.Row="0"
+                        x:Name="BtnTogglePane"
+                        Content="✕"
+                        FontSize="18"
+                        Width="40" Height="40"
+                        Margin="12,12,12,4"
+                        Padding="0"
+                        Background="Transparent"
+                        Foreground="{DynamicResource OnSurfaceBrush}"
+                        HorizontalAlignment="Left"
+                        Click="OnTogglePane"/>
+
+                <StackPanel Grid.Row="1" Spacing="6" Margin="12,8">
+
+                    <Button x:Name="BtnPractice"
+                            Classes="nav"
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Click="OnNavigatePractice">
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                            <TextBlock Text="▶" FontSize="14"/>
+                            <TextBlock Text="{DynamicResource Play}" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnDictionary"
+                            Classes="nav"
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Click="OnNavigateDictionary">
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                            <TextBlock Text="📖" FontSize="14"/>
+                            <TextBlock Text="{DynamicResource Dictionary}" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnConfiguration"
+                            Classes="nav"
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left"
+                            Click="OnNavigateConfiguration">
+                        <StackPanel Orientation="Horizontal" Spacing="12">
+                            <TextBlock Text="⚙" FontSize="14"/>
+                            <TextBlock Text="{DynamicResource Configuration}" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+                </StackPanel>
+
+                <Border Grid.Row="2" Padding="20,16">
+
+                    <StackPanel Spacing="6">
+
+                        <WrapPanel x:Name="LstLangs" Orientation="Horizontal" Margin="0,6,0,0">
+                            <WrapPanel.Styles>
+                                <Style Selector="WrapPanel > Border">
+                                    <Setter Property="Margin" Value="0,0,8,8"/>
+                                </Style>
+                            </WrapPanel.Styles>
+                        </WrapPanel>
+
+                        <Border Classes="divider" Margin="0,12,0,4"/>
+
+                        <TextBlock x:Name="TxtAppName" Classes="caption" Text="Practica Palabras"/>
+                        <TextBlock x:Name="TxtVersion" Classes="caption"/>
+
+                    </StackPanel>
+
+                </Border>
+
+            </Grid>
+        </SplitView.Pane>
+
+        <Grid RowDefinitions="Auto,*">
+
+            <Button Grid.Row="0"
+                    x:Name="BtnOpenPane"
+                    Content="☰"
+                    FontSize="20"
+                    Width="44" Height="44"
+                    Margin="8,8,0,0"
+                    Padding="0"
+                    Background="Transparent"
+                    Foreground="{DynamicResource OnSurfaceBrush}"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="OnTogglePane"/>
+
+            <ContentControl Grid.Row="1" x:Name="ContentArea"/>
+
+        </Grid>
+
+    </SplitView>
+
+    <Window.Styles>
+
+        <Style Selector="Button.nav">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{DynamicResource OnSurfaceBrush}"/>
+            <Setter Property="Padding" Value="16,12"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        </Style>
+
+        <Style Selector="Button.nav:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource SurfaceContainerHighBrush}"/>
+        </Style>
+
+    </Window.Styles>
+
+</Window>

@@ -1,0 +1,134 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="PracticaPalabras.Views.ConfigurationView"
+             Padding="16">
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="SecondaryContainerColor" Color="{DynamicResource SecondaryContainerColor}"/>
+    </UserControl.Resources>
+
+    <ScrollViewer>
+        <StackPanel Spacing="12">
+
+            <Border Classes="setting-card">
+                <StackPanel Spacing="12">
+
+                    <TextBlock Text="{DynamicResource Theme}" Classes="body-large"
+                               TextWrapping="Wrap"/>
+
+                    <ComboBox SelectedIndex="{Binding ThemeIndex, Mode=TwoWay}"
+                              HorizontalAlignment="Stretch">
+                        <ComboBoxItem Content="{DynamicResource ThemeSystem}"/>
+                        <ComboBoxItem Content="{DynamicResource ThemeLight}"/>
+                        <ComboBoxItem Content="{DynamicResource ThemeDark}"/>
+                    </ComboBox>
+
+                </StackPanel>
+            </Border>
+
+            <Border Classes="setting-card">
+                <StackPanel Spacing="12">
+
+                    <TextBlock Text="{DynamicResource ImagineRatio}" Classes="body-large"
+                               TextWrapping="Wrap"/>
+
+                    <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="12">
+
+                        <Slider Grid.Column="0"
+                                x:Name="SlImagineRatio"
+                                Minimum="0"
+                                Maximum="10"
+                                Value="{Binding ImagineRate, Mode=TwoWay}"
+                                VerticalAlignment="Center"
+                                MinWidth="120"/>
+
+                        <Border Grid.Column="1" Classes="chip-primary" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding Value, ElementName=SlImagineRatio, StringFormat={}{0:F0}}"
+                                       FontWeight="SemiBold"
+                                       FontSize="13"
+                                       Foreground="{DynamicResource OnPrimaryContainerColor}"/>
+                        </Border>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="{DynamicResource ImagineDisabled}"
+                                   IsVisible="{Binding IsImagineDisabled}"
+                                   FontSize="13"
+                                   FontStyle="Italic"
+                                   Foreground="{DynamicResource OnSurfaceVariantColor}"
+                                   TextWrapping="Wrap"
+                                   VerticalAlignment="Center"/>
+
+                    </Grid>
+
+                </StackPanel>
+            </Border>
+
+            <Border Classes="setting-card">
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+
+                    <TextBlock Grid.Column="0"
+                               Text="{DynamicResource SpeakAllWord}"
+                               Classes="body-large"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Center"/>
+
+                    <CheckBox Grid.Column="1"
+                              IsChecked="{Binding SpeakAllWord, Mode=TwoWay}"
+                              VerticalAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+            <Border Classes="setting-card">
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+
+                    <TextBlock Grid.Column="0"
+                               Text="{DynamicResource SortDictionary}"
+                               Classes="body-large"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Center"/>
+
+                    <CheckBox Grid.Column="1"
+                              IsChecked="{Binding SortDictionary, Mode=TwoWay}"
+                              VerticalAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+            <Border Classes="setting-card">
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+
+                    <TextBlock Grid.Column="0"
+                               Text="{DynamicResource PersistProgress}"
+                               Classes="body-large"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Center"/>
+
+                    <CheckBox Grid.Column="1"
+                              IsChecked="{Binding PersistProgress, Mode=TwoWay}"
+                              VerticalAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+            <Border Classes="setting-card">
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+
+                    <TextBlock Grid.Column="0"
+                               Text="{DynamicResource ClearProgress}"
+                               Classes="body-large"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Center"/>
+
+                    <Button Grid.Column="1"
+                            Content="{DynamicResource ClearProgress}"
+                            Classes="chip-secondary"
+                            Click="OnClearProgressClicked"/>
+
+                </Grid>
+            </Border>
+
+        </StackPanel>
+    </ScrollViewer>
+
+</UserControl>

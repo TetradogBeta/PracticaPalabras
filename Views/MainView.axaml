@@ -1,0 +1,87 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PracticaPalabras"
+             x:Class="PracticaPalabras.Views.MainView"
+             Padding="16">
+
+    <UserControl.Resources>
+        <local:Word x:Key="actual"/>
+    </UserControl.Resources>
+
+    <Grid RowDefinitions="Auto,*,Auto,Auto" RowSpacing="16">
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Disabled">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+
+                <Border Classes="chip-primary">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <TextBlock Text="{DynamicResource Max}"
+                                   FontWeight="SemiBold" FontSize="13"
+                                   Foreground="{DynamicResource OnPrimaryContainerColor}"/>
+                        <TextBlock Text="{Binding Max}"
+                                   FontWeight="SemiBold" FontSize="13"
+                                   Foreground="{DynamicResource OnPrimaryContainerColor}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Classes="chip-secondary">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <TextBlock Text="{DynamicResource Current}"
+                                   FontWeight="SemiBold" FontSize="13"
+                                   Foreground="{DynamicResource OnSecondaryContainerColor}"/>
+                        <TextBlock Text="{Binding Current}"
+                                   FontWeight="SemiBold" FontSize="13"
+                                   Foreground="{DynamicResource OnSecondaryContainerColor}"/>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="1" Classes="card-hero">
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                          VerticalScrollBarVisibility="Auto">
+                <Grid RowDefinitions="*,Auto" RowSpacing="12">
+
+                    <TextBlock Grid.Row="0"
+                               Text="{Binding Source={StaticResource actual}, Path=HiddenContent}"
+                               FontWeight="SemiBold"
+                               FontSize="44"
+                               TextWrapping="Wrap"
+                               Foreground="{DynamicResource PrimaryColor}"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               TextAlignment="Center"/>
+
+                    <TextBlock Grid.Row="1"
+                               Text="{Binding Source={StaticResource actual}, Path=Clue}"
+                               FontSize="14"
+                               Foreground="{DynamicResource OnSurfaceVariantColor}"
+                               HorizontalAlignment="Center"
+                               TextAlignment="Center"
+                               TextWrapping="Wrap"
+                               MaxLines="4"/>
+
+                </Grid>
+            </ScrollViewer>
+        </Border>
+
+        <Border Grid.Row="2" Classes="input-field">
+            <TextBox x:Name="TxtWord"
+                     Classes="input"
+                     Text="{Binding Text, Mode=TwoWay}"
+                     KeyDown="OnKeyDown"/>
+        </Border>
+
+        <TextBlock Grid.Row="3"
+                   Text="{DynamicResource ExplicationHowToPlay}"
+                   Classes="caption"
+                   HorizontalAlignment="Center"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap"
+                   Margin="0,2,0,0"/>
+
+    </Grid>
+
+</UserControl>

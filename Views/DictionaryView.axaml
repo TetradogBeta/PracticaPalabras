@@ -1,0 +1,52 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="PracticaPalabras.Views.DictionaryView"
+             Padding="16">
+
+    <Grid RowDefinitions="Auto,*,Auto" RowSpacing="16">
+
+        <Border Classes="card-high">
+            <StackPanel Spacing="6">
+                <TextBlock Text="{DynamicResource ExplicationHowToAddNewWords1}"
+                           FontWeight="SemiBold"
+                           FontSize="13"
+                           TextWrapping="Wrap"
+                           Foreground="{DynamicResource OnSurfaceVariantColor}"/>
+                <TextBlock Text="{DynamicResource ExplicationHowToAddNewWords2}"
+                           FontWeight="SemiBold"
+                           FontSize="14"
+                           TextWrapping="Wrap"
+                           Foreground="{DynamicResource PrimaryColor}"/>
+                <TextBlock Text="{DynamicResource ExplicationHowToAddNewWords3}"
+                           FontSize="12"
+                           TextWrapping="Wrap"
+                           Foreground="{DynamicResource OnSurfaceVariantColor}"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Classes="input-field">
+            <TextBox x:Name="TxtDictionary"
+                     Text="{Binding Text, Mode=TwoWay}"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     Background="Transparent"
+                     BorderThickness="0"
+                     FontFamily="Inter, monospace"
+                     FontSize="14"/>
+        </Border>
+
+        <Border Grid.Row="2"
+                Classes="card-error"
+                IsVisible="{Binding HasDuplicateds}">
+            <TextBlock Text="{DynamicResource DictionaryDuplication}"
+                       FontWeight="SemiBold"
+                       FontSize="13"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       Foreground="{DynamicResource OnErrorContainerColor}"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="PracticaPalabras.Views.VisualitzationWordView"
+             Padding="16">
+
+    <Grid RowDefinitions="Auto,*,Auto" RowSpacing="16">
+
+        <TextBlock Grid.Row="0"
+                   Text="{DynamicResource Imagine}"
+                   Classes="headline-large"
+                   FontSize="28"
+                   Foreground="{DynamicResource PrimaryColor}"
+                   HorizontalAlignment="Center"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap"
+                   Margin="0,12,0,0"/>
+
+        <Border Grid.Row="1" Classes="card-hero">
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                          VerticalScrollBarVisibility="Auto">
+                <TextBlock Text="{Binding Word}"
+                           FontWeight="SemiBold"
+                           FontSize="40"
+                           TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Foreground="{DynamicResource PrimaryColor}"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+            </ScrollViewer>
+        </Border>
+
+        <Border Grid.Row="2"
+                Classes="chip-secondary"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,16">
+            <TextBlock Text="{DynamicResource CloseEyes}"
+                       FontWeight="SemiBold"
+                       FontSize="13"
+                       TextAlignment="Center"
+                       TextWrapping="Wrap"
+                       Foreground="{DynamicResource OnTertiaryContainerColor}"/>
+        </Border>
+
+    </Grid>
+
+</UserControl>

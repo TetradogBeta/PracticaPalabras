@@ -1,3 +1,64 @@
-bin
-obj
-*.pfx
+# Build results
+bin/
+obj/
+out/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.lock.json
+
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.coverage
+*.coveragexml
+
+# .NET / Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+*.vsp
+*.vspx
+*.sapcar
+*.sln.ide
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+.vscode/
+
+# Publish / distribution outputs
+publish/
+dist/
+*.appimage
+PracticaPalabras.AppDir/
+
+# Avalonia / runtime
+*.deps.json
+*.runtimeconfig.json
+Avalonia.*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Misc
+*.tmp
+*.bak
+*.swp

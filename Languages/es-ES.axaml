@@ -1,0 +1,34 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <x:String x:Key="Dictionary">Diccionario</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords1">palabra → palabRa → palab_a</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords2">palabra;pista</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords3">ENTER entre palabras</x:String>
+    <x:String x:Key="DictionaryDuplication">Se han encontrado duplicados, solo se guardará la primera aparición</x:String>
+
+    <x:String x:Key="Play">Practicar</x:String>
+    <x:String x:Key="Current">Actual</x:String>
+    <x:String x:Key="Max">Máximo</x:String>
+    <x:String x:Key="ExplicationHowToPlay">Presiona ENTER para verificar</x:String>
+    <x:String x:Key="Check">Comprobar</x:String>
+
+    <x:String x:Key="Imagine">Imagina</x:String>
+    <x:String x:Key="CloseEyes">Cierra los ojos</x:String>
+
+    <x:String x:Key="LangToChange">Puedes cambiar el idioma actual.</x:String>
+
+    <x:String x:Key="Configuration">Configuración</x:String>
+    <x:String x:Key="ImagineRatio">El número de veces que te equivocas para hacer el ejercicio de imaginar la palabra.</x:String>
+    <x:String x:Key="ImagineDisabled">desactivado</x:String>
+    <x:String x:Key="SpeakAllWord">Hablar la palabra completa al final del ejercicio de imaginar</x:String>
+    <x:String x:Key="SortDictionary">¿Guardar el diccionario ordenado?</x:String>
+
+    <x:String x:Key="Theme">Tema</x:String>
+    <x:String x:Key="ThemeSystem">Sistema</x:String>
+    <x:String x:Key="ThemeLight">Claro</x:String>
+    <x:String x:Key="ThemeDark">Oscuro</x:String>
+    <x:String x:Key="PersistProgress">Guardar el progreso entre sesiones</x:String>
+    <x:String x:Key="ClearProgress">Borrar el progreso guardado</x:String>
+
+</ResourceDictionary>

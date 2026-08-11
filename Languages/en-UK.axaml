@@ -1,0 +1,34 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <x:String x:Key="Dictionary">Dictionary</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords1">word → woRd → wo_d</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords2">word;clue</x:String>
+    <x:String x:Key="ExplicationHowToAddNewWords3">ENTER between words</x:String>
+    <x:String x:Key="DictionaryDuplication">Duplicates found, only the first occurrence will be saved</x:String>
+
+    <x:String x:Key="Play">Practice</x:String>
+    <x:String x:Key="Current">Current</x:String>
+    <x:String x:Key="Max">Max</x:String>
+    <x:String x:Key="ExplicationHowToPlay">Press ENTER to check</x:String>
+    <x:String x:Key="Check">Check</x:String>
+
+    <x:String x:Key="Imagine">Imagine</x:String>
+    <x:String x:Key="CloseEyes">Close your eyes</x:String>
+
+    <x:String x:Key="LangToChange">You can change the current language.</x:String>
+
+    <x:String x:Key="Configuration">Configuration</x:String>
+    <x:String x:Key="ImagineRatio">The number of times you make a mistake to do the exercise of imagining the word.</x:String>
+    <x:String x:Key="ImagineDisabled">disabled</x:String>
+    <x:String x:Key="SpeakAllWord">Speak the complete word at the end of the imagine exercise</x:String>
+    <x:String x:Key="SortDictionary">Save the dictionary sorted?</x:String>
+
+    <x:String x:Key="Theme">Theme</x:String>
+    <x:String x:Key="ThemeSystem">System</x:String>
+    <x:String x:Key="ThemeLight">Light</x:String>
+    <x:String x:Key="ThemeDark">Dark</x:String>
+    <x:String x:Key="PersistProgress">Save progress between sessions</x:String>
+    <x:String x:Key="ClearProgress">Clear saved progress</x:String>
+
+</ResourceDictionary>
