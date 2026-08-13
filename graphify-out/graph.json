@@ -1,0 +1,6016 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "ConfigurationView",
+      "file_type": "code",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L11",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s192"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "community": 0,
+      "norm_label": "configurationview"
+    },
+    {
+      "label": "VisualitzationWordView",
+      "file_type": "code",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L10",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s165"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "community": 0,
+      "norm_label": "visualitzationwordview"
+    },
+    {
+      "label": "ConsoleBackend",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L187",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_consolebackend",
+      "community": 1,
+      "norm_label": "consolebackend"
+    },
+    {
+      "label": "EspeakBackend",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L153",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_espeakbackend",
+      "community": 1,
+      "norm_label": "espeakbackend"
+    },
+    {
+      "label": "EspeakNgBackend",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L135",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_espeakngbackend",
+      "community": 1,
+      "norm_label": "espeakngbackend"
+    },
+    {
+      "label": "SayBackend",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L169",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_saybackend",
+      "community": 1,
+      "norm_label": "saybackend"
+    },
+    {
+      "label": "SpdSayBackend",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L126",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_spdsaybackend",
+      "community": 1,
+      "norm_label": "spdsaybackend"
+    },
+    {
+      "label": "SpeechService",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_speechservice",
+      "community": 1,
+      "norm_label": "speechservice"
+    },
+    {
+      "label": "TtsBackend",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L90",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_ttsbackend",
+      "community": 1,
+      "norm_label": "ttsbackend"
+    },
+    {
+      "label": "WindowsOneCoreBackend",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L178",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_windowsonecorebackend",
+      "community": 1,
+      "norm_label": "windowsonecorebackend"
+    },
+    {
+      "label": "Program",
+      "file_type": "code",
+      "source_file": "Program.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "program_practicapalabras_program",
+      "community": 10,
+      "norm_label": "program"
+    },
+    {
+      "label": "ISpeechService",
+      "file_type": "code",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L3",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_ispeechservice_practicapalabras_ispeechservice",
+      "community": 2,
+      "norm_label": "ispeechservice"
+    },
+    {
+      "label": "Language",
+      "file_type": "code",
+      "source_file": "Services/Language.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s29"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_language_practicapalabras_language",
+      "community": 2,
+      "norm_label": "language"
+    },
+    {
+      "label": "IReadController",
+      "file_type": "code",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L94",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speak_practicapalabras_ireadcontroller",
+      "community": 2,
+      "norm_label": "ireadcontroller"
+    },
+    {
+      "label": "Speak",
+      "file_type": "code",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_speak_practicapalabras_speak",
+      "community": 2,
+      "norm_label": "speak"
+    },
+    {
+      "label": "MainView",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L12",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview",
+      "community": 3,
+      "norm_label": "mainview"
+    },
+    {
+      "label": "ShellWindow",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L8",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow",
+      "community": 4,
+      "norm_label": "shellwindow"
+    },
+    {
+      "label": "Word",
+      "file_type": "code",
+      "source_file": "Models/Word.cs",
+      "source_location": "L7",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s88"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "models_word_practicapalabras_word",
+      "community": 5,
+      "norm_label": "word"
+    },
+    {
+      "label": "DictionaryView",
+      "file_type": "code",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L10",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s175"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "community": 5,
+      "norm_label": "dictionaryview"
+    },
+    {
+      "label": "App",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L9",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s140"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_axaml_practicapalabras_app",
+      "community": 7,
+      "norm_label": "app"
+    },
+    {
+      "label": "PreferencesService",
+      "file_type": "code",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_preferencesservice_practicapalabras_preferencesservice",
+      "community": 8,
+      "norm_label": "preferencesservice"
+    },
+    {
+      "label": "ProgressStore",
+      "file_type": "code",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "services_progressstore_practicapalabras_progressstore",
+      "community": 9,
+      "norm_label": "progressstore"
+    },
+    {
+      "label": ".ApplyTheme()",
+      "file_type": "code",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L110",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s192"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_configurationview_axaml_practicapalabras_views_configurationview_applytheme",
+      "community": 0,
+      "norm_label": ".applytheme()"
+    },
+    {
+      "label": ".ClearProgress()",
+      "file_type": "code",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L99",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s192"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_configurationview_axaml_practicapalabras_views_configurationview_clearprogress",
+      "community": 0,
+      "norm_label": ".clearprogress()"
+    },
+    {
+      "label": ".OnClearProgressClicked()",
+      "file_type": "code",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L105",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s192"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_configurationview_axaml_practicapalabras_views_configurationview_onclearprogressclicked",
+      "community": 0,
+      "norm_label": ".onclearprogressclicked()"
+    },
+    {
+      "label": ".OnPropertyChanged()",
+      "file_type": "code",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L123",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s192"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_configurationview_axaml_practicapalabras_views_configurationview_onpropertychanged",
+      "community": 0,
+      "norm_label": ".onpropertychanged()"
+    },
+    {
+      "label": ".GetWord()",
+      "file_type": "code",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L44",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s165"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_getword",
+      "community": 0,
+      "norm_label": ".getword()"
+    },
+    {
+      "label": ".OnDetachedFromVisualTree()",
+      "file_type": "code",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L65",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s165"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_ondetachedfromvisualtree",
+      "community": 0,
+      "norm_label": ".ondetachedfromvisualtree()"
+    },
+    {
+      "label": ".OnLoaded()",
+      "file_type": "code",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L48",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s165"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onloaded",
+      "community": 0,
+      "norm_label": ".onloaded()"
+    },
+    {
+      "label": ".OnPropertyChanged()",
+      "file_type": "code",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L74",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s165"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onpropertychanged",
+      "community": 0,
+      "norm_label": ".onpropertychanged()"
+    },
+    {
+      "label": ".Speak()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L189",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_consolebackend_speak",
+      "community": 1,
+      "norm_label": ".speak()"
+    },
+    {
+      "label": ".Speak()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L155",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_espeakbackend_speak",
+      "community": 1,
+      "norm_label": ".speak()"
+    },
+    {
+      "label": ".MapEspeakVoice()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L143",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_espeakngbackend_mapespeakvoice",
+      "community": 1,
+      "norm_label": ".mapespeakvoice()"
+    },
+    {
+      "label": ".Speak()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L137",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "community": 1,
+      "norm_label": ".speak()"
+    },
+    {
+      "label": ".Speak()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L171",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_saybackend_speak",
+      "community": 1,
+      "norm_label": ".speak()"
+    },
+    {
+      "label": ".Speak()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L128",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "community": 1,
+      "norm_label": ".speak()"
+    },
+    {
+      "label": ".GetBackend()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L32",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_speechservice_getbackend",
+      "community": 1,
+      "norm_label": ".getbackend()"
+    },
+    {
+      "label": ".HasBinary()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L68",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_speechservice_hasbinary",
+      "community": 1,
+      "norm_label": ".hasbinary()"
+    },
+    {
+      "label": ".SpeakAsync()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L9",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_speechservice_speakasync",
+      "community": 1,
+      "norm_label": ".speakasync()"
+    },
+    {
+      "label": ".EscapeForShell()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L123",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_ttsbackend_escapeforshell",
+      "community": 1,
+      "norm_label": ".escapeforshell()"
+    },
+    {
+      "label": ".MapLanguage()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L114",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_ttsbackend_maplanguage",
+      "community": 1,
+      "norm_label": ".maplanguage()"
+    },
+    {
+      "label": ".RunAsync()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L94",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "community": 1,
+      "norm_label": ".runasync()"
+    },
+    {
+      "label": ".Speak()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L92",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_ttsbackend_speak",
+      "community": 1,
+      "norm_label": ".speak()"
+    },
+    {
+      "label": ".Speak()",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L180",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speechservice_practicapalabras_windowsonecorebackend_speak",
+      "community": 1,
+      "norm_label": ".speak()"
+    },
+    {
+      "label": ".BuildAvaloniaApp()",
+      "file_type": "code",
+      "source_file": "Program.cs",
+      "source_location": "L13",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "program_practicapalabras_program_buildavaloniaapp",
+      "community": 10,
+      "norm_label": ".buildavaloniaapp()"
+    },
+    {
+      "label": ".Main()",
+      "file_type": "code",
+      "source_file": "Program.cs",
+      "source_location": "L7",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s17"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "program_practicapalabras_program_main",
+      "community": 10,
+      "norm_label": ".main()"
+    },
+    {
+      "label": ".SpeakAsync()",
+      "file_type": "code",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L5",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_ispeechservice_practicapalabras_ispeechservice_speakasync",
+      "community": 2,
+      "norm_label": ".speakasync()"
+    },
+    {
+      "label": ".ConfigCat()",
+      "file_type": "code",
+      "source_file": "Services/Language.cs",
+      "source_location": "L56",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s29"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_language_practicapalabras_language_configcat",
+      "community": 2,
+      "norm_label": ".configcat()"
+    },
+    {
+      "label": ".ConfigEsp()",
+      "file_type": "code",
+      "source_file": "Services/Language.cs",
+      "source_location": "L82",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s29"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_language_practicapalabras_language_configesp",
+      "community": 2,
+      "norm_label": ".configesp()"
+    },
+    {
+      "label": ".ConfigSpeak()",
+      "file_type": "code",
+      "source_file": "Services/Language.cs",
+      "source_location": "L40",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s29"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_language_practicapalabras_language_configspeak",
+      "community": 2,
+      "norm_label": ".configspeak()"
+    },
+    {
+      "label": ".GetSystemLanguage()",
+      "file_type": "code",
+      "source_file": "Services/Language.cs",
+      "source_location": "L31",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s29"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_language_practicapalabras_language_getsystemlanguage",
+      "community": 2,
+      "norm_label": ".getsystemlanguage()"
+    },
+    {
+      "label": ".GetWord()",
+      "file_type": "code",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L98",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speak_practicapalabras_ireadcontroller_getword",
+      "community": 2,
+      "norm_label": ".getword()"
+    },
+    {
+      "label": ".SetWord()",
+      "file_type": "code",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L99",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speak_practicapalabras_ireadcontroller_setword",
+      "community": 2,
+      "norm_label": ".setword()"
+    },
+    {
+      "label": ".Read()",
+      "file_type": "code",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L45",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speak_practicapalabras_speak_read",
+      "community": 2,
+      "norm_label": ".read()"
+    },
+    {
+      "label": ".ToHidden()",
+      "file_type": "code",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L17",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s20"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_speak_practicapalabras_speak_tohidden",
+      "community": 2,
+      "norm_label": ".tohidden()"
+    },
+    {
+      "label": ".ToString()",
+      "file_type": "code",
+      "source_file": "Models/Word.cs",
+      "source_location": "L48",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s88"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "models_word_practicapalabras_word_tostring",
+      "community": 3,
+      "norm_label": ".tostring()"
+    },
+    {
+      "label": ".CheckWord()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L214",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "community": 3,
+      "norm_label": ".checkword()"
+    },
+    {
+      "label": ".Load()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L194",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "community": 3,
+      "norm_label": ".load()"
+    },
+    {
+      "label": ".Next()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L274",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_next",
+      "community": 3,
+      "norm_label": ".next()"
+    },
+    {
+      "label": ".OnAttachedToVisualTree()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L188",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_onattachedtovisualtree",
+      "community": 3,
+      "norm_label": ".onattachedtovisualtree()"
+    },
+    {
+      "label": ".OnKeyDown()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L280",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_onkeydown",
+      "community": 3,
+      "norm_label": ".onkeydown()"
+    },
+    {
+      "label": ".OnPropertyChanged()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L291",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_onpropertychanged",
+      "community": 3,
+      "norm_label": ".onpropertychanged()"
+    },
+    {
+      "label": ".SaveProgressIfEnabled()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L154",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_saveprogressifenabled",
+      "community": 3,
+      "norm_label": ".saveprogressifenabled()"
+    },
+    {
+      "label": ".UpdateDics()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L131",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_updatedics",
+      "community": 3,
+      "norm_label": ".updatedics()"
+    },
+    {
+      "label": ".UpdateWord()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L104",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_updateword",
+      "community": 3,
+      "norm_label": ".updateword()"
+    },
+    {
+      "label": ".SetWord()",
+      "file_type": "code",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L46",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s165"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_setword",
+      "community": 3,
+      "norm_label": ".setword()"
+    },
+    {
+      "label": ".BuildLangChip()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L68",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_buildlangchip",
+      "community": 4,
+      "norm_label": ".buildlangchip()"
+    },
+    {
+      "label": ".GetAppVersion()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L25",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_getappversion",
+      "community": 4,
+      "norm_label": ".getappversion()"
+    },
+    {
+      "label": ".NavigateTo()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L38",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_navigateto",
+      "community": 4,
+      "norm_label": ".navigateto()"
+    },
+    {
+      "label": ".OnNavigateConfiguration()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L57",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_onnavigateconfiguration",
+      "community": 4,
+      "norm_label": ".onnavigateconfiguration()"
+    },
+    {
+      "label": ".OnNavigateDictionary()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L56",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_onnavigatedictionary",
+      "community": 4,
+      "norm_label": ".onnavigatedictionary()"
+    },
+    {
+      "label": ".OnNavigatePractice()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L55",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_onnavigatepractice",
+      "community": 4,
+      "norm_label": ".onnavigatepractice()"
+    },
+    {
+      "label": ".OnTogglePane()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L50",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_ontogglepane",
+      "community": 4,
+      "norm_label": ".ontogglepane()"
+    },
+    {
+      "label": ".RefreshLangDependentUI()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L59",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_refreshlangdependentui",
+      "community": 4,
+      "norm_label": ".refreshlangdependentui()"
+    },
+    {
+      "label": ".ResolveForeground()",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L94",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s114"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "shellwindow_axaml_practicapalabras_shellwindow_resolveforeground",
+      "community": 4,
+      "norm_label": ".resolveforeground()"
+    },
+    {
+      "label": ".FromLine()",
+      "file_type": "code",
+      "source_file": "Models/Word.cs",
+      "source_location": "L55",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s88"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "models_word_practicapalabras_word_fromline",
+      "community": 5,
+      "norm_label": ".fromline()"
+    },
+    {
+      "label": ".OnPropertyChanged()",
+      "file_type": "code",
+      "source_file": "Models/Word.cs",
+      "source_location": "L50",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s88"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "models_word_practicapalabras_word_onpropertychanged",
+      "community": 5,
+      "norm_label": ".onpropertychanged()"
+    },
+    {
+      "label": ".Clear()",
+      "file_type": "code",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L89",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s175"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_clear",
+      "community": 5,
+      "norm_label": ".clear()"
+    },
+    {
+      "label": ".Load()",
+      "file_type": "code",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L113",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s175"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_load",
+      "community": 5,
+      "norm_label": ".load()"
+    },
+    {
+      "label": ".OnPropertyChanged()",
+      "file_type": "code",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L124",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s175"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_onpropertychanged",
+      "community": 5,
+      "norm_label": ".onpropertychanged()"
+    },
+    {
+      "label": ".Parse()",
+      "file_type": "code",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L71",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s175"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_parse",
+      "community": 5,
+      "norm_label": ".parse()"
+    },
+    {
+      "label": ".Save()",
+      "file_type": "code",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L104",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s175"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_save",
+      "community": 5,
+      "norm_label": ".save()"
+    },
+    {
+      "label": ".ApplySavedTheme()",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L38",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s140"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_axaml_practicapalabras_app_applysavedtheme",
+      "community": 7,
+      "norm_label": ".applysavedtheme()"
+    },
+    {
+      "label": ".Initialize()",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L22",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s140"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_axaml_practicapalabras_app_initialize",
+      "community": 7,
+      "norm_label": ".initialize()"
+    },
+    {
+      "label": ".LoadLangDict()",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L64",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s140"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_axaml_practicapalabras_app_loadlangdict",
+      "community": 7,
+      "norm_label": ".loadlangdict()"
+    },
+    {
+      "label": ".OnFrameworkInitializationCompleted()",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L27",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s140"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_axaml_practicapalabras_app_onframeworkinitializationcompleted",
+      "community": 7,
+      "norm_label": ".onframeworkinitializationcompleted()"
+    },
+    {
+      "label": ".UpdateLang()",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L49",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s140"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_axaml_practicapalabras_app_updatelang",
+      "community": 7,
+      "norm_label": ".updatelang()"
+    },
+    {
+      "label": ".Get()",
+      "file_type": "code",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L14",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_preferencesservice_practicapalabras_preferencesservice_get",
+      "community": 8,
+      "norm_label": ".get()"
+    },
+    {
+      "label": ".Load()",
+      "file_type": "code",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L58",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_preferencesservice_practicapalabras_preferencesservice_load",
+      "community": 8,
+      "norm_label": ".load()"
+    },
+    {
+      "label": ".Save()",
+      "file_type": "code",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L75",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_preferencesservice_practicapalabras_preferencesservice_save",
+      "community": 8,
+      "norm_label": ".save()"
+    },
+    {
+      "label": ".Set()",
+      "file_type": "code",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L34",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_preferencesservice_practicapalabras_preferencesservice_set",
+      "community": 8,
+      "norm_label": ".set()"
+    },
+    {
+      "label": ".Clear()",
+      "file_type": "code",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L35",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_progressstore_practicapalabras_progressstore_clear",
+      "community": 9,
+      "norm_label": ".clear()"
+    },
+    {
+      "label": ".KeyFor()",
+      "file_type": "code",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L10",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_progressstore_practicapalabras_progressstore_keyfor",
+      "community": 9,
+      "norm_label": ".keyfor()"
+    },
+    {
+      "label": ".Load()",
+      "file_type": "code",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L12",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_progressstore_practicapalabras_progressstore_load",
+      "community": 9,
+      "norm_label": ".load()"
+    },
+    {
+      "label": ".Save()",
+      "file_type": "code",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L29",
+      "metadata": {
+        "namespace": "PracticaPalabras",
+        "scope_chain": [
+          "s25"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "services_progressstore_practicapalabras_progressstore_save",
+      "community": 9,
+      "norm_label": ".save()"
+    },
+    {
+      "label": ".ForceClearProgressForLanguage()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L183",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_forceclearprogressforlanguage",
+      "community": 9,
+      "norm_label": ".forceclearprogressforlanguage()"
+    },
+    {
+      "label": ".LoadProgressIfEnabled()",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L166",
+      "metadata": {
+        "namespace": "PracticaPalabras.Views",
+        "scope_chain": [
+          "s213"
+        ]
+      },
+      "_callable": true,
+      "_origin": "ast",
+      "id": "views_mainview_axaml_practicapalabras_views_mainview_loadprogressifenabled",
+      "community": 9,
+      "norm_label": ".loadprogressifenabled()"
+    },
+    {
+      "label": "CancellationTokenSource",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "cancellationtokensource",
+      "community": 0,
+      "norm_label": "cancellationtokensource"
+    },
+    {
+      "label": "PracticaPalabras.Views",
+      "file_type": "code",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L9",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "PracticaPalabras.Views"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:f42f9e879f5f9816",
+      "community": 0,
+      "norm_label": "practicapalabras.views"
+    },
+    {
+      "label": "IReadController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "ireadcontroller",
+      "community": 0,
+      "norm_label": "ireadcontroller"
+    },
+    {
+      "label": "ShellWindow.axaml.cs",
+      "file_type": "code",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "shellwindow_axaml",
+      "community": 0,
+      "norm_label": "shellwindow.axaml.cs"
+    },
+    {
+      "label": "UserControl",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "usercontrol",
+      "community": 0,
+      "norm_label": "usercontrol"
+    },
+    {
+      "label": "ConfigurationView.axaml.cs",
+      "file_type": "code",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "views_configurationview_axaml",
+      "community": 0,
+      "norm_label": "configurationview.axaml.cs"
+    },
+    {
+      "label": "RoutedEventArgs",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_configurationview_axaml_cs_routedeventargs",
+      "community": 0,
+      "norm_label": "routedeventargs"
+    },
+    {
+      "label": "DictionaryView.axaml.cs",
+      "file_type": "code",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml",
+      "community": 0,
+      "norm_label": "dictionaryview.axaml.cs"
+    },
+    {
+      "label": "MainView.axaml.cs",
+      "file_type": "code",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "views_mainview_axaml",
+      "community": 0,
+      "norm_label": "mainview.axaml.cs"
+    },
+    {
+      "label": "VisualitzationWordView.axaml.cs",
+      "file_type": "code",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml",
+      "community": 0,
+      "norm_label": "visualitzationwordview.axaml.cs"
+    },
+    {
+      "label": "CancellationToken",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_cs_cancellationtoken",
+      "community": 0,
+      "norm_label": "cancellationtoken"
+    },
+    {
+      "label": "ISpeechService",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_cs_ispeechservice",
+      "community": 0,
+      "norm_label": "ispeechservice"
+    },
+    {
+      "label": "RoutedEventArgs",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_cs_routedeventargs",
+      "community": 0,
+      "norm_label": "routedeventargs"
+    },
+    {
+      "label": "Speak",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_cs_speak",
+      "community": 0,
+      "norm_label": "speak"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_cs_string",
+      "community": 0,
+      "norm_label": "string"
+    },
+    {
+      "label": "VisualTreeAttachmentEventArgs",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_visualitzationwordview_axaml_cs_visualtreeattachmenteventargs",
+      "community": 0,
+      "norm_label": "visualtreeattachmenteventargs"
+    },
+    {
+      "label": "SpeechService.cs",
+      "file_type": "code",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_speechservice",
+      "community": 1,
+      "norm_label": "speechservice.cs"
+    },
+    {
+      "label": "CancellationToken",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_speechservice_cs_cancellationtoken",
+      "community": 1,
+      "norm_label": "cancellationtoken"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_speechservice_cs_task",
+      "community": 1,
+      "norm_label": "task"
+    },
+    {
+      "label": "AppBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "appbuilder",
+      "community": 10,
+      "norm_label": "appbuilder"
+    },
+    {
+      "label": "Program.cs",
+      "file_type": "code",
+      "source_file": "Program.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "program",
+      "community": 10,
+      "norm_label": "program.cs"
+    },
+    {
+      "label": "STAThread",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "stathread",
+      "community": 10,
+      "norm_label": "stathread"
+    },
+    {
+      "label": "install-prereqs.sh",
+      "file_type": "code",
+      "source_file": "install-prereqs.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "install_prereqs",
+      "community": 11,
+      "norm_label": "install-prereqs.sh"
+    },
+    {
+      "label": "DOTNET_CLI_TEMP_DIRECTORY",
+      "file_type": "code",
+      "source_file": "install-prereqs.sh",
+      "source_location": "L15",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "install_prereqs_dotnet_cli_temp_directory",
+      "community": 11,
+      "norm_label": "dotnet_cli_temp_directory"
+    },
+    {
+      "label": "install-prereqs.sh script",
+      "file_type": "code",
+      "source_file": "install-prereqs.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "install_prereqs_sh__entry",
+      "community": 11,
+      "norm_label": "install-prereqs.sh script"
+    },
+    {
+      "label": "TMPDIR",
+      "file_type": "code",
+      "source_file": "install-prereqs.sh",
+      "source_location": "L16",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "install_prereqs_tmpdir",
+      "community": 11,
+      "norm_label": "tmpdir"
+    },
+    {
+      "label": "build-all.sh",
+      "file_type": "code",
+      "source_file": "build-all.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "build_all",
+      "community": 12,
+      "norm_label": "build-all.sh"
+    },
+    {
+      "label": "publish()",
+      "file_type": "code",
+      "source_file": "build-all.sh",
+      "source_location": "L26",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "build_all_publish",
+      "community": 12,
+      "norm_label": "publish()"
+    },
+    {
+      "label": "build-all.sh script",
+      "file_type": "code",
+      "source_file": "build-all.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "build_all_sh__entry",
+      "community": 12,
+      "norm_label": "build-all.sh script"
+    },
+    {
+      "label": "build-appimage.sh",
+      "file_type": "code",
+      "source_file": "build-appimage.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "build_appimage",
+      "community": 13,
+      "norm_label": "build-appimage.sh"
+    },
+    {
+      "label": "build-appimage.sh script",
+      "file_type": "code",
+      "source_file": "build-appimage.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "build_appimage_sh__entry",
+      "community": 13,
+      "norm_label": "build-appimage.sh script"
+    },
+    {
+      "label": "clean.sh",
+      "file_type": "code",
+      "source_file": "clean.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "clean",
+      "community": 14,
+      "norm_label": "clean.sh"
+    },
+    {
+      "label": "clean.sh script",
+      "file_type": "code",
+      "source_file": "clean.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "clean_sh__entry",
+      "community": 14,
+      "norm_label": "clean.sh script"
+    },
+    {
+      "label": "PracticaPalabras",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L7",
+      "type": "namespace",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "PracticaPalabras"
+      },
+      "_origin": "ast",
+      "id": "csharp_namespace:f315d029b43dbf3b",
+      "community": 2,
+      "norm_label": "practicapalabras"
+    },
+    {
+      "label": "Word.cs",
+      "file_type": "code",
+      "source_file": "Models/Word.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_word",
+      "community": 2,
+      "norm_label": "word.cs"
+    },
+    {
+      "label": "ISpeechService.cs",
+      "file_type": "code",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_ispeechservice",
+      "community": 2,
+      "norm_label": "ispeechservice.cs"
+    },
+    {
+      "label": "CancellationToken",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_ispeechservice_cs_cancellationtoken",
+      "community": 2,
+      "norm_label": "cancellationtoken"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_ispeechservice_cs_task",
+      "community": 2,
+      "norm_label": "task"
+    },
+    {
+      "label": "Language.cs",
+      "file_type": "code",
+      "source_file": "Services/Language.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_language",
+      "community": 2,
+      "norm_label": "language.cs"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_language_cs_string",
+      "community": 2,
+      "norm_label": "string"
+    },
+    {
+      "label": "Speak.cs",
+      "file_type": "code",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_speak",
+      "community": 2,
+      "norm_label": "speak.cs"
+    },
+    {
+      "label": "CancellationToken",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_speak_cs_cancellationtoken",
+      "community": 2,
+      "norm_label": "cancellationtoken"
+    },
+    {
+      "label": "SortedList",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_speak_cs_sortedlist",
+      "community": 2,
+      "norm_label": "sortedlist"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_speak_cs_task",
+      "community": 2,
+      "norm_label": "task"
+    },
+    {
+      "label": "int",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "int",
+      "community": 3,
+      "norm_label": "int"
+    },
+    {
+      "label": "KeyEventArgs",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "keyeventargs",
+      "community": 3,
+      "norm_label": "keyeventargs"
+    },
+    {
+      "label": "Random",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "random",
+      "community": 3,
+      "norm_label": "random"
+    },
+    {
+      "label": "DateTime",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_mainview_axaml_cs_datetime",
+      "community": 3,
+      "norm_label": "datetime"
+    },
+    {
+      "label": "IList",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_mainview_axaml_cs_ilist",
+      "community": 3,
+      "norm_label": "ilist"
+    },
+    {
+      "label": "SortedList",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_mainview_axaml_cs_sortedlist",
+      "community": 3,
+      "norm_label": "sortedlist"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_mainview_axaml_cs_string",
+      "community": 3,
+      "norm_label": "string"
+    },
+    {
+      "label": "Task",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_mainview_axaml_cs_task",
+      "community": 3,
+      "norm_label": "task"
+    },
+    {
+      "label": "VisualTreeAttachmentEventArgs",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_mainview_axaml_cs_visualtreeattachmenteventargs",
+      "community": 3,
+      "norm_label": "visualtreeattachmenteventargs"
+    },
+    {
+      "label": "Word",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_mainview_axaml_cs_word",
+      "community": 3,
+      "norm_label": "word"
+    },
+    {
+      "label": "Border",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "border",
+      "community": 4,
+      "norm_label": "border"
+    },
+    {
+      "label": "IBrush",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "ibrush",
+      "community": 4,
+      "norm_label": "ibrush"
+    },
+    {
+      "label": "RoutedEventArgs",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "shellwindow_axaml_cs_routedeventargs",
+      "community": 4,
+      "norm_label": "routedeventargs"
+    },
+    {
+      "label": "UserControl",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "shellwindow_axaml_cs_usercontrol",
+      "community": 4,
+      "norm_label": "usercontrol"
+    },
+    {
+      "label": "Window",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "window",
+      "community": 4,
+      "norm_label": "window"
+    },
+    {
+      "label": "IEnumerable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "ienumerable",
+      "community": 5,
+      "norm_label": "ienumerable"
+    },
+    {
+      "label": "INotifyPropertyChanged",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "inotifypropertychanged",
+      "community": 5,
+      "norm_label": "inotifypropertychanged"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "models_word_cs_string",
+      "community": 5,
+      "norm_label": "string"
+    },
+    {
+      "label": "IList",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_cs_ilist",
+      "community": 5,
+      "norm_label": "ilist"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_cs_string",
+      "community": 5,
+      "norm_label": "string"
+    },
+    {
+      "label": "Word",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "views_dictionaryview_axaml_cs_word",
+      "community": 5,
+      "norm_label": "word"
+    },
+    {
+      "label": "Avalonia (11.3.20)",
+      "file_type": "code",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_avalonia",
+      "community": 6,
+      "norm_label": "avalonia (11.3.20)"
+    },
+    {
+      "label": "Avalonia.Android (11.3.20)",
+      "file_type": "code",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_avalonia_android",
+      "community": 6,
+      "norm_label": "avalonia.android (11.3.20)"
+    },
+    {
+      "label": "Avalonia.Desktop (11.3.20)",
+      "file_type": "code",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_avalonia_desktop",
+      "community": 6,
+      "norm_label": "avalonia.desktop (11.3.20)"
+    },
+    {
+      "label": "Avalonia.Fonts.Inter (11.3.20)",
+      "file_type": "code",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_avalonia_fonts_inter",
+      "community": 6,
+      "norm_label": "avalonia.fonts.inter (11.3.20)"
+    },
+    {
+      "label": "Avalonia.Themes.Fluent (11.3.20)",
+      "file_type": "code",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "nuget_avalonia_themes_fluent",
+      "community": 6,
+      "norm_label": "avalonia.themes.fluent (11.3.20)"
+    },
+    {
+      "label": "PracticaPalabras.Avalonia.csproj",
+      "file_type": "code",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "practicapalabras_avalonia",
+      "community": 6,
+      "norm_label": "practicapalabras.avalonia.csproj"
+    },
+    {
+      "label": "net9.0",
+      "file_type": "concept",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "framework_net9_0",
+      "community": 6,
+      "norm_label": "net9.0"
+    },
+    {
+      "label": "net9.0-android",
+      "file_type": "concept",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "framework_net9_0_android",
+      "community": 6,
+      "norm_label": "net9.0-android"
+    },
+    {
+      "label": "$(TargetFrameworks)",
+      "file_type": "concept",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "framework_targetframeworks",
+      "community": 6,
+      "norm_label": "$(targetframeworks)"
+    },
+    {
+      "label": "Microsoft.NET.Sdk",
+      "file_type": "concept",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "id": "sdk_microsoft_net_sdk",
+      "community": 6,
+      "norm_label": "microsoft.net.sdk"
+    },
+    {
+      "label": "App.axaml.cs",
+      "file_type": "code",
+      "source_file": "App.axaml.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_axaml",
+      "community": 7,
+      "norm_label": "app.axaml.cs"
+    },
+    {
+      "label": "Application",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "application",
+      "community": 7,
+      "norm_label": "application"
+    },
+    {
+      "label": "ResourceDictionary",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "resourcedictionary",
+      "community": 7,
+      "norm_label": "resourcedictionary"
+    },
+    {
+      "label": "PreferencesService.cs",
+      "file_type": "code",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_preferencesservice",
+      "community": 8,
+      "norm_label": "preferencesservice.cs"
+    },
+    {
+      "label": "DateTime",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_preferencesservice_cs_datetime",
+      "community": 8,
+      "norm_label": "datetime"
+    },
+    {
+      "label": "Dictionary",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_preferencesservice_cs_dictionary",
+      "community": 8,
+      "norm_label": "dictionary"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_preferencesservice_cs_string",
+      "community": 8,
+      "norm_label": "string"
+    },
+    {
+      "label": "ProgressStore.cs",
+      "file_type": "code",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "services_progressstore",
+      "community": 9,
+      "norm_label": "progressstore.cs"
+    },
+    {
+      "label": "Dictionary",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "services_progressstore_cs_dictionary",
+      "community": 9,
+      "norm_label": "dictionary"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "STAThread"
+      },
+      "_origin": "ast",
+      "source": "program_practicapalabras_program_main",
+      "target": "stathread",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "App.axaml.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app_applysavedtheme",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app_onframeworkinitializationcompleted",
+      "target": "app_axaml_practicapalabras_app_applysavedtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app_onframeworkinitializationcompleted",
+      "target": "app_axaml_practicapalabras_app_updatelang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app_updatelang",
+      "target": "app_axaml_practicapalabras_app_loadlangdict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "build-all.sh",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "call",
+      "_origin": "ast",
+      "source": "build_all_sh__entry",
+      "target": "build_all_publish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "program_practicapalabras_program_main",
+      "target": "program_practicapalabras_program_buildavaloniaapp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language_configspeak",
+      "target": "services_language_practicapalabras_language_configcat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language_configspeak",
+      "target": "services_language_practicapalabras_language_configesp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice_set",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice_save",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore_clear",
+      "target": "services_progressstore_practicapalabras_progressstore_keyfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore_load",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore_load",
+      "target": "services_progressstore_practicapalabras_progressstore_keyfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore_save",
+      "target": "services_progressstore_practicapalabras_progressstore_keyfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakbackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_escapeforshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakbackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "target": "services_speechservice_practicapalabras_espeakngbackend_mapespeakvoice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_escapeforshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_saybackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_maplanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L174",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_saybackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_escapeforshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L174",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_saybackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_maplanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_escapeforshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "target": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice_getbackend",
+      "target": "services_speechservice_practicapalabras_speechservice_hasbinary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice_speakasync",
+      "target": "services_speechservice_practicapalabras_speechservice_getbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_buildlangchip",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_resolveforeground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_refreshlangdependentui",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_buildlangchip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview_clearprogress",
+      "target": "services_progressstore_practicapalabras_progressstore_clear"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview_onclearprogressclicked",
+      "target": "views_configurationview_axaml_practicapalabras_views_configurationview_clearprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_parse",
+      "target": "models_word_practicapalabras_word_fromline"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L236",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_saveprogressifenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L237",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_forceclearprogressforlanguage",
+      "target": "services_progressstore_practicapalabras_progressstore_clear"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_loadprogressifenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L210",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_updatedics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_updateword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L172",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_loadprogressifenabled",
+      "target": "services_progressstore_practicapalabras_progressstore_load"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L277",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_next",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_updateword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L191",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_onattachedtovisualtree",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L284",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_onkeydown",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L97",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_ireadcontroller",
+      "target": "services_speak_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L42",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "CancellationTokenSource"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "cancellationtokensource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_cs_datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Dictionary"
+      },
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice",
+      "target": "services_preferencesservice_cs_dictionary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Dictionary"
+      },
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore",
+      "target": "services_progressstore_cs_dictionary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "ienumerable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L69",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IList"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_cs_ilist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "IList"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_cs_ilist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ISpeechService"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_cs_ispeechservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Random"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "random",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "ResourceDictionary"
+      },
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app",
+      "target": "resourcedictionary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "SortedList"
+      },
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak",
+      "target": "services_speak_cs_sortedlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "SortedList"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_cs_sortedlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Speak"
+      },
+      "_origin": "ast",
+      "source": "models_word_practicapalabras_word",
+      "target": "services_speak_practicapalabras_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Speak"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_cs_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L91",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "Word"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_cs_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "int"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "source": "models_word_practicapalabras_word",
+      "target": "models_word_cs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language",
+      "target": "services_language_cs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice",
+      "target": "services_preferencesservice_cs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_cs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_cs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "field",
+      "metadata": {
+        "ref_token": "string"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_cs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L69",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Word"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_cs_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L89",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Word"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_clear",
+      "target": "views_dictionaryview_axaml_cs_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "metadata": {
+        "ref_token": "Word"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_parse",
+      "target": "views_dictionaryview_axaml_cs_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "PracticaPalabras.Views",
+        "scope_kind": "file"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml",
+      "target": "csharp_namespace:f42f9e879f5f9816",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RoutedEventArgs",
+        "qualified": true,
+        "ref_qualifier": "Avalonia.Interactivity"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onloaded",
+      "target": "views_visualitzationwordview_axaml_cs_routedeventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_ispeechservice_practicapalabras_ispeechservice_speakasync",
+      "target": "services_ispeechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L189",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_consolebackend_speak",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L155",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakbackend_speak",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L137",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L171",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_saybackend_speak",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L128",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice_speakasync",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L94",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L92",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend_speak",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "CancellationToken"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_windowsonecorebackend_speak",
+      "target": "services_speechservice_cs_cancellationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L52",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice_set",
+      "target": "services_preferencesservice_cs_datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L89",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_clear",
+      "target": "ienumerable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "IReadController"
+      },
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak_read",
+      "target": "services_speak_practicapalabras_ireadcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "ISpeechService"
+      },
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak_read",
+      "target": "services_ispeechservice_practicapalabras_ispeechservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L280",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "KeyEventArgs"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_onkeydown",
+      "target": "keyeventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RoutedEventArgs"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_onnavigateconfiguration",
+      "target": "shellwindow_axaml_cs_routedeventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RoutedEventArgs"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_onnavigatedictionary",
+      "target": "shellwindow_axaml_cs_routedeventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RoutedEventArgs"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_onnavigatepractice",
+      "target": "shellwindow_axaml_cs_routedeventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RoutedEventArgs"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_ontogglepane",
+      "target": "shellwindow_axaml_cs_routedeventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "RoutedEventArgs"
+      },
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview_onclearprogressclicked",
+      "target": "views_configurationview_axaml_cs_routedeventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Speak"
+      },
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language_configcat",
+      "target": "services_speak_practicapalabras_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Speak"
+      },
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language_configesp",
+      "target": "services_speak_practicapalabras_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Speak"
+      },
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language_configspeak",
+      "target": "services_speak_practicapalabras_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "UserControl"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_navigateto",
+      "target": "shellwindow_axaml_cs_usercontrol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L188",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "VisualTreeAttachmentEventArgs"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_onattachedtovisualtree",
+      "target": "views_mainview_axaml_cs_visualtreeattachmenteventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "VisualTreeAttachmentEventArgs"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_ondetachedfromvisualtree",
+      "target": "views_visualitzationwordview_axaml_cs_visualtreeattachmenteventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L94",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IBrush",
+        "qualified": true,
+        "ref_qualifier": "Avalonia.Media"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_resolveforeground",
+      "target": "ibrush",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "AppBuilder"
+      },
+      "_origin": "ast",
+      "source": "program_practicapalabras_program_buildavaloniaapp",
+      "target": "appbuilder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L68",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Border"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow_buildlangchip",
+      "target": "border",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "DateTime"
+      },
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice_get",
+      "target": "services_preferencesservice_cs_datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Dictionary"
+      },
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice_load",
+      "target": "services_preferencesservice_cs_dictionary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IEnumerable"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_parse",
+      "target": "ienumerable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L89",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "IList"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_clear",
+      "target": "views_dictionaryview_axaml_cs_ilist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "ProgressStore"
+      },
+      "source": "services_progressstore_practicapalabras_progressstore_load",
+      "target": "services_progressstore_practicapalabras_progressstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L64",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "ResourceDictionary"
+      },
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app_loadlangdict",
+      "target": "resourcedictionary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_ispeechservice_practicapalabras_ispeechservice_speakasync",
+      "target": "services_ispeechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak_read",
+      "target": "services_speak_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L189",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_consolebackend_speak",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L155",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakbackend_speak",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L137",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L171",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_saybackend_speak",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L128",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice_speakasync",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L94",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L92",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend_speak",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_windowsonecorebackend_speak",
+      "target": "services_speechservice_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L194",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "target": "views_mainview_axaml_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L274",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_next",
+      "target": "views_mainview_axaml_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Task"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_updateword",
+      "target": "views_mainview_axaml_cs_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice_getbackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "Word"
+      },
+      "source": "models_word_practicapalabras_word_fromline",
+      "target": "models_word_practicapalabras_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Application",
+        "qualified": true,
+        "ref_qualifier": "Avalonia"
+      },
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app",
+      "target": "application",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "INotifyPropertyChanged"
+      },
+      "_origin": "ast",
+      "source": "models_word_practicapalabras_word",
+      "target": "inotifypropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "INotifyPropertyChanged"
+      },
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "target": "inotifypropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "INotifyPropertyChanged"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "inotifypropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "INotifyPropertyChanged"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "inotifypropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "INotifyPropertyChanged"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "inotifypropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "IReadController"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "ireadcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "ISpeechService"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice",
+      "target": "services_ispeechservice_practicapalabras_ispeechservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L187",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_consolebackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L153",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakbackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L135",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L169",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_saybackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L126",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_spdsaybackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L178",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "TtsBackend"
+      },
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_windowsonecorebackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "UserControl"
+      },
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "target": "usercontrol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "UserControl"
+      },
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "usercontrol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "UserControl"
+      },
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "usercontrol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "UserControl"
+      },
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "usercontrol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "metadata": {
+        "ref_token": "Window"
+      },
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "window",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml",
+      "target": "app_axaml_practicapalabras_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "build-all.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "build_all",
+      "target": "build_all_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "build-appimage.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "build_appimage",
+      "target": "build_appimage_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "clean.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "clean",
+      "target": "clean_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "install-prereqs.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "install_prereqs",
+      "target": "install_prereqs_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_word",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_word",
+      "target": "models_word_practicapalabras_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "program",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "program",
+      "target": "program_practicapalabras_program",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_ispeechservice",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_ispeechservice",
+      "target": "services_ispeechservice_practicapalabras_ispeechservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language",
+      "target": "services_language_practicapalabras_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_preferencesservice",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_preferencesservice",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore",
+      "target": "services_progressstore_practicapalabras_progressstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak",
+      "target": "services_speak_practicapalabras_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak",
+      "target": "services_speak_practicapalabras_ireadcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_spdsaybackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_espeakngbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_espeakbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L169",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_saybackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L178",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_windowsonecorebackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_consolebackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_speechservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice",
+      "target": "services_speechservice_practicapalabras_ttsbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml",
+      "target": "csharp_namespace:f315d029b43dbf3b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml",
+      "target": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml",
+      "target": "csharp_namespace:f42f9e879f5f9816",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml",
+      "target": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml",
+      "target": "csharp_namespace:f42f9e879f5f9816",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml",
+      "target": "csharp_namespace:f42f9e879f5f9816",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml",
+      "target": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml",
+      "target": "csharp_namespace:f42f9e879f5f9816",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "build-all.sh",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "build_all",
+      "target": "build_all_publish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "install-prereqs.sh",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "install_prereqs",
+      "target": "install_prereqs_dotnet_cli_temp_directory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "install-prereqs.sh",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "install_prereqs",
+      "target": "install_prereqs_tmpdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "nuget_avalonia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "nuget_avalonia_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "nuget_avalonia_desktop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "nuget_avalonia_fonts_inter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "nuget_avalonia_themes_fluent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app",
+      "target": "app_axaml_practicapalabras_app_initialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app",
+      "target": "app_axaml_practicapalabras_app_onframeworkinitializationcompleted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app",
+      "target": "app_axaml_practicapalabras_app_applysavedtheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app",
+      "target": "app_axaml_practicapalabras_app_updatelang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "App.axaml.cs",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_axaml_practicapalabras_app",
+      "target": "app_axaml_practicapalabras_app_loadlangdict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_word_practicapalabras_word",
+      "target": "models_word_practicapalabras_word_tostring",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/Word.cs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_word_practicapalabras_word",
+      "target": "models_word_practicapalabras_word_onpropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "program_practicapalabras_program",
+      "target": "program_practicapalabras_program_buildavaloniaapp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Program.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "program_practicapalabras_program",
+      "target": "program_practicapalabras_program_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ISpeechService.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_ispeechservice_practicapalabras_ispeechservice",
+      "target": "services_ispeechservice_practicapalabras_ispeechservice_speakasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language",
+      "target": "services_language_practicapalabras_language_getsystemlanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language",
+      "target": "services_language_practicapalabras_language_configspeak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language",
+      "target": "services_language_practicapalabras_language_configcat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Language.cs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_language_practicapalabras_language",
+      "target": "services_language_practicapalabras_language_configesp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice_set",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/PreferencesService.cs",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_preferencesservice_practicapalabras_preferencesservice",
+      "target": "services_preferencesservice_practicapalabras_preferencesservice_save",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore",
+      "target": "services_progressstore_practicapalabras_progressstore_keyfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore",
+      "target": "services_progressstore_practicapalabras_progressstore_save",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/ProgressStore.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_progressstore_practicapalabras_progressstore",
+      "target": "services_progressstore_practicapalabras_progressstore_clear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_ireadcontroller",
+      "target": "services_speak_practicapalabras_ireadcontroller_getword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_ireadcontroller",
+      "target": "services_speak_practicapalabras_ireadcontroller_setword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak",
+      "target": "services_speak_practicapalabras_speak_tohidden",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/Speak.cs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak",
+      "target": "services_speak_practicapalabras_speak_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L189",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_consolebackend",
+      "target": "services_speechservice_practicapalabras_consolebackend_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakbackend",
+      "target": "services_speechservice_practicapalabras_espeakbackend_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend",
+      "target": "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_espeakngbackend",
+      "target": "services_speechservice_practicapalabras_espeakngbackend_mapespeakvoice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L171",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_saybackend",
+      "target": "services_speechservice_practicapalabras_saybackend_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_spdsaybackend",
+      "target": "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice",
+      "target": "services_speechservice_practicapalabras_speechservice_getbackend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice",
+      "target": "services_speechservice_practicapalabras_speechservice_hasbinary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_speechservice",
+      "target": "services_speechservice_practicapalabras_speechservice_speakasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend_maplanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend_escapeforshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_ttsbackend",
+      "target": "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Services/SpeechService.cs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speechservice_practicapalabras_windowsonecorebackend",
+      "target": "services_speechservice_practicapalabras_windowsonecorebackend_speak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_getappversion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_navigateto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_ontogglepane",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_onnavigatepractice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_onnavigatedictionary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_onnavigateconfiguration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_refreshlangdependentui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_buildlangchip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ShellWindow.axaml.cs",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shellwindow_axaml_practicapalabras_shellwindow",
+      "target": "shellwindow_axaml_practicapalabras_shellwindow_resolveforeground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "target": "views_configurationview_axaml_practicapalabras_views_configurationview_onclearprogressclicked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "target": "views_configurationview_axaml_practicapalabras_views_configurationview_applytheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "target": "views_configurationview_axaml_practicapalabras_views_configurationview_onpropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/ConfigurationView.axaml.cs",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "target": "views_configurationview_axaml_practicapalabras_views_configurationview_clearprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_save",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_onpropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_parse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/DictionaryView.axaml.cs",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "target": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_clear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_updateword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_updatedics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_saveprogressifenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L166",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_loadprogressifenabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L183",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_forceclearprogressforlanguage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_onattachedtovisualtree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L214",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L274",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L280",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_onkeydown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L291",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview",
+      "target": "views_mainview_axaml_practicapalabras_views_mainview_onpropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_getword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_setword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onloaded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_ondetachedfromvisualtree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "target": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onpropertychanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "framework_net9_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "framework_net9_0_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "framework_targetframeworks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "PracticaPalabras.Avalonia.csproj",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "practicapalabras_avalonia",
+      "target": "sdk_microsoft_net_sdk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Services/Speak.cs",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak_read",
+      "target": "services_speak_practicapalabras_ireadcontroller_setword"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Services/Speak.cs",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak_read",
+      "target": "services_speak_practicapalabras_ireadcontroller_getword"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Services/Speak.cs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "services_speak_practicapalabras_speak_read",
+      "target": "services_ispeechservice_practicapalabras_ispeechservice_speakasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "target": "models_word_practicapalabras_word_tostring"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Views/MainView.axaml.cs",
+      "source_location": "L262",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "target": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_setword"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Views/VisualitzationWordView.axaml.cs",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onloaded",
+      "target": "services_speak_practicapalabras_speak_read"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "de400b1632af6c854c1db201c622b1e9ae17294c"
+}

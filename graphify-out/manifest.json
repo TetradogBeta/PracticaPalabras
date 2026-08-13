@@ -1,0 +1,97 @@
+{
+  "App.axaml.cs": {
+    "mtime": 1786431247.5186274,
+    "ast_hash": "50c162dbdca07397d717fc20c3c057af",
+    "semantic_hash": "50c162dbdca07397d717fc20c3c057af"
+  },
+  "Models/Word.cs": {
+    "mtime": 1786421108.6962268,
+    "ast_hash": "31a589d820317dd1a7f9cdaa24208dd7",
+    "semantic_hash": "31a589d820317dd1a7f9cdaa24208dd7"
+  },
+  "PracticaPalabras.Avalonia.csproj": {
+    "mtime": 1786433313.228902,
+    "ast_hash": "4c6d4e665bb98a4f7eebe325556ce44d",
+    "semantic_hash": "4c6d4e665bb98a4f7eebe325556ce44d"
+  },
+  "Program.cs": {
+    "mtime": 1786421092.2319858,
+    "ast_hash": "229d04703a47e2dd97b36e8d6665b7d6",
+    "semantic_hash": "229d04703a47e2dd97b36e8d6665b7d6"
+  },
+  "Services/ISpeechService.cs": {
+    "mtime": 1786421122.6204307,
+    "ast_hash": "d24cb9745c8fcdfe7a9ece18f5938666",
+    "semantic_hash": "d24cb9745c8fcdfe7a9ece18f5938666"
+  },
+  "Services/Language.cs": {
+    "mtime": 1786422266.9432478,
+    "ast_hash": "3d87261fb7662885cdcc67dae16a24d1",
+    "semantic_hash": "3d87261fb7662885cdcc67dae16a24d1"
+  },
+  "Services/PreferencesService.cs": {
+    "mtime": 1786426051.3820322,
+    "ast_hash": "c194bd58f7d11319d44d0ec7843866ce",
+    "semantic_hash": "c194bd58f7d11319d44d0ec7843866ce"
+  },
+  "Services/ProgressStore.cs": {
+    "mtime": 1786428494.827226,
+    "ast_hash": "ff9a0f59c19a2e7689b54a834db018a9",
+    "semantic_hash": "ff9a0f59c19a2e7689b54a834db018a9"
+  },
+  "Services/Speak.cs": {
+    "mtime": 1786421143.8967426,
+    "ast_hash": "89923d2e423770c96ced4188f1f31a6a",
+    "semantic_hash": "89923d2e423770c96ced4188f1f31a6a"
+  },
+  "Services/SpeechService.cs": {
+    "mtime": 1786425142.0562897,
+    "ast_hash": "b592f59033c5c6b0df348175f6e84735",
+    "semantic_hash": "b592f59033c5c6b0df348175f6e84735"
+  },
+  "ShellWindow.axaml.cs": {
+    "mtime": 1786421632.0639448,
+    "ast_hash": "45cfbd4d795afa4b881d55def21cda08",
+    "semantic_hash": "45cfbd4d795afa4b881d55def21cda08"
+  },
+  "Views/ConfigurationView.axaml.cs": {
+    "mtime": 1786431270.7669826,
+    "ast_hash": "e46df77338d9bf10dc8e375dfc9ba0c6",
+    "semantic_hash": "e46df77338d9bf10dc8e375dfc9ba0c6"
+  },
+  "Views/DictionaryView.axaml.cs": {
+    "mtime": 1786423120.073959,
+    "ast_hash": "6eb6d7d567e5b43e7af95feb11ca3b06",
+    "semantic_hash": "6eb6d7d567e5b43e7af95feb11ca3b06"
+  },
+  "Views/MainView.axaml.cs": {
+    "mtime": 1786428523.199742,
+    "ast_hash": "850129a92103ad3c3f7a2f2181393aef",
+    "semantic_hash": "850129a92103ad3c3f7a2f2181393aef"
+  },
+  "Views/VisualitzationWordView.axaml.cs": {
+    "mtime": 1786421596.1314125,
+    "ast_hash": "34b0d7249499aadf0006aa8a721d3851",
+    "semantic_hash": "34b0d7249499aadf0006aa8a721d3851"
+  },
+  "build-all.sh": {
+    "mtime": 1786433713.435403,
+    "ast_hash": "b74a271f7729585379734570f992bc0f",
+    "semantic_hash": "b74a271f7729585379734570f992bc0f"
+  },
+  "build-appimage.sh": {
+    "mtime": 1786427688.4411552,
+    "ast_hash": "ca3aa62b1b74d4ed2ffe9c67708be55c",
+    "semantic_hash": "ca3aa62b1b74d4ed2ffe9c67708be55c"
+  },
+  "clean.sh": {
+    "mtime": 1786429609.8738477,
+    "ast_hash": "6f5e2d8ee21273252cd905088e353733",
+    "semantic_hash": "6f5e2d8ee21273252cd905088e353733"
+  },
+  "install-prereqs.sh": {
+    "mtime": 1786430470.8909388,
+    "ast_hash": "1efd3e07e55610cc377051388dd94305",
+    "semantic_hash": "1efd3e07e55610cc377051388dd94305"
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "communities": {
+    "0": [
+      "cancellationtokensource",
+      "csharp_namespace:f42f9e879f5f9816",
+      "ireadcontroller",
+      "shellwindow_axaml",
+      "usercontrol",
+      "views_configurationview_axaml",
+      "views_configurationview_axaml_cs_routedeventargs",
+      "views_configurationview_axaml_practicapalabras_views_configurationview",
+      "views_configurationview_axaml_practicapalabras_views_configurationview_applytheme",
+      "views_configurationview_axaml_practicapalabras_views_configurationview_clearprogress",
+      "views_configurationview_axaml_practicapalabras_views_configurationview_onclearprogressclicked",
+      "views_configurationview_axaml_practicapalabras_views_configurationview_onpropertychanged",
+      "views_dictionaryview_axaml",
+      "views_mainview_axaml",
+      "views_visualitzationwordview_axaml",
+      "views_visualitzationwordview_axaml_cs_cancellationtoken",
+      "views_visualitzationwordview_axaml_cs_ispeechservice",
+      "views_visualitzationwordview_axaml_cs_routedeventargs",
+      "views_visualitzationwordview_axaml_cs_speak",
+      "views_visualitzationwordview_axaml_cs_string",
+      "views_visualitzationwordview_axaml_cs_visualtreeattachmenteventargs",
+      "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_getword",
+      "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_ondetachedfromvisualtree",
+      "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onloaded",
+      "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_onpropertychanged"
+    ],
+    "1": [
+      "services_speechservice",
+      "services_speechservice_cs_cancellationtoken",
+      "services_speechservice_cs_task",
+      "services_speechservice_practicapalabras_consolebackend",
+      "services_speechservice_practicapalabras_consolebackend_speak",
+      "services_speechservice_practicapalabras_espeakbackend",
+      "services_speechservice_practicapalabras_espeakbackend_speak",
+      "services_speechservice_practicapalabras_espeakngbackend",
+      "services_speechservice_practicapalabras_espeakngbackend_mapespeakvoice",
+      "services_speechservice_practicapalabras_espeakngbackend_speak",
+      "services_speechservice_practicapalabras_saybackend",
+      "services_speechservice_practicapalabras_saybackend_speak",
+      "services_speechservice_practicapalabras_spdsaybackend",
+      "services_speechservice_practicapalabras_spdsaybackend_speak",
+      "services_speechservice_practicapalabras_speechservice",
+      "services_speechservice_practicapalabras_speechservice_getbackend",
+      "services_speechservice_practicapalabras_speechservice_hasbinary",
+      "services_speechservice_practicapalabras_speechservice_speakasync",
+      "services_speechservice_practicapalabras_ttsbackend",
+      "services_speechservice_practicapalabras_ttsbackend_escapeforshell",
+      "services_speechservice_practicapalabras_ttsbackend_maplanguage",
+      "services_speechservice_practicapalabras_ttsbackend_runasync",
+      "services_speechservice_practicapalabras_ttsbackend_speak",
+      "services_speechservice_practicapalabras_windowsonecorebackend",
+      "services_speechservice_practicapalabras_windowsonecorebackend_speak"
+    ],
+    "2": [
+      "csharp_namespace:f315d029b43dbf3b",
+      "models_word",
+      "services_ispeechservice",
+      "services_ispeechservice_cs_cancellationtoken",
+      "services_ispeechservice_cs_task",
+      "services_ispeechservice_practicapalabras_ispeechservice",
+      "services_ispeechservice_practicapalabras_ispeechservice_speakasync",
+      "services_language",
+      "services_language_cs_string",
+      "services_language_practicapalabras_language",
+      "services_language_practicapalabras_language_configcat",
+      "services_language_practicapalabras_language_configesp",
+      "services_language_practicapalabras_language_configspeak",
+      "services_language_practicapalabras_language_getsystemlanguage",
+      "services_speak",
+      "services_speak_cs_cancellationtoken",
+      "services_speak_cs_sortedlist",
+      "services_speak_cs_task",
+      "services_speak_practicapalabras_ireadcontroller",
+      "services_speak_practicapalabras_ireadcontroller_getword",
+      "services_speak_practicapalabras_ireadcontroller_setword",
+      "services_speak_practicapalabras_speak",
+      "services_speak_practicapalabras_speak_read",
+      "services_speak_practicapalabras_speak_tohidden"
+    ],
+    "3": [
+      "int",
+      "keyeventargs",
+      "models_word_practicapalabras_word_tostring",
+      "random",
+      "views_mainview_axaml_cs_datetime",
+      "views_mainview_axaml_cs_ilist",
+      "views_mainview_axaml_cs_sortedlist",
+      "views_mainview_axaml_cs_string",
+      "views_mainview_axaml_cs_task",
+      "views_mainview_axaml_cs_visualtreeattachmenteventargs",
+      "views_mainview_axaml_cs_word",
+      "views_mainview_axaml_practicapalabras_views_mainview",
+      "views_mainview_axaml_practicapalabras_views_mainview_checkword",
+      "views_mainview_axaml_practicapalabras_views_mainview_load",
+      "views_mainview_axaml_practicapalabras_views_mainview_next",
+      "views_mainview_axaml_practicapalabras_views_mainview_onattachedtovisualtree",
+      "views_mainview_axaml_practicapalabras_views_mainview_onkeydown",
+      "views_mainview_axaml_practicapalabras_views_mainview_onpropertychanged",
+      "views_mainview_axaml_practicapalabras_views_mainview_saveprogressifenabled",
+      "views_mainview_axaml_practicapalabras_views_mainview_updatedics",
+      "views_mainview_axaml_practicapalabras_views_mainview_updateword",
+      "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview_setword"
+    ],
+    "4": [
+      "border",
+      "ibrush",
+      "shellwindow_axaml_cs_routedeventargs",
+      "shellwindow_axaml_cs_usercontrol",
+      "shellwindow_axaml_practicapalabras_shellwindow",
+      "shellwindow_axaml_practicapalabras_shellwindow_buildlangchip",
+      "shellwindow_axaml_practicapalabras_shellwindow_getappversion",
+      "shellwindow_axaml_practicapalabras_shellwindow_navigateto",
+      "shellwindow_axaml_practicapalabras_shellwindow_onnavigateconfiguration",
+      "shellwindow_axaml_practicapalabras_shellwindow_onnavigatedictionary",
+      "shellwindow_axaml_practicapalabras_shellwindow_onnavigatepractice",
+      "shellwindow_axaml_practicapalabras_shellwindow_ontogglepane",
+      "shellwindow_axaml_practicapalabras_shellwindow_refreshlangdependentui",
+      "shellwindow_axaml_practicapalabras_shellwindow_resolveforeground",
+      "window"
+    ],
+    "5": [
+      "ienumerable",
+      "inotifypropertychanged",
+      "models_word_cs_string",
+      "models_word_practicapalabras_word",
+      "models_word_practicapalabras_word_fromline",
+      "models_word_practicapalabras_word_onpropertychanged",
+      "views_dictionaryview_axaml_cs_ilist",
+      "views_dictionaryview_axaml_cs_string",
+      "views_dictionaryview_axaml_cs_word",
+      "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_clear",
+      "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_load",
+      "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_onpropertychanged",
+      "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_parse",
+      "views_dictionaryview_axaml_practicapalabras_views_dictionaryview_save"
+    ],
+    "6": [
+      "framework_net9_0",
+      "framework_net9_0_android",
+      "framework_targetframeworks",
+      "nuget_avalonia",
+      "nuget_avalonia_android",
+      "nuget_avalonia_desktop",
+      "nuget_avalonia_fonts_inter",
+      "nuget_avalonia_themes_fluent",
+      "practicapalabras_avalonia",
+      "sdk_microsoft_net_sdk"
+    ],
+    "7": [
+      "app_axaml",
+      "app_axaml_practicapalabras_app",
+      "app_axaml_practicapalabras_app_applysavedtheme",
+      "app_axaml_practicapalabras_app_initialize",
+      "app_axaml_practicapalabras_app_loadlangdict",
+      "app_axaml_practicapalabras_app_onframeworkinitializationcompleted",
+      "app_axaml_practicapalabras_app_updatelang",
+      "application",
+      "resourcedictionary"
+    ],
+    "8": [
+      "services_preferencesservice",
+      "services_preferencesservice_cs_datetime",
+      "services_preferencesservice_cs_dictionary",
+      "services_preferencesservice_cs_string",
+      "services_preferencesservice_practicapalabras_preferencesservice",
+      "services_preferencesservice_practicapalabras_preferencesservice_get",
+      "services_preferencesservice_practicapalabras_preferencesservice_load",
+      "services_preferencesservice_practicapalabras_preferencesservice_save",
+      "services_preferencesservice_practicapalabras_preferencesservice_set"
+    ],
+    "9": [
+      "services_progressstore",
+      "services_progressstore_cs_dictionary",
+      "services_progressstore_practicapalabras_progressstore",
+      "services_progressstore_practicapalabras_progressstore_clear",
+      "services_progressstore_practicapalabras_progressstore_keyfor",
+      "services_progressstore_practicapalabras_progressstore_load",
+      "services_progressstore_practicapalabras_progressstore_save",
+      "views_mainview_axaml_practicapalabras_views_mainview_forceclearprogressforlanguage",
+      "views_mainview_axaml_practicapalabras_views_mainview_loadprogressifenabled"
+    ],
+    "10": [
+      "appbuilder",
+      "program",
+      "program_practicapalabras_program",
+      "program_practicapalabras_program_buildavaloniaapp",
+      "program_practicapalabras_program_main",
+      "stathread"
+    ],
+    "11": [
+      "install_prereqs",
+      "install_prereqs_dotnet_cli_temp_directory",
+      "install_prereqs_sh__entry",
+      "install_prereqs_tmpdir"
+    ],
+    "12": [
+      "build_all",
+      "build_all_publish",
+      "build_all_sh__entry"
+    ],
+    "13": [
+      "build_appimage",
+      "build_appimage_sh__entry"
+    ],
+    "14": [
+      "clean",
+      "clean_sh__entry"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08307692307692308,
+    "1": 0.20333333333333334,
+    "2": 0.11956521739130435,
+    "3": 0.12987012987012986,
+    "4": 0.18095238095238095,
+    "5": 0.19047619047619047,
+    "6": 0.2,
+    "7": 0.3333333333333333,
+    "8": 0.3055555555555556,
+    "9": 0.3055555555555556,
+    "10": 0.4,
+    "11": 0.5,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0
+  },
+  "gods": [
+    {
+      "id": "views_mainview_axaml_practicapalabras_views_mainview",
+      "label": "MainView",
+      "degree": 21
+    },
+    {
+      "id": "views_visualitzationwordview_axaml_practicapalabras_views_visualitzationwordview",
+      "label": "VisualitzationWordView",
+      "degree": 14
+    },
+    {
+      "id": "services_speechservice_practicapalabras_ttsbackend",
+      "label": "TtsBackend",
+      "degree": 13
+    },
+    {
+      "id": "views_dictionaryview_axaml_practicapalabras_views_dictionaryview",
+      "label": "DictionaryView",
+      "degree": 12
+    },
+    {
+      "id": "shellwindow_axaml_practicapalabras_shellwindow",
+      "label": "ShellWindow",
+      "degree": 11
+    },
+    {
+      "id": "csharp_namespace:f315d029b43dbf3b",
+      "label": "PracticaPalabras",
+      "degree": 10
+    },
+    {
+      "id": "app_axaml_practicapalabras_app",
+      "label": "App",
+      "degree": 8
+    },
+    {
+      "id": "services_speak_practicapalabras_speak",
+      "label": "Speak",
+      "degree": 8
+    },
+    {
+      "id": "models_word_practicapalabras_word",
+      "label": "Word",
+      "degree": 7
+    },
+    {
+      "id": "services_preferencesservice_practicapalabras_preferencesservice",
+      "label": "PreferencesService",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Word",
+      "target": "Speak",
+      "source_files": [
+        "Models/Word.cs",
+        "Services/Speak.cs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "SpeechService",
+      "target": "ISpeechService",
+      "source_files": [
+        "Services/SpeechService.cs",
+        "Services/ISpeechService.cs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
